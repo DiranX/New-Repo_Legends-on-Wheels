@@ -17,6 +17,10 @@ public class TrackCheckPointHolder : MonoBehaviour
         // Singleton pattern for global access
         instance = this;
 
+    }
+
+    private void Start()
+    {
         // Find all players with the "Player" tag and add them to the playerBatch list
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         playerBatch.AddRange(players);
