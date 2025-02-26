@@ -1,0 +1,23 @@
+# Blender 4.1.1 MTL File: 'Pohon Stylized.blend'
+# www.blender.org
+
+newmtl Leaves
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.527273 0.527273 0.527273
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Kd DAUN 1 BAKED.png
+map_d DAUN 1 BAKED.png
+
+newmtl Pohon1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd BATANG 3.png
+map_Bump -bm 1.000000 BATANG 3 NORMAL.png
