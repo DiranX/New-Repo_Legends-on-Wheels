@@ -77,7 +77,7 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""8f396b70-1ac4-49af-8f54-500e39ad82d8"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -89,6 +89,17 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""240a7444-0cff-4b72-a02b-70292fac6384"",
                     ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Forward"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7c983dc4-a053-496e-b2d7-7e587f676432"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -110,7 +121,7 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""ebbb0d37-b95f-4bf2-a84f-6213166f7fd9"",
-                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -121,7 +132,7 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""baf30f53-b5c0-4954-a41a-8e931147b8ab"",
-                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
