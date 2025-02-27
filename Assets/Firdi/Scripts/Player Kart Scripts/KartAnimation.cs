@@ -11,21 +11,23 @@ public class KartAnimation : MonoBehaviour
     PlayerKartController playerKart;
 
     public Transform kartModel;
-    public Transform frontWheels;
+    public Transform leftFrontWheel;  // Separate left front wheel
+    public Transform rightFrontWheel; // Separate right front wheel
     public Transform steeringWheel;
+
+    [SerializeField] private float maxSteerAngle; // Max wheel steering angle
 
     private void Awake()
     {
         input = GetComponentInParent<PlayerInput>();
     }
-    // Start is called before the first frame update
+
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
         playerKart = GetComponent<PlayerKartController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         // Update acceleration and backward animation
@@ -49,15 +51,30 @@ public class KartAnimation : MonoBehaviour
             anim.SetBool("Backward", false);
         }
 
+        // Read input from player
         Vector3 moveInput = input.actions["Move"].ReadValue<Vector2>();
+
         if(playerKart.drifting && moveInput.x != 0)
         {
-            float control = (playerKart.driftDirection == 1) ? ExtensionMethods.Remap(moveInput.x, -1, 1, .5f, 2) : ExtensionMethods.Remap(moveInput.x, -1, 1, 2, .5f);
-            kartModel.parent.localRotation = Quaternion.Euler(0, Mathf.LerpAngle(kartModel.parent.localEulerAngles.y, (control * 15) * playerKart.driftDirection, .2f), 0);
+            float control = (playerKart.driftDirection == 1) ? 
+                ExtensionMethods.Remap(moveInput.x, -1, 1, .5f, 2) : 
+                ExtensionMethods.Remap(moveInput.x, -1, 1, 2, .5f);
+                
+            kartModel.parent.localRotation = Quaternion.Euler(
+                0, 
+                Mathf.LerpAngle(kartModel.parent.localEulerAngles.y, (control * 15) * playerKart.driftDirection, .2f), 
+                0
+            );
         }
 
-        // Update front wheels and steering wheel based on input
-        frontWheels.localEulerAngles = new Vector3(0, (moveInput.x * 20), frontWheels.localEulerAngles.z);
-        steeringWheel.localEulerAngles = new Vector3(-25, 90, (moveInput.x * 45));
+        // Compute wheel rotation angle based on input
+        float steerAngle = moveInput.x * maxSteerAngle;
+
+        leftFrontWheel.localRotation = Quaternion.Euler(leftFrontWheel.localRotation.eulerAngles.x, steerAngle, leftFrontWheel.localRotation.eulerAngles.z);
+        rightFrontWheel.localRotation = Quaternion.Euler(rightFrontWheel.localRotation.eulerAngles.x, steerAngle, rightFrontWheel.localRotation.eulerAngles.z);
+
+
+        // Rotate steering wheel
+        steeringWheel.localEulerAngles = new Vector3(0, 0, (moveInput.x * 45));
     }
 }

@@ -4,28 +4,26 @@ using UnityEngine;
 
 public class PlayerHolder : MonoBehaviour
 {
-    public GameObject[] secondP;
-    public GameObject thirdP;
-    public GameObject fourthP;
+    public GameObject[] playerHolder;
     private void Awake()
     {
         if (GameManager.Instance.playerCount == 2)
         {
-            secondP[0].SetActive(true);
-            secondP[1].SetActive(true);
+            playerHolder[0].SetActive(true);
+            playerHolder[1].SetActive(true);
         }
         else if(GameManager.Instance.playerCount == 3)
         {
-            secondP[0].SetActive(true);
-            secondP[1].SetActive(true);
-            thirdP.SetActive(true);
+            playerHolder[0].SetActive(true);
+            playerHolder[1].SetActive(true);
+            playerHolder[2].SetActive(true);
         }
         else if(GameManager.Instance.playerCount == 4)
         {
-            secondP[0].SetActive(true);
-            secondP[1].SetActive(true);
-            thirdP.SetActive(true);
-            fourthP.SetActive(true);
+            playerHolder[0].SetActive(true);
+            playerHolder[1].SetActive(true);
+            playerHolder[2].SetActive(true);
+            playerHolder[3].SetActive(true);
         }
     }
 }
