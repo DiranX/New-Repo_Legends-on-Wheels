@@ -16,6 +16,7 @@ public class playerLapCounter : MonoBehaviour
     public TextMeshProUGUI PlacementCounter;
     public TextMeshProUGUI winOrLose;
     public int playerCurrentPlace;
+    public bool finish;
 
     private void Awake()
     {
@@ -51,10 +52,12 @@ public class playerLapCounter : MonoBehaviour
             {
                 //Debug.Log("Win");
                 winOrLose.text = "Win:)";
+                finish = true;
             }
             else if(currentLap >= totalLap && playerCurrentPlace != 1)
             {
                 winOrLose.text = "Lose;(";
+                finish = true;
             }
         }
     }

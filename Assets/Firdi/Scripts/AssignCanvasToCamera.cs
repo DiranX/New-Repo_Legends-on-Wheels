@@ -8,6 +8,7 @@ public class AssignCanvasToCamera : MonoBehaviour
     private Camera playerCamera;
     private PlayerInput playerInput;
     private CanvasScaler canvasScaler;
+    public RectTransform P1P2UI;
 
     void Awake()
     {
@@ -37,7 +38,9 @@ public class AssignCanvasToCamera : MonoBehaviour
         if (canvasScaler != null)
         {
             if (playerCount == 2)
-                canvasScaler.scaleFactor = 0.8f; // Slightly smaller UI for 2 players
+            {
+                P1P2UI.sizeDelta = new Vector2(1350, 1550);
+            }
             else if (playerCount == 4)
                 canvasScaler.scaleFactor = 0.6f; // Even smaller UI for 4 players
             else

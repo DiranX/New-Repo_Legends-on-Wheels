@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class TrackCheckPointHolder : MonoBehaviour
@@ -12,43 +13,40 @@ public class TrackCheckPointHolder : MonoBehaviour
     [Header("Players")]
     public List<GameObject> playerBatch = new List<GameObject>(); // List of players
 
+    [Header("Leader Board")]
+    public TextMeshProUGUI[] leaderBoard;
+    public GameObject leaderBoardCanvas; // Assign in Inspector
+
+    private List<GameObject> finishedPlayers = new List<GameObject>(); // Stores finished players
+
     private void Awake()
     {
-        // Singleton pattern for global access
         instance = this;
-
     }
 
     private void Start()
     {
-        // Find all players with the "Player" tag and add them to the playerBatch list
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         playerBatch.AddRange(players);
+
+        // Hide leaderboard UI at the start
+        leaderBoardCanvas.SetActive(false);
     }
 
     private void Update()
     {
-        // Sort players by lap count, then by distance to the next checkpoint
+        // Sort players based on lap, checkpoint, and distance
         playerBatch.Sort((a, b) =>
         {
             playerLapCounter playerA = a.GetComponent<playerLapCounter>();
             playerLapCounter playerB = b.GetComponent<playerLapCounter>();
 
-            // Compare by lap count (descending)
             int lapComparison = playerB.currentLap.CompareTo(playerA.currentLap);
-            if (lapComparison != 0)
-            {
-                return lapComparison;
-            }
+            if (lapComparison != 0) return lapComparison;
 
-            // Compare by checkpoint count (descending)
             int checkpointComparison = playerB.currentCheckpoint.CompareTo(playerA.currentCheckpoint);
-            if (checkpointComparison != 0)
-            {
-                return checkpointComparison;
-            }
+            if (checkpointComparison != 0) return checkpointComparison;
 
-            // Compare by distance to the next checkpoint (ascending)
             Transform nextCheckpointA = CheckPoint[playerA.currentCheckpoint].transform;
             Transform nextCheckpointB = CheckPoint[playerB.currentCheckpoint].transform;
 
@@ -58,15 +56,8 @@ public class TrackCheckPointHolder : MonoBehaviour
             return distanceA.CompareTo(distanceB);
         });
 
-        // Debugging: Print sorted players' order
-        foreach (GameObject player in playerBatch)
-        {
-            playerLapCounter playerInfo = player.GetComponent<playerLapCounter>();
-            //Debug.Log($"Player {player.name}: Lap {playerInfo.currentLap}, Checkpoint {playerInfo.currentCheckpoint}");
-        }
-
-        // Update player positions
         UpdatePlayerPositions();
+        CheckRaceCompletion();
     }
 
     private void UpdatePlayerPositions()
@@ -76,11 +67,40 @@ public class TrackCheckPointHolder : MonoBehaviour
             GameObject player = playerBatch[i];
             playerLapCounter playerCode = player.GetComponent<playerLapCounter>();
 
-            // Update player's current position in the race
+            // Update player's position
             playerCode.playerCurrentPlace = i + 1;
+        }
+    }
 
-            // Debugging: Log the player's position
-            //Debug.Log($"Player {player.name}: Position {playerCode.playerCurrentPlace}");
+    private void CheckRaceCompletion()
+    {
+        foreach (GameObject player in playerBatch)
+        {
+            playerLapCounter playerInfo = player.GetComponent<playerLapCounter>();
+
+            if (playerInfo.finish && !finishedPlayers.Contains(player))
+            {
+                finishedPlayers.Add(player);
+                AddToLeaderBoard(player.name);
+            }
+        }
+
+        // If all players have finished, show leaderboard
+        if (finishedPlayers.Count == playerBatch.Count)
+        {
+            leaderBoardCanvas.SetActive(true);
+        }
+    }
+
+    private void AddToLeaderBoard(string playerName)
+    {
+        for (int i = 0; i < leaderBoard.Length; i++)
+        {
+            if (string.IsNullOrEmpty(leaderBoard[i].text))
+            {
+                leaderBoard[i].text = playerName;
+                break;
+            }
         }
     }
 }

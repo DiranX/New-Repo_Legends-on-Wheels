@@ -93,6 +93,8 @@ public class PlayerKartController : MonoBehaviour
         if (this.gameObject.activeSelf == true)
         {
             this.sphere.GetComponent<PlayerItemHolder>().itemFront = frontThrow;
+            virtualCam.Follow = this.transform;
+            virtualCam.LookAt = this.transform;
         }
     }
 
