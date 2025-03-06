@@ -3,7 +3,12 @@ guid: 9a63915660bf1f94897397caffdf4d86
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KeongMas_Texture
+    second: {fileID: 2100000, guid: b93accca2f390304da3fd1f9dcfff343, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
