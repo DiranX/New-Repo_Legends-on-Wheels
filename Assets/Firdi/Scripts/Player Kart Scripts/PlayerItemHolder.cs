@@ -13,6 +13,7 @@ public class PlayerItemHolder : MonoBehaviour
     public GameObject[] ItemPrefabs;
     public GameObject[] playerItemUI;
     public Transform itemFront;
+    public Transform itemBack;
     public Animator animator;
     public PlayerInput playerInput;
 
@@ -25,9 +26,16 @@ public class PlayerItemHolder : MonoBehaviour
     }
     private void Update()
     {
+        Vector2 throwInput = playerInput.actions["Move"].ReadValue<Vector2>();
         if (playerItemUI[playerItemIndex].activeSelf == true && ItemUsed)
         {
-            UseItem();
+            if(throwInput.y >= 0f)
+            {
+                FrontThrow();
+            }else if(throwInput.y < 0f)
+            {
+                BackThrow();
+            }
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -51,7 +59,7 @@ public class PlayerItemHolder : MonoBehaviour
         Debug.Log("Get Item: " + playerItemUI[playerItemIndex].ToString());
     }
 
-    public void UseItem()
+    public void FrontThrow()
     {
         if (haveItem)
         {
@@ -60,10 +68,41 @@ public class PlayerItemHolder : MonoBehaviour
             haveItem = false; // Allow picking up a new item
             Debug.Log("Item Used!");
 
-            GameObject Throw = Instantiate(ItemPrefabs[playerItemIndex], itemFront.position, transform.rotation);
+            // Instantiate the item
+            GameObject Throw = Instantiate(ItemPrefabs[playerItemIndex], itemFront.position, itemFront.rotation);
             Rigidbody rb = Throw.GetComponent<Rigidbody>();
-            Vector3 throwDirection = itemFront.forward * throwForce + Vector3.up * upwardForce;
+
+            // Get player velocity
+            Vector3 playerVelocity = GetComponent<Rigidbody>().velocity;
+
+            // Calculate force multiplier based on speed
+            float speedFactor = Mathf.Clamp(playerVelocity.magnitude / 10f, 0.5f, 2f); // Adjust range as needed
+
+            // Apply dynamic force
+            Vector3 throwDirection = itemFront.forward * (throwForce * speedFactor) + Vector3.up * (upwardForce);
             rb.AddForce(throwDirection, ForceMode.Impulse);
         }
     }
+    public void BackThrow()
+    {
+        if (haveItem)
+        {
+            ItemUsed = false;
+            playerItemUI[playerItemIndex].SetActive(false); // Deactivate the UI element
+            haveItem = false; // Allow picking up a new item
+            Debug.Log("Item Used!");
+
+            // Instantiate the item
+            GameObject Throw = Instantiate(ItemPrefabs[playerItemIndex], itemBack.position, itemBack.rotation);
+            Rigidbody rb = Throw.GetComponent<Rigidbody>();
+
+            // Get player velocity
+            Vector3 playerVelocity = GetComponent<Rigidbody>().velocity;
+
+            // Apply dynamic force
+            Vector3 throwDirection = -itemBack.forward * (throwForce/2) + Vector3.up * (upwardForce);
+            rb.AddForce(throwDirection, ForceMode.Impulse);
+        }
+    }
+
 }

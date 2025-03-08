@@ -19,13 +19,14 @@ public class PlayerKartController : MonoBehaviour
     public Transform kartNormal;
     public Transform kartModel;
     public Transform frontThrow;
+    public Transform BackThrow;
+    public bool canMove;
 
     public Rigidbody sphere;
     public float speed, currentSpeed;
     float rotate, currentRotate;
     public int driftDirection;
     float driftPower;
-    int driftMode = 0;
     //bool first, second, third;
 
     [Header("Parameters")]
@@ -93,6 +94,7 @@ public class PlayerKartController : MonoBehaviour
         if (this.gameObject.activeSelf == true)
         {
             this.sphere.GetComponent<PlayerItemHolder>().itemFront = frontThrow;
+            this.sphere.GetComponent<PlayerItemHolder>().itemBack = BackThrow;
             virtualCam.Follow = this.transform;
             virtualCam.LookAt = this.transform;
         }
@@ -100,6 +102,7 @@ public class PlayerKartController : MonoBehaviour
 
     void Update()
     {
+        if (!canMove) return;
         //Debug.Log("Current Speed: " + currentSpeed);
 
         if (moveForward && !moveBackward)
@@ -238,25 +241,21 @@ public class PlayerKartController : MonoBehaviour
 
         if (driftPower >= level3Threshold)
         {
-            driftMode = 3;
             StartBoost(level3Boost);
             boosted = true;
         }
         else if (driftPower >= level2Threshold)
         {
-            driftMode = 2;
             StartBoost(level2Boost);
             boosted = true;
         }
         else if (driftPower >= level1Threshold)
         {
-            driftMode = 1;
             StartBoost(level1Boost);
             boosted = true;
         }
         else
         {
-            driftMode = 0; // No boost
             PlayFlareParticle();
         }
 

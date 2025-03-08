@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -19,6 +20,13 @@ public class TrackCheckPointHolder : MonoBehaviour
 
     private List<GameObject> finishedPlayers = new List<GameObject>(); // Stores finished players
 
+    [Header("Start Countdown")]
+    public float countdownTime = 3f; // Time before race starts
+    public TextMeshProUGUI countdownText; // UI text to show countdown
+    public AudioSource countdownBeep; // Optional: Beep sound
+    public AudioSource startSound; // Optional: Start sound
+    private List<GameObject> playerKarts = new List<GameObject>(); // Assign all player karts in the inspector
+
     private void Awake()
     {
         instance = this;
@@ -29,8 +37,13 @@ public class TrackCheckPointHolder : MonoBehaviour
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         playerBatch.AddRange(players);
 
+        GameObject[] Kart = GameObject.FindGameObjectsWithTag("Kart");
+        playerKarts.AddRange(Kart);
+
         // Hide leaderboard UI at the start
         leaderBoardCanvas.SetActive(false);
+
+        StartCoroutine(StartRaceCountDown());
     }
 
     private void Update()
@@ -101,6 +114,32 @@ public class TrackCheckPointHolder : MonoBehaviour
                 leaderBoard[i].text = playerName;
                 break;
             }
+        }
+    }
+    IEnumerator StartRaceCountDown()
+    {
+        foreach (var player in playerKarts)
+        {
+            player.GetComponent<PlayerKartController>().canMove = false;
+        }
+
+        while (countdownTime > 0)
+        {
+            countdownText.text = countdownTime.ToString("0");
+            //countdownBeep.Play();
+            yield return new WaitForSeconds(1f);
+            countdownTime--;
+        }
+
+        countdownText.text = "Go!";
+        //startSound?.Play();
+        yield return new WaitForSeconds(1f);
+
+        countdownText.gameObject.SetActive(false);
+
+        foreach (var player in playerKarts)
+        {
+            player.GetComponent<PlayerKartController>().canMove = true;
         }
     }
 }

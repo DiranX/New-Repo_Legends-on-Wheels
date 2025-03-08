@@ -17,6 +17,8 @@ public class KartAnimation : MonoBehaviour
 
     [SerializeField] private float maxSteerAngle; // Max wheel steering angle
 
+    public Animator charaAnim;
+
     private void Awake()
     {
         input = GetComponentInParent<PlayerInput>();
@@ -54,17 +56,33 @@ public class KartAnimation : MonoBehaviour
         // Read input from player
         Vector3 moveInput = input.actions["Move"].ReadValue<Vector2>();
 
-        if(playerKart.drifting && moveInput.x != 0)
+        if (playerKart.drifting && moveInput.x != 0)
         {
-            float control = (playerKart.driftDirection == 1) ? 
-                ExtensionMethods.Remap(moveInput.x, -1, 1, .5f, 2) : 
+            float control = (playerKart.driftDirection == 1) ?
+                ExtensionMethods.Remap(moveInput.x, -1, 1, .5f, 2) :
                 ExtensionMethods.Remap(moveInput.x, -1, 1, 2, .5f);
-                
+
             kartModel.parent.localRotation = Quaternion.Euler(
-                0, 
-                Mathf.LerpAngle(kartModel.parent.localEulerAngles.y, (control * 15) * playerKart.driftDirection, .2f), 
+                0,
+                Mathf.LerpAngle(kartModel.parent.localEulerAngles.y, (control * 15) * playerKart.driftDirection, .2f),
                 0
             );
+
+            float headTilt = (playerKart.driftDirection == 1) ? ExtensionMethods.Remap(moveInput.x, -1, 1, -2, 2) : ExtensionMethods.Remap(moveInput.x, -1, 1, 2, -2);
+
+            if (playerKart.driftDirection == 1)
+            {
+                if (moveInput.x > 0)
+                {
+                    charaAnim.SetFloat("L", 1);
+                }
+            } else if (playerKart.driftDirection == -1)
+            {
+                if (control > 0)
+                {
+                    charaAnim.SetFloat("R", 1);
+                }
+            }
         }
 
         // Compute wheel rotation angle based on input
@@ -76,5 +94,11 @@ public class KartAnimation : MonoBehaviour
 
         // Rotate steering wheel
         steeringWheel.localEulerAngles = new Vector3(0, 0, (moveInput.x * 45));
+
+        if (moveInput.x == 0)
+        {
+            charaAnim.SetFloat("L", 0);
+            charaAnim.SetFloat("R", 0);
+        }
     }
 }
