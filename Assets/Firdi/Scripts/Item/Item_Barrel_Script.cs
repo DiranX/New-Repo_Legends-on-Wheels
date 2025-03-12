@@ -28,5 +28,11 @@ public class Item_Barrel_Script : MonoBehaviour
                 transform.localScale *= 12f;
             }
         }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<PlayerItemHolder>().playerKartController.GetComponent<Animator>().SetTrigger("Stop");
+            Destroy(this.gameObject);
+        }
     }
 }
