@@ -15,12 +15,12 @@ public class PlayerKartController : MonoBehaviour
     public bool moveBackward;
     public bool drift;
     public bool drifting;
+    public bool canMove;
     public float kartYPosition;
     public Transform kartNormal;
     public Transform kartModel;
     public Transform frontThrow;
     public Transform BackThrow;
-    public bool canMove;
 
     public Rigidbody sphere;
     public float speed, currentSpeed;
@@ -95,6 +95,7 @@ public class PlayerKartController : MonoBehaviour
         {
             this.sphere.GetComponent<PlayerItemHolder>().itemFront = frontThrow;
             this.sphere.GetComponent<PlayerItemHolder>().itemBack = BackThrow;
+            this.sphere.GetComponent<PlayerItemHolder>().playerKartController = this;
             virtualCam.Follow = this.transform;
             virtualCam.LookAt = this.transform;
         }
@@ -102,7 +103,6 @@ public class PlayerKartController : MonoBehaviour
 
     void Update()
     {
-        if (!canMove) return;
         //Debug.Log("Current Speed: " + currentSpeed);
 
         if (moveForward && !moveBackward)
@@ -179,6 +179,8 @@ public class PlayerKartController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!canMove) return;
+
         if (speed == 0f && boostTimer <= 0)
         {
             currentSpeed = Mathf.MoveTowards(currentSpeed, 0, deceleration * Time.fixedDeltaTime);
@@ -203,17 +205,12 @@ public class PlayerKartController : MonoBehaviour
         if (boostTimer > 0)
         {
             boostTimer -= Time.fixedDeltaTime;
+            currentSpeed += driftBoostAmount;
 
             if (boostTimer <= 0)
             {
                 currentSpeed = Mathf.Max(currentSpeed - level3Boost, acceleration);
             }
-        }
-
-        if (boostTimer > 0)
-        {
-            boostTimer -= Time.fixedDeltaTime;
-            currentSpeed += driftBoostAmount;
         }
         else
         {
@@ -272,8 +269,8 @@ public class PlayerKartController : MonoBehaviour
     }
     public void ReceiveBoost(float boostAmount, float duration)
     {
-        driftBoostAmount = boostAmount;
-        boostTimer = duration;
+        driftBoostAmount += boostAmount;
+        boostTimer = Mathf.Max(boostTimer, duration);
         if (virtualCam != null)
         {
             StopAllCoroutines();
@@ -404,6 +401,16 @@ public class PlayerKartController : MonoBehaviour
         {
             boost.Play();
         }
+    }
+
+    public void StopKart()
+    {
+        canMove = false;
+    }
+
+    public void StartKart()
+    {
+        canMove = true;
     }
 
     private void OnDrawGizmos()

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,6 +17,7 @@ public class PlayerItemHolder : MonoBehaviour
     public Transform itemBack;
     public Animator animator;
     public PlayerInput playerInput;
+    public PlayerKartController playerKartController;
 
     private void Awake()
     {
@@ -29,12 +31,19 @@ public class PlayerItemHolder : MonoBehaviour
         Vector2 throwInput = playerInput.actions["Move"].ReadValue<Vector2>();
         if (playerItemUI[playerItemIndex].activeSelf == true && ItemUsed)
         {
-            if(throwInput.y >= 0f)
+            if (playerItemIndex == 0)
             {
-                FrontThrow();
-            }else if(throwInput.y < 0f)
+                if (throwInput.y >= 0f)
+                {
+                    FrontThrow();
+                }
+                else if (throwInput.y < 0f)
+                {
+                    BackThrow();
+                }
+            }else if(playerItemIndex == 1)
             {
-                BackThrow();
+                Boost();
             }
         }
     }
@@ -103,6 +112,15 @@ public class PlayerItemHolder : MonoBehaviour
             Vector3 throwDirection = -itemBack.forward * (throwForce/2) + Vector3.up * (upwardForce);
             rb.AddForce(throwDirection, ForceMode.Impulse);
         }
+    }
+    public void Boost()
+    {
+        ItemUsed = false;
+        playerItemUI[playerItemIndex].SetActive(false); // Deactivate the UI element
+        haveItem = false; // Allow picking up a new item
+        Debug.Log("Item Used!");
+        playerKartController.ReceiveBoost(20, 1);
+        playerKartController.PlayBoostParticle();
     }
 
 }

@@ -20,13 +20,8 @@ public class MainMenu : MonoBehaviour
         GameManager.Instance.playerCount = 4;
         SceneManager.LoadSceneAsync("CharacterSelection4");
     }
-
-    public void Track()
+    public void Track(string track)
     {
-        SceneManager.LoadSceneAsync("Track1");
-    }
-    public void Track2()
-    {
-        SceneManager.LoadSceneAsync("Track2");
+        SceneManager.LoadSceneAsync(track);
     }
 }
