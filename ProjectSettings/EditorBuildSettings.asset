@@ -6,26 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Firdi/Main Menu.unity
+    path: Assets/Firdi/Scenes/Main Menu.unity
     guid: 29d772f64aaaf5c4da3a063d9d12f455
   - enabled: 1
-    path: Assets/Firdi/CharacterSelection2.unity
+    path: Assets/Firdi/Scenes/Mode Selection.unity
+    guid: 89f06c157eae68948b06a94ca9865ea5
+  - enabled: 1
+    path: Assets/Firdi/Scenes/CharacterSelection2.unity
     guid: 9958ff565080b654f9dc51c038911cf7
   - enabled: 1
-    path: Assets/Firdi/CharacterSelection3.unity
+    path: Assets/Firdi/Scenes/CharacterSelection3.unity
     guid: 6d6a326e5b5a3664fbc6df4df51a4d63
   - enabled: 1
-    path: Assets/Firdi/CharacterSelection4.unity
+    path: Assets/Firdi/Scenes/CharacterSelection4.unity
     guid: 528c15826271de44581e3f5289e13b16
   - enabled: 1
-    path: Assets/Firdi/MapSelectionScreen.unity
+    path: Assets/Firdi/Scenes/MapSelectionScreen.unity
     guid: 39e298a5f9b65d646bf8b4dd97b68fc3
   - enabled: 1
-    path: Assets/Restu/Arena 1/TRACK 1 ASPHALT.unity
-    guid: ada21455508bdd04aa6d68522ec8429f
-  - enabled: 1
-    path: Assets/Restu/Arena 1/Arena 1.unity
-    guid: 4b6ab39a72428074b916c5874966fc53
+    path: Assets/Firdi/Scenes/Arena 1.unity
+    guid: 64f9d6ccbed03a540b944b9ef683840d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 468f338fc36fdae468e312476b10c9ac,
       type: 3}

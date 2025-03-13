@@ -65,7 +65,6 @@ public class PlayerItemHolder : MonoBehaviour
         playerItemIndex = Random.Range(0, playerItemUI.Length);
         playerItemUI[playerItemIndex].SetActive(true);
         haveItem = true; // Mark that the player now has an item
-        Debug.Log("Get Item: " + playerItemUI[playerItemIndex].ToString());
     }
 
     public void FrontThrow()
@@ -75,7 +74,6 @@ public class PlayerItemHolder : MonoBehaviour
             ItemUsed = false;
             playerItemUI[playerItemIndex].SetActive(false); // Deactivate the UI element
             haveItem = false; // Allow picking up a new item
-            Debug.Log("Item Used!");
 
             // Instantiate the item
             GameObject Throw = Instantiate(ItemPrefabs[playerItemIndex], itemFront.position, itemFront.rotation);
@@ -99,7 +97,6 @@ public class PlayerItemHolder : MonoBehaviour
             ItemUsed = false;
             playerItemUI[playerItemIndex].SetActive(false); // Deactivate the UI element
             haveItem = false; // Allow picking up a new item
-            Debug.Log("Item Used!");
 
             // Instantiate the item
             GameObject Throw = Instantiate(ItemPrefabs[playerItemIndex], itemBack.position, itemBack.rotation);
@@ -118,7 +115,6 @@ public class PlayerItemHolder : MonoBehaviour
         ItemUsed = false;
         playerItemUI[playerItemIndex].SetActive(false); // Deactivate the UI element
         haveItem = false; // Allow picking up a new item
-        Debug.Log("Item Used!");
         playerKartController.ReceiveBoost(20, 1);
         playerKartController.PlayBoostParticle();
     }

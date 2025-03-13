@@ -36,6 +36,7 @@ public class PlayerKartController : MonoBehaviour
     public float steering;
     public float gravity;
     public LayerMask layerMask;
+    public LayerMask TerrainMask;
 
     [Header("Drift Parameters")]
     public float level1Threshold = 50f;
@@ -61,7 +62,7 @@ public class PlayerKartController : MonoBehaviour
     public Color[] driftColor;
     public CinemachineVirtualCamera virtualCam;
     private float defaultFOV;
-    public float boostFOV; // Adjust this value for a stronger zoom effect
+    private float boostFOV = 70; // Adjust this value for a stronger zoom effect
     public float zoomOutSpeed; // Controls how fast the zoom effect happens
     public float ZoomInSpeed; // Controls how fast the zoom effect happens
 
@@ -368,7 +369,6 @@ public class PlayerKartController : MonoBehaviour
         kartNormal.up = Vector3.Lerp(kartNormal.up, hitNear.normal, Time.fixedDeltaTime * 8.0f);
         kartNormal.Rotate(0, transform.eulerAngles.y, 0);
     }
-
     void ChangeParticleColor()
     {
         foreach (var ps in particleSystem)

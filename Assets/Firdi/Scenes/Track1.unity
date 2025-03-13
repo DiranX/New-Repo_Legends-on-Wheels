@@ -8665,91 +8665,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Holder
       objectReference: {fileID: 0}
-    - target: {fileID: 2070751093597662035, guid: 9128af1ae82e7114c80ed06c836af48a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2209134493547477220, guid: 9128af1ae82e7114c80ed06c836af48a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.0000000147904435
-      objectReference: {fileID: 0}
-    - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.0000000013574667
-      objectReference: {fileID: 0}
-    - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 4.06372e-10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2417767358075593121, guid: 9128af1ae82e7114c80ed06c836af48a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.9999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9924813
-      objectReference: {fileID: 0}
-    - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.122166686
-      objectReference: {fileID: 0}
-    - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.007443244
-      objectReference: {fileID: 0}
-    - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.00091620523
-      objectReference: {fileID: 0}
     - target: {fileID: 3885045165114583304, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8798,11 +8713,6 @@ PrefabInstance:
     - target: {fileID: 3885045165114583304, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7624469743107237090, guid: 9128af1ae82e7114c80ed06c836af48a,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
