@@ -17470,7 +17470,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799644170205320292}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000022217902, y: -9.2929764e-10, z: 6.921769e-11, w: 1}
+  m_LocalRotation: {x: -0.000000018355301, y: -6.9152006e-10, z: 4.3798236e-11, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -17499,7 +17499,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 5096530234877265242}
   m_Follow: {fileID: 5096530234877265242}
   m_Lens:
-    FieldOfView: 40
+    FieldOfView: 50
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -18354,10 +18354,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -19116,10 +19116,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -45978,8 +45978,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1960221366257015831}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.109105006, y: 0.0066264193, z: -0.00072733377, w: 0.9940079}
-  m_LocalPosition: {x: 0, y: 2, z: -4.5}
+  m_LocalRotation: {x: 0.06622466, y: 0.00399112, z: -0.00026489413, w: 0.9977968}
+  m_LocalPosition: {x: 0, y: 2, z: -7.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -46019,13 +46019,13 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 40
+  field of view: 50
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 6271
+    m_Bits: 14463
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -46069,7 +46069,7 @@ MonoBehaviour:
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
-  m_Antialiasing: 0
+  m_Antialiasing: 2
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -78001,7 +78001,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2830616961318314131}
   m_Layer: 0
-  m_Name: R
+  m_Name: R pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -135207,7 +135207,10 @@ MonoBehaviour:
   gravity: 30
   layerMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 8200
+  TerrainMask:
+    serializedVersion: 2
+    m_Bits: 8192
   level1Threshold: 50
   level2Threshold: 90
   level3Threshold: 140
@@ -158067,7 +158070,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1823845452246152215}
   m_Layer: 0
-  m_Name: L
+  m_Name: L Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -165211,7 +165214,10 @@ MonoBehaviour:
   gravity: 30
   layerMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 8200
+  TerrainMask:
+    serializedVersion: 2
+    m_Bits: 8192
   level1Threshold: 50
   level2Threshold: 90
   level3Threshold: 140
@@ -175376,7 +175382,10 @@ MonoBehaviour:
   gravity: 30
   layerMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 8200
+  TerrainMask:
+    serializedVersion: 2
+    m_Bits: 8192
   level1Threshold: 50
   level2Threshold: 90
   level3Threshold: 140
@@ -200029,7 +200038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 2, z: -4.5}
+  m_FollowOffset: {x: 0, y: 2, z: -7.5}
   m_XDamping: 0
   m_YDamping: 0
   m_ZDamping: 0
@@ -237591,7 +237600,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8763808864898456607
 Transform:
   m_ObjectHideFlags: 0
@@ -237657,14 +237666,17 @@ MonoBehaviour:
   speed: 0
   currentSpeed: 0
   driftDirection: 0
-  topSpeed: 80
+  topSpeed: 70
   acceleration: 20
-  deceleration: 10
+  deceleration: 15
   steering: 30
   gravity: 30
   layerMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 8200
+  TerrainMask:
+    serializedVersion: 2
+    m_Bits: 8192
   level1Threshold: 50
   level2Threshold: 90
   level3Threshold: 140
@@ -237724,7 +237736,7 @@ MonoBehaviour:
   leftFrontWheel: {fileID: 1823845452246152215}
   rightFrontWheel: {fileID: 2830616961318314131}
   steeringWheel: {fileID: 4623002417798108175}
-  maxSteerAngle: 35
+  maxSteerAngle: 45
   charaAnim: {fileID: 9127441599613120138}
 --- !u!65 &7163122537731562416
 BoxCollider:
@@ -249396,10 +249408,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0

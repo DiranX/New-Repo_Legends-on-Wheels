@@ -24,4 +24,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(track);
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
