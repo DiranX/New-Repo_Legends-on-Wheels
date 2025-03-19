@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Firdi/Scenes/Main Menu.unity
-    guid: 29d772f64aaaf5c4da3a063d9d12f455
+    path: Assets/Restu/Scenes/MainMenu.unity
+    guid: fe654cabbc91b144098df5ff4a98c0a7
   - enabled: 1
     path: Assets/Firdi/Scenes/Mode Selection.unity
     guid: 89f06c157eae68948b06a94ca9865ea5
