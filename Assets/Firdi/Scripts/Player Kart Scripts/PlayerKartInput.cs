@@ -71,6 +71,15 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Skill"",
+                    ""type"": ""Button"",
+                    ""id"": ""86638160-b399-4792-8775-59aeae586498"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -78,17 +87,6 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""8f396b70-1ac4-49af-8f54-500e39ad82d8"",
                     ""path"": ""<Gamepad>/rightShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Forward"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""240a7444-0cff-4b72-a02b-70292fac6384"",
-                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -142,17 +140,6 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""8ab40d97-59cf-4a5f-b3a4-71dfa1d18a3c"",
-                    ""path"": ""<Keyboard>/shift"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";PlayerKart1"",
-                    ""action"": ""Drift"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""066f6eae-767f-4e34-b72b-9173dcef8a43"",
                     ""path"": ""<Gamepad>/leftStick"",
                     ""interactions"": """",
@@ -175,12 +162,12 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""7399f00e-4701-42e8-a7ca-4045c6954fcc"",
-                    ""path"": ""<Keyboard>/s"",
+                    ""id"": ""7ec869d9-ee15-4089-ac8b-6298542642af"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Item"",
+                    ""action"": ""Skill"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -208,6 +195,7 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
         m_PlayerKart_Drift = m_PlayerKart.FindAction("Drift", throwIfNotFound: true);
         m_PlayerKart_Move = m_PlayerKart.FindAction("Move", throwIfNotFound: true);
         m_PlayerKart_Item = m_PlayerKart.FindAction("Item", throwIfNotFound: true);
+        m_PlayerKart_Skill = m_PlayerKart.FindAction("Skill", throwIfNotFound: true);
     }
 
     ~@PlayerKartInput()
@@ -279,6 +267,7 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_PlayerKart_Drift;
     private readonly InputAction m_PlayerKart_Move;
     private readonly InputAction m_PlayerKart_Item;
+    private readonly InputAction m_PlayerKart_Skill;
     public struct PlayerKartActions
     {
         private @PlayerKartInput m_Wrapper;
@@ -288,6 +277,7 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
         public InputAction @Drift => m_Wrapper.m_PlayerKart_Drift;
         public InputAction @Move => m_Wrapper.m_PlayerKart_Move;
         public InputAction @Item => m_Wrapper.m_PlayerKart_Item;
+        public InputAction @Skill => m_Wrapper.m_PlayerKart_Skill;
         public InputActionMap Get() { return m_Wrapper.m_PlayerKart; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -312,6 +302,9 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
             @Item.started += instance.OnItem;
             @Item.performed += instance.OnItem;
             @Item.canceled += instance.OnItem;
+            @Skill.started += instance.OnSkill;
+            @Skill.performed += instance.OnSkill;
+            @Skill.canceled += instance.OnSkill;
         }
 
         private void UnregisterCallbacks(IPlayerKartActions instance)
@@ -331,6 +324,9 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
             @Item.started -= instance.OnItem;
             @Item.performed -= instance.OnItem;
             @Item.canceled -= instance.OnItem;
+            @Skill.started -= instance.OnSkill;
+            @Skill.performed -= instance.OnSkill;
+            @Skill.canceled -= instance.OnSkill;
         }
 
         public void RemoveCallbacks(IPlayerKartActions instance)
@@ -364,5 +360,6 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
         void OnDrift(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
         void OnItem(InputAction.CallbackContext context);
+        void OnSkill(InputAction.CallbackContext context);
     }
 }

@@ -23,7 +23,7 @@ public class PlayerKartController : MonoBehaviour
     public Transform BackThrow;
 
     public Rigidbody sphere;
-    public float speed, currentSpeed;
+    public float speed, currentSpeed, previousSpeed;
     float rotate, currentRotate;
     public int driftDirection;
     float driftPower;
@@ -65,6 +65,14 @@ public class PlayerKartController : MonoBehaviour
     private float boostFOV = 70; // Adjust this value for a stronger zoom effect
     public float zoomOutSpeed; // Controls how fast the zoom effect happens
     public float ZoomInSpeed; // Controls how fast the zoom effect happens
+
+    [Header("Sound")]
+    public AudioSource skidSound;
+    public AudioSource engineSound;
+    public float minPitch;
+    public float maxPitch;
+    public float minVolume;
+    public float maxVolume;
 
     void Awake()
     {
@@ -145,6 +153,11 @@ public class PlayerKartController : MonoBehaviour
             wheelsParticle[0].SetActive(true);
             wheelsParticle[1].SetActive(true);
 
+            if (!skidSound.isPlaying)
+            {
+                skidSound.Play();
+            }
+
             // Only update the color if it changes
             if (driftPower >= level3Threshold && newColor != driftColor[2])
             {
@@ -175,6 +188,8 @@ public class PlayerKartController : MonoBehaviour
         }
 
         transform.position = sphere.transform.position - new Vector3(0, kartYPosition, 0);
+
+        EngineSound();
 
     }
 
@@ -267,6 +282,11 @@ public class PlayerKartController : MonoBehaviour
         }
 
         driftPower = 0;
+
+        if (skidSound.isPlaying)
+        {
+            skidSound.Stop();
+        }
     }
     public void ReceiveBoost(float boostAmount, float duration)
     {
@@ -411,6 +431,19 @@ public class PlayerKartController : MonoBehaviour
     public void StartKart()
     {
         canMove = true;
+    }
+
+    void EngineSound()
+    {
+        float speedPercent = Mathf.Clamp01(currentSpeed / topSpeed);
+
+        engineSound.pitch = Mathf.Lerp(minPitch, maxPitch, speedPercent);
+
+        float acceleration = Mathf.Abs(currentSpeed - previousSpeed);
+        float accelerationPercent = Mathf.Clamp01(acceleration / topSpeed);
+        engineSound.volume = Mathf.Lerp(minVolume, maxVolume, accelerationPercent);
+
+        previousSpeed = currentSpeed;
     }
 
     private void OnDrawGizmos()
