@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: PohonBatang
-    second: {fileID: 2100000, guid: da7f59aed818a464684b27145ffb318c, type: 2}
+    second: {fileID: 2100000, guid: cff75281e8d325542954ade31c3494a5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: PohonDaun
-    second: {fileID: 2100000, guid: fc66e6528b004044dafaeb4c4b6c2b86, type: 2}
+    second: {fileID: 2100000, guid: 15a913563bed30d418625e3dc654d235, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
