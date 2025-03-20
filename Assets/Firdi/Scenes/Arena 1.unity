@@ -22008,7 +22008,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c12c84c7e03c8cc44b4eda1e00c6752c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -35017,6 +35017,86 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Holder
       objectReference: {fileID: 0}
+    - target: {fileID: 1872620861778615448, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2213654699839388115, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346483999010551732, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417767358075593121, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2872044730448299148, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2872044730448299148, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2872044730448299148, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3020956063580102687, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.000014662743
+      objectReference: {fileID: 0}
+    - target: {fileID: 3020956063580102687, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3020956063580102687, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.500004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.4999924
+      objectReference: {fileID: 0}
     - target: {fileID: 3885045165114583304, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35065,6 +35145,21 @@ PrefabInstance:
     - target: {fileID: 3885045165114583304, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938910769824951731, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637008955230704205, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7645563761147105418, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

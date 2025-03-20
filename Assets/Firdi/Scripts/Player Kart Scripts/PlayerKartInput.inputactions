@@ -49,6 +49,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Skill",
+                    "type": "Button",
+                    "id": "86638160-b399-4792-8775-59aeae586498",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -56,17 +65,6 @@
                     "name": "",
                     "id": "8f396b70-1ac4-49af-8f54-500e39ad82d8",
                     "path": "<Gamepad>/rightShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Forward",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "240a7444-0cff-4b72-a02b-70292fac6384",
-                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -120,17 +118,6 @@
                 },
                 {
                     "name": "",
-                    "id": "8ab40d97-59cf-4a5f-b3a4-71dfa1d18a3c",
-                    "path": "<Keyboard>/shift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";PlayerKart1",
-                    "action": "Drift",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "066f6eae-767f-4e34-b72b-9173dcef8a43",
                     "path": "<Gamepad>/leftStick",
                     "interactions": "",
@@ -153,12 +140,12 @@
                 },
                 {
                     "name": "",
-                    "id": "7399f00e-4701-42e8-a7ca-4045c6954fcc",
-                    "path": "<Keyboard>/s",
+                    "id": "7ec869d9-ee15-4089-ac8b-6298542642af",
+                    "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Item",
+                    "action": "Skill",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

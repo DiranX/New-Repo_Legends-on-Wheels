@@ -8665,6 +8665,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Holder
       objectReference: {fileID: 0}
+    - target: {fileID: 1872620861778615448, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417767358075593121, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3885045165114583304, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalPosition.x
