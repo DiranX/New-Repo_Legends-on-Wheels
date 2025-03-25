@@ -36,7 +36,6 @@ public class PlayerKartController : MonoBehaviour
     public float steering;
     public float gravity;
     public LayerMask layerMask;
-    public LayerMask TerrainMask;
 
     [Header("Drift Parameters")]
     public float level1Threshold = 50f;

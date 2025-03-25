@@ -63,57 +63,57 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Normal/Parent/Model/Front Tire/Circle.002
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: {x: 0, y: 0, z: 0}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 1440, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      - serializedVersion: 3
-        time: 0.5
-        value: {x: 720, y: 0, z: 0}
-        inSlope: {x: 1440, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    path: Normal/Parent/Model/Front Tire/Circle.024
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: {x: 0, y: 0, z: 0}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 1440, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      - serializedVersion: 3
-        time: 0.5
-        value: {x: 720, y: 0, z: 0}
-        inSlope: {x: 1440, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
     path: Normal/Parent/Model/Back/Circle.020
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 1440, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5
+        value: {x: 720, y: 0, z: 0}
+        inSlope: {x: 1440, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Normal/Parent/Model/Front Tire/R/Circle.002
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 1440, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5
+        value: {x: 720, y: 0, z: 0}
+        inSlope: {x: 1440, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Normal/Parent/Model/Front Tire/L/Circle.024
   m_PositionCurves: []
   m_ScaleCurves: []
   m_FloatCurves: []
@@ -135,25 +135,25 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 618640300
-      attribute: 4
-      script: {fileID: 0}
-      typeID: 4
-      customType: 4
-      isPPtrCurve: 0
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 4287263771
-      attribute: 4
-      script: {fileID: 0}
-      typeID: 4
-      customType: 4
-      isPPtrCurve: 0
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
       path: 3385338598
+      attribute: 4
+      script: {fileID: 0}
+      typeID: 4
+      customType: 4
+      isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 3054327834
+      attribute: 4
+      script: {fileID: 0}
+      typeID: 4
+      customType: 4
+      isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 2289148239
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -299,7 +299,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: Normal/Parent/Model/Front Tire/Circle.002
+    path: Normal/Parent/Model/Back/Circle.020
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -329,7 +329,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: Normal/Parent/Model/Front Tire/Circle.002
+    path: Normal/Parent/Model/Back/Circle.020
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -359,7 +359,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: Normal/Parent/Model/Front Tire/Circle.002
+    path: Normal/Parent/Model/Back/Circle.020
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -389,7 +389,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: Normal/Parent/Model/Front Tire/Circle.024
+    path: Normal/Parent/Model/Front Tire/R/Circle.002
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -419,7 +419,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: Normal/Parent/Model/Front Tire/Circle.024
+    path: Normal/Parent/Model/Front Tire/R/Circle.002
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -449,7 +449,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: Normal/Parent/Model/Front Tire/Circle.024
+    path: Normal/Parent/Model/Front Tire/R/Circle.002
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -479,7 +479,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: Normal/Parent/Model/Back/Circle.020
+    path: Normal/Parent/Model/Front Tire/L/Circle.024
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -509,7 +509,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: Normal/Parent/Model/Back/Circle.020
+    path: Normal/Parent/Model/Front Tire/L/Circle.024
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -539,7 +539,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: Normal/Parent/Model/Back/Circle.020
+    path: Normal/Parent/Model/Front Tire/L/Circle.024
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -551,8 +551,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Normal/Parent/Model/Front Tire/Circle.002
+    attribute: m_LocalEulerAngles.x
+    path: Normal/Parent/Model/Back/Circle.020
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -564,7 +564,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Normal/Parent/Model/Front Tire/Circle.002
+    path: Normal/Parent/Model/Back/Circle.020
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -575,8 +575,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Normal/Parent/Model/Front Tire/Circle.002
+    attribute: m_LocalEulerAngles.z
+    path: Normal/Parent/Model/Back/Circle.020
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -624,7 +624,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Normal/Parent/Model/Back/Circle.020
+    path: Normal/Parent/Model/Front Tire/L/Circle.024
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -636,7 +636,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Normal/Parent/Model/Back/Circle.020
+    path: Normal/Parent/Model/Front Tire/L/Circle.024
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -648,7 +648,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Normal/Parent/Model/Back/Circle.020
+    path: Normal/Parent/Model/Front Tire/L/Circle.024
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -660,7 +660,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Normal/Parent/Model/Front Tire/Circle.024
+    path: Normal/Parent/Model/Front Tire/R/Circle.002
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -672,7 +672,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Normal/Parent/Model/Front Tire/Circle.024
+    path: Normal/Parent/Model/Front Tire/R/Circle.002
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -684,7 +684,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Normal/Parent/Model/Front Tire/Circle.024
+    path: Normal/Parent/Model/Front Tire/R/Circle.002
     classID: 4
     script: {fileID: 0}
     flags: 0
