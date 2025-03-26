@@ -18,6 +18,7 @@ public class TimunEmas_Skill : MonoBehaviour
     private float lastUsedTime = -Mathf.Infinity;
     float timeSinceUsed;
     public GameObject Terasi;
+    public GameObject UiSkill;
     public float Force;
     public float ForceY;
 
@@ -28,6 +29,11 @@ public class TimunEmas_Skill : MonoBehaviour
 
         playerKartKontroller.actions["Skill"].started += ctx => skillUsed = true;
         playerKartKontroller.actions["Skill"].canceled += ctx => skillUsed = false;
+
+        if (this.gameObject.activeSelf)
+        {
+            UiSkill.SetActive(true);
+        }
 
     }
 
@@ -46,6 +52,9 @@ public class TimunEmas_Skill : MonoBehaviour
                 if (MoveY.y >= 0)
                 {
                     FrontThrow();
+                }else if(MoveY.y <= -0.5)
+                {
+                    BackThrow();
                 }
             }
         }
@@ -72,6 +81,23 @@ public class TimunEmas_Skill : MonoBehaviour
 
         // Apply dynamic force
         Vector3 throwDirection = frontThrow.forward * (Force * speedFactor) + Vector3.up * (ForceY);
+        rb.AddForce(throwDirection, ForceMode.Impulse);
+    }
+
+    void BackThrow()
+    {
+        GameObject terasi = Instantiate(Terasi, backThrow.position, backThrow.rotation);
+        Rigidbody rb = terasi.GetComponent<Rigidbody>();
+
+        Vector3 Direction = backThrow.forward * Force + Vector3.up * ForceY;
+
+        Vector3 playerVelocity = GetComponent<PlayerKartController>().sphere.GetComponent<Rigidbody>().velocity;
+
+        // Calculate force multiplier based on speed
+        float speedFactor = Mathf.Clamp(playerVelocity.magnitude / 10f, 0.5f, 2f); // Adjust range as needed
+
+        // Apply dynamic force
+        Vector3 throwDirection = -backThrow.forward * (Force * speedFactor/2) + Vector3.up * (ForceY);
         rb.AddForce(throwDirection, ForceMode.Impulse);
     }
 }

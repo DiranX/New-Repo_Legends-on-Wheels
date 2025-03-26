@@ -9,6 +9,7 @@ TagManager:
   - ItemLoot
   - Selector
   - Track
+  - Obstacle
   layers:
   - Default
   - TransparentFX
