@@ -7,6 +7,7 @@ public class Skill_Effect : MonoBehaviour
     [Header("Blind Effect")]
     public GameObject lumpur;
     bool isblind;
+    public bool isProtect;
     private void Update()
     {
         StartCoroutine(BlindingEffect());
