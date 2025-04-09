@@ -26,7 +26,7 @@ public class BosstPad : MonoBehaviour
                 }
                 else if (!playerKart.moveForward || !playerKart.moveBackward)
                 {
-                    playerKart.ReceiveBoost(boostAmount * 2, boostDuration / 2);
+                    playerKart.ReceiveBoost(boostAmount * 1.5f, boostDuration);
                     playerKart.PlayBoostParticle();
                 }
             }
