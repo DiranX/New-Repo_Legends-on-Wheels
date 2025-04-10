@@ -3,62 +3,7 @@ guid: ec1eb8257f7176b4cbbf04724954dcbd
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Badan.001
-    second: {fileID: 2100000, guid: a01e39aa88c6b9747b27d4c15e70e338, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Baju Dalem.001
-    second: {fileID: 2100000, guid: 9b6a63d266d1c8744ad186ce80e04145, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Baju Luar.001
-    second: {fileID: 2100000, guid: 86abd9f065add404583ae01f6f69384f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Celana.001
-    second: {fileID: 2100000, guid: 59cda0ba0f5153f47af769e3291c96dd, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Kantong Kresek.001
-    second: {fileID: 2100000, guid: 801fa773d23ea0143ab828ceae220dab, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Rambut.001
-    second: {fileID: 2100000, guid: b20faf0030ecf47458ac3ff41e5a5178, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sabuk .001
-    second: {fileID: 2100000, guid: 40d7346cd1b37b44592617bc13de2a1e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sabuk Kantong.001
-    second: {fileID: 2100000, guid: 38bfa811cc1dda9408e0be8d4340782d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sarung Tangan.001
-    second: {fileID: 2100000, guid: ddec0e30c9be92f4184edf0361b7ca7b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sepatu_1.001
-    second: {fileID: 2100000, guid: f0832a6f531128e4e82177ab0068b5f9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sepatu_2.001
-    second: {fileID: 2100000, guid: 343d43d6e0d007145bd1507875890905, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -74,8 +19,76 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: 
-    animationRetargetingWarnings: 
+    animationImportWarnings: "\nClip 'root|Idle_Duduk' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'spine_01.x' has translation animation that
+      will be discarded.\n\t'neck.x' has translation animation that will be discarded.\n\t'neck.x'
+      has scale animation that will be discarded.\n\t'c_tail_00_dupli_005.x' has
+      translation animation that will be discarded.\n\t'c_tail_00_dupli_005.x' has
+      scale animation that will be discarded.\n\t'c_tail_00_dupli_006.x' has translation
+      animation that will be discarded.\n\t'c_tail_00_dupli_006.x' has scale animation
+      that will be discarded.\n\nClip 'root|Left_Duduk' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'spine_01.x' has translation animation that
+      will be discarded.\n\t'c_tail_00_dupli_005.x' has translation animation that
+      will be discarded.\n\t'c_tail_00_dupli_005.x' has scale animation that will
+      be discarded.\n\t'c_tail_00_dupli_006.x' has translation animation that will
+      be discarded.\n\t'c_tail_00_dupli_006.x' has scale animation that will be discarded.\n\nClip
+      'root|Right_Duduk' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'spine_01.x'
+      has translation animation that will be discarded.\n\t'c_tail_00_dupli_005.x'
+      has translation animation that will be discarded.\n\t'c_tail_00_dupli_005.x'
+      has scale animation that will be discarded.\n\t'c_tail_00_dupli_006.x' has
+      translation animation that will be discarded.\n\t'c_tail_00_dupli_006.x' has
+      scale animation that will be discarded.\n"
+    animationRetargetingWarnings: "\nRetargeting quality report for clip 'root|Idle_Duduk':\n\tLeftUpperArm
+      average position error 10.7 mm and maximum position error 19.1 mm at time 0:14
+      (48.3%) Frame 14\n\tLeftLowerArm average position error 10.9 mm and maximum
+      position error 19.3 mm at time 0:14 (48.3%) Frame 14\n\tLeftHand average position
+      error 10.7 mm and maximum position error 19.1 mm at time 0:14 (48.3%) Frame
+      14\n\tRightUpperArm average position error 10.7 mm and maximum position error
+      19.1 mm at time 0:14 (48.3%) Frame 14\n\tRightLowerArm average position error
+      10.9 mm and maximum position error 19.3 mm at time 0:14 (48.3%) Frame 14\n\tRightHand
+      average position error 10.7 mm and maximum position error 19.1 mm at time 0:14
+      (48.3%) Frame 14\n\tHead average position error 10.7 mm and maximum position
+      error 19.3 mm at time 0:14 (48.3%) Frame 14\n\nRetargeting quality report for
+      clip 'root|Left_Duduk':\n\tLeftUpperArm average position error 10.7 mm and
+      maximum position error 19.1 mm at time 0:14 (48.3%) Frame 14\n\tLeftLowerArm
+      average position error 10.8 mm and maximum position error 19.2 mm at time 0:14
+      (48.3%) Frame 14\n\tLeftHand average position error 10.7 mm and maximum position
+      error 19.1 mm at time 0:14 (48.3%) Frame 14\n\tRightUpperArm average position
+      error 10.7 mm and maximum position error 19.1 mm at time 0:14 (48.3%) Frame
+      14\n\tRightLowerArm average position error 13.3 mm and maximum position error
+      23.8 mm at time 0:14 (48.3%) Frame 14\n\tRightHand average position error 10.7
+      mm and maximum position error 19.1 mm at time 0:14 (48.3%) Frame 14\n\tHead
+      average position error 10.7 mm and maximum position error 19.1 mm at time 0:14
+      (48.3%) Frame 14\n\nRetargeting quality report for clip 'root|Right_Duduk':\n\tLeftUpperArm
+      average position error 10.7 mm and maximum position error 19.1 mm at time 0:14
+      (48.3%) Frame 14\n\tLeftLowerArm average position error 13.5 mm and maximum
+      position error 23.8 mm at time 0:14 (48.3%) Frame 14\n\tLeftHand average position
+      error 10.7 mm and maximum position error 19.1 mm at time 0:14 (48.3%) Frame
+      14\n\tRightUpperArm average position error 10.7 mm and maximum position error
+      19.1 mm at time 0:14 (48.3%) Frame 14\n\tRightLowerArm average position error
+      10.8 mm and maximum position error 19.3 mm at time 0:14 (48.3%) Frame 14\n\tRightHand
+      average position error 10.7 mm and maximum position error 19.1 mm at time 0:14
+      (48.3%) Frame 14\n\tHead average position error 10.7 mm and maximum position
+      error 19.1 mm at time 0:14 (48.3%) Frame 14\n\nRetargeting quality report for
+      clip 'root|t pose':\n\tLeftLowerLeg average position error 390.7 mm and maximum
+      position error 390.7 mm at time 0: 0 (0.0%) Frame 0\n\tLeftFoot average position
+      error 389.1 mm and maximum position error 389.1 mm at time 0: 0 (0.0%) Frame
+      0\n\tRightLowerLeg average position error 390.7 mm and maximum position error
+      390.7 mm at time 0: 0 (0.0%) Frame 0\n\tRightFoot average position error 389.1
+      mm and maximum position error 389.1 mm at time 0: 0 (0.0%) Frame 0\n\tLeftUpperArm
+      average position error 391.2 mm and maximum position error 391.2 mm at time
+      0: 0 (0.0%) Frame 0\n\tLeftLowerArm average position error 395.3 mm and maximum
+      position error 395.3 mm at time 0: 0 (0.0%) Frame 0\n\tLeftHand average position
+      error 391.2 mm and maximum position error 391.2 mm at time 0: 0 (0.0%) Frame
+      0\n\tRightUpperArm average position error 391.2 mm and maximum position error
+      391.2 mm at time 0: 0 (0.0%) Frame 0\n\tRightLowerArm average position error
+      395.3 mm and maximum position error 395.3 mm at time 0: 0 (0.0%) Frame 0\n\tRightHand
+      average position error 391.2 mm and maximum position error 391.2 mm at time
+      0: 0 (0.0%) Frame 0\n\tHead average position error 391.2 mm and maximum position
+      error 391.2 mm at time 0: 0 (0.0%) Frame 0\n"
     animationDoRetargetingWarnings: 1
     importAnimatedCustomProperties: 1
     importConstraints: 0

@@ -3,62 +3,7 @@ guid: 7f4a0bbb73a4ee6409df72b1bfb1b469
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Badan.001
-    second: {fileID: 2100000, guid: a01e39aa88c6b9747b27d4c15e70e338, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Baju Dalem.001
-    second: {fileID: 2100000, guid: 9b6a63d266d1c8744ad186ce80e04145, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Baju Luar.001
-    second: {fileID: 2100000, guid: 86abd9f065add404583ae01f6f69384f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Celana.001
-    second: {fileID: 2100000, guid: 59cda0ba0f5153f47af769e3291c96dd, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Kantong Kresek.001
-    second: {fileID: 2100000, guid: 801fa773d23ea0143ab828ceae220dab, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Rambut.001
-    second: {fileID: 2100000, guid: b20faf0030ecf47458ac3ff41e5a5178, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sabuk .001
-    second: {fileID: 2100000, guid: 40d7346cd1b37b44592617bc13de2a1e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sabuk Kantong.001
-    second: {fileID: 2100000, guid: 38bfa811cc1dda9408e0be8d4340782d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sarung Tangan.001
-    second: {fileID: 2100000, guid: ddec0e30c9be92f4184edf0361b7ca7b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sepatu_1.001
-    second: {fileID: 2100000, guid: f0832a6f531128e4e82177ab0068b5f9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sepatu_2.001
-    second: {fileID: 2100000, guid: 343d43d6e0d007145bd1507875890905, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
