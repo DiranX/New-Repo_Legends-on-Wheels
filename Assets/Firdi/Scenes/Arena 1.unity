@@ -17287,7 +17287,7 @@ MonoBehaviour:
   isEditorCameraRotated: 0
   isEditorConstructing: 0
   editorConstructionID: 0
-  isEditorSelected: 1
+  isEditorSelected: 0
   isEditorMouseHittingTerrain: 0
   editorMousePos: {x: 526.35254, y: 58.65807, z: 731.833}
   defaultNodeColor: {r: 0, g: 1, b: 1, a: 0.75}
@@ -34891,17 +34891,17 @@ PrefabInstance:
     - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0000000021208226
+      value: -0.0000000021206403
       objectReference: {fileID: 0}
     - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -2.212399e-10
+      value: 2.3480864e-10
       objectReference: {fileID: 0}
     - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 7.7491395e-11
+      value: -5.0882583e-11
       objectReference: {fileID: 0}
     - target: {fileID: 2417767358075593121, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
@@ -34931,12 +34931,12 @@ PrefabInstance:
     - target: {fileID: 3020956063580102687, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9999999
+      value: 2.46
       objectReference: {fileID: 0}
     - target: {fileID: 3020956063580102687, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.500004
+      value: -5.6400185
       objectReference: {fileID: 0}
     - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
@@ -34966,12 +34966,12 @@ PrefabInstance:
     - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0039838953
+      value: 0.0039838958
       objectReference: {fileID: 0}
     - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0003556812
+      value: -0.00035568123
       objectReference: {fileID: 0}
     - target: {fileID: 3885045165114583304, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
@@ -35021,6 +35021,61 @@ PrefabInstance:
     - target: {fileID: 3885045165114583304, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4045630702232452095, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: field of view
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4566771279364529844, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: field of view
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4566771279364529844, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_FOVAxisMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4566771279364529844, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_FocalLength
+      value: 31.52425
+      objectReference: {fileID: 0}
+    - target: {fileID: 4566771279364529844, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: far clip plane
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4566771279364529844, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_SensorSize.x
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4566771279364529844, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_SensorSize.y
+      value: 29.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4566771279364529844, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_FocusDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4566771279364529844, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4566771279364529844, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_projectionMatrixMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5704297686824476248, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5938910769824951731, guid: 9128af1ae82e7114c80ed06c836af48a,

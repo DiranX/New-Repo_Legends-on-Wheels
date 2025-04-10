@@ -3,7 +3,77 @@ guid: 8fcfedb3622a7d243a28380b9ccf2d37
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anting
+    second: {fileID: 2100000, guid: cf5e9101c3df67544893f76a9a851c02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Badan.001
+    second: {fileID: 2100000, guid: 03be7040a30a5e747bf706449c9e7fd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Baju Dalam
+    second: {fileID: 2100000, guid: 7b205e34b13479d4eb91bfbb03bdeed5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Celana.001
+    second: {fileID: 2100000, guid: c88fc8fef4026a74fb327c67b0b82bfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gelang.001
+    second: {fileID: 2100000, guid: 1c411b564b6d0d14f9fc196c2b1f87b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jaket.001
+    second: {fileID: 2100000, guid: d4b099c7d9b1fac4a8d45f7bbab961d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kacamata1
+    second: {fileID: 2100000, guid: 2cc3c2747c6a45645b96f1528bf7bdaf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kacamata2
+    second: {fileID: 2100000, guid: 1dd25f063056fdb479a75edf209275c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mahkota.001
+    second: {fileID: 2100000, guid: 1a19ee6c4fd43d3459828e3eb4d610db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rambut.001
+    second: {fileID: 2100000, guid: 56408bffde8a10547a11229b09c80cde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rok
+    second: {fileID: 2100000, guid: 9bc824096ac4f7249ab0f504c20f53a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sabuk.001
+    second: {fileID: 2100000, guid: 47e21013f6772d34594381aa9ccb7400, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sepatu.001
+    second: {fileID: 2100000, guid: a65c631a36e83ab438ea336ff0a00247, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Topi
+    second: {fileID: 2100000, guid: ef5a64b9b4aaa41419c567df025a71be, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
