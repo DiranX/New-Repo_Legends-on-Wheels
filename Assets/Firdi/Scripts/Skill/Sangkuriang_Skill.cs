@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
-public class RoroJongrang_Skill : MonoBehaviour
+public class Sangkuriang_Skill : MonoBehaviour
 {
     private PlayerInput playerKartKontroller;
     public GameObject UiSkill;
@@ -15,18 +15,21 @@ public class RoroJongrang_Skill : MonoBehaviour
     public float remainingTime;
     private float lastUsedTime = -Mathf.Infinity;
     float timeSinceUsed;
-    public GameObject Candi;
+    Skill_Effect efek;
+    public GameObject Bukit;
     public Transform Front;
     public Transform Back;
-    // Start is called before the first frame update
+    public int Id;
     void Start()
     {
+        efek = GetComponent<Skill_Effect>();
         playerKartKontroller = GetComponentInParent<PlayerInput>();
         playerKartKontroller.actions["Skill"].started += ctx => skillUsed = true;
         playerKartKontroller.actions["Skill"].canceled += ctx => skillUsed = false;
         if (this.gameObject.activeSelf)
         {
             UiSkill.SetActive(true);
+            //this.Id = GetComponent<PlayerKartController>().ID;
         }
     }
 
@@ -40,16 +43,18 @@ public class RoroJongrang_Skill : MonoBehaviour
             canUsed = true;
             if (skillUsed && canUsed && Time.time - lastUsedTime >= duration)
             {
-                Debug.Log("Skill is Used");
                 canUsed = false;
                 lastUsedTime = Time.time;
+                efek.isProtect = true;
                 if (MoveY.y >= 0)
                 {
-                    GameObject candi = Instantiate(Candi, Front.position, Quaternion.identity);
+                    GameObject bukit = Instantiate(Bukit, Front.position, Front.rotation);
+                    bukit.GetComponent<Sangkuriang_Bukit>().Id = this.Id;
                 }
                 else if (MoveY.y <= -0.5f)
                 {
-                    GameObject candi = Instantiate(Candi, Back.position, Quaternion.identity);
+                    GameObject bukit = Instantiate(Bukit, Back.position, Back.rotation);
+                    bukit.GetComponent<Sangkuriang_Bukit>().Id = this.Id;
                 }
             }
         }
@@ -60,5 +65,6 @@ public class RoroJongrang_Skill : MonoBehaviour
 
         timeSinceUsed = Time.time - lastUsedTime;
         remainingTime = Mathf.Max(0, duration - timeSinceUsed);
+
     }
 }
