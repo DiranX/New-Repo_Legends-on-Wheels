@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Firdi/Scenes/Arena 1.unity
     guid: 64f9d6ccbed03a540b944b9ef683840d
+  - enabled: 1
+    path: Assets/Firdi/Scenes/Arena 2.unity
+    guid: 8b89577ddb5f02a47b21c61314555cfe
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 468f338fc36fdae468e312476b10c9ac,
       type: 3}

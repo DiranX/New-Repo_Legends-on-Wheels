@@ -11,6 +11,7 @@ TagManager:
   - Track
   - Obstacle
   - Water
+  - Respawner
   layers:
   - Default
   - TransparentFX
