@@ -13,6 +13,18 @@ public class Item_Barrel_Script : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         Physics.IgnoreLayerCollision(12, 11, true);
     }
+    private void Update()
+    {
+        StartCoroutine(Dest());
+    }
+    IEnumerator Dest()
+    {
+        yield return new WaitForSeconds(2f);
+        if (!isContact)
+        {
+            Destroy(this.gameObject);
+        }
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -26,7 +38,7 @@ public class Item_Barrel_Script : MonoBehaviour
                 rb.angularVelocity = Vector3.zero;
                 rb.isKinematic = true;
                 Physics.IgnoreLayerCollision(12, 11, false);
-                transform.localScale *= 12f;
+                transform.localScale *= 3f;
             }
         }
 
@@ -35,5 +47,5 @@ public class Item_Barrel_Script : MonoBehaviour
             collision.gameObject.GetComponent<PlayerItemHolder>().playerKartController.GetComponent<Animator>().SetTrigger("Stop");
             Destroy(this.gameObject);
         }
-    }
+    }   
 }

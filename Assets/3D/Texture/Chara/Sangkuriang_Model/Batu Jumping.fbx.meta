@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9ae63a8bfd102544189ee6c3f6a2fa6c
+guid: 8b805c1989860b04b905a97d15c75a08
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Buto_Texture1
-    second: {fileID: 2100000, guid: c3c95b31cba064a4b81d8f240e8fae4a, type: 2}
+      name: Material.001
+    second: {fileID: 2100000, guid: 896aaa5fcf1b4084890c2b15f52a53c0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

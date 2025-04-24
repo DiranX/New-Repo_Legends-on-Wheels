@@ -28,7 +28,7 @@ public class ItemBox : MonoBehaviour
             itemBoxes.Add(child.gameObject);
         }
 
-        Debug.Log("Total Item Boxes: " + itemBoxes.Count);
+        //Debug.Log("Total Item Boxes: " + itemBoxes.Count);
     }
 
     public IEnumerator TimerActive()

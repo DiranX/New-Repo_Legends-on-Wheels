@@ -68,6 +68,7 @@ public class PlayerKartController : MonoBehaviour
     [Header("Sound")]
     public AudioSource skidSound;
     public AudioSource engineSound;
+    public AudioSource BoostSound;
     public float minPitch;
     public float maxPitch;
     public float minVolume;
@@ -278,6 +279,7 @@ public class PlayerKartController : MonoBehaviour
             newColor = driftColor[3];
             ChangeParticleColor();
             PlayBoostParticle();
+            BoostSound.PlayOneShot(BoostSound.clip);
         }
 
         driftPower = 0;
@@ -291,6 +293,7 @@ public class PlayerKartController : MonoBehaviour
     {
         driftBoostAmount += boostAmount;
         boostTimer = Mathf.Max(boostTimer, duration);
+        BoostSound.PlayOneShot(BoostSound.clip);
         if (virtualCam != null)
         {
             StopAllCoroutines();
@@ -301,6 +304,7 @@ public class PlayerKartController : MonoBehaviour
     {
         driftBoostAmount += boostAmount;
         boostTimer = boostDuration;
+        BoostSound.PlayOneShot(BoostSound.clip);
         if (virtualCam != null)
         {
             StopAllCoroutines();

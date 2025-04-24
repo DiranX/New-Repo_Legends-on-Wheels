@@ -8,6 +8,23 @@ public class Sangkuriang_Bukit : MonoBehaviour
     public float boostAmount = 30f; // Adjust boost power
     public float boostDuration = 2f; // Adjust boost time
 
+    void Start()
+    {
+        AlignToGround();
+    }
+
+    void AlignToGround()
+    {
+        RaycastHit hit;
+        // Cast a ray downward from a bit above the object's position
+        if (Physics.Raycast(transform.position + Vector3.up, Vector3.down, out hit, 10f))
+        {
+            // Align the up vector of the object to match the normal of the ground
+            Quaternion groundRotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
+            transform.rotation = groundRotation * Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+        }
+    }
+
     private void Update()
     {
         if (this.gameObject.activeSelf)
