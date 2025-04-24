@@ -14,10 +14,12 @@ public class KartAnimation : MonoBehaviour
     public Transform leftFrontWheel;  // Separate left front wheel
     public Transform rightFrontWheel; // Separate right front wheel
     public Transform steeringWheel;
+    public bool ETV;
 
     [SerializeField] private float maxSteerAngle; // Max wheel steering angle
 
     public Animator charaAnim;
+
 
     private void Awake()
     {
@@ -91,9 +93,16 @@ public class KartAnimation : MonoBehaviour
         leftFrontWheel.localRotation = Quaternion.Euler(leftFrontWheel.localRotation.eulerAngles.x, steerAngle, leftFrontWheel.localRotation.eulerAngles.z);
         rightFrontWheel.localRotation = Quaternion.Euler(rightFrontWheel.localRotation.eulerAngles.x, steerAngle, rightFrontWheel.localRotation.eulerAngles.z);
 
-
-        // Rotate steering wheel
-        steeringWheel.localEulerAngles = new Vector3(0, 0, (moveInput.x * 45));
+        if (ETV)
+        {
+            // Rotate steering wheel
+            steeringWheel.localEulerAngles = new Vector3(90, (moveInput.x * 45), 0);
+        }
+        else
+        {
+            // Rotate steering wheel
+            steeringWheel.localEulerAngles = new Vector3(0, 0, (moveInput.x * 45));
+        }
 
         if (moveInput.x == 0)
         {

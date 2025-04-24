@@ -29,7 +29,7 @@ public class Sangkuriang_Skill : MonoBehaviour
         if (this.gameObject.activeSelf)
         {
             UiSkill.SetActive(true);
-            //this.Id = GetComponent<PlayerKartController>().ID;
+            this.Id = GetComponentInParent<Player>().id;
         }
     }
 
@@ -49,11 +49,6 @@ public class Sangkuriang_Skill : MonoBehaviour
                 if (MoveY.y >= 0)
                 {
                     GameObject bukit = Instantiate(Bukit, Front.position, Front.rotation);
-                    bukit.GetComponent<Sangkuriang_Bukit>().Id = this.Id;
-                }
-                else if (MoveY.y <= -0.5f)
-                {
-                    GameObject bukit = Instantiate(Bukit, Back.position, Back.rotation);
                     bukit.GetComponent<Sangkuriang_Bukit>().Id = this.Id;
                 }
             }
