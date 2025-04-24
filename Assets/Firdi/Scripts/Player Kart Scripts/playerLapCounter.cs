@@ -17,6 +17,8 @@ public class playerLapCounter : MonoBehaviour
     public TextMeshProUGUI winOrLose;
     public int playerCurrentPlace;
     public bool finish;
+    public AudioSource FinishSound;
+    public AudioSource CrowdSound;
 
     private void Awake()
     {
@@ -46,6 +48,7 @@ public class playerLapCounter : MonoBehaviour
                 this.currentCheckpoint = 0;
                 this.currentLap++;
                 this.lapCounter.text = currentLap.ToString() + "/" + totalLap.ToString();
+                FinishSound.Play();
             }
 
             if (currentLap >= totalLap && playerCurrentPlace == 1)
@@ -53,6 +56,7 @@ public class playerLapCounter : MonoBehaviour
                 //Debug.Log("Win");
                 winOrLose.text = "Win:)";
                 finish = true;
+                CrowdSound.Play();
             }
             else if(currentLap >= totalLap && playerCurrentPlace != 1)
             {

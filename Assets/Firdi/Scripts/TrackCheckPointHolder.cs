@@ -126,13 +126,13 @@ public class TrackCheckPointHolder : MonoBehaviour
         while (countdownTime > 0)
         {
             countdownText.text = countdownTime.ToString("0");
-            //countdownBeep.Play();
+            countdownBeep.Play();
             yield return new WaitForSeconds(1f);
             countdownTime--;
         }
 
         countdownText.text = "Go!";
-        //startSound?.Play();
+        startSound?.Play();
         yield return new WaitForSeconds(1f);
 
         countdownText.gameObject.SetActive(false);

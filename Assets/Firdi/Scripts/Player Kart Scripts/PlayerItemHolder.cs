@@ -19,6 +19,7 @@ public class PlayerItemHolder : MonoBehaviour
     public Animator animator;
     public PlayerInput playerInput;
     public PlayerKartController playerKartController;
+    public AudioSource itemSound;
 
     private void Awake()
     {
@@ -56,6 +57,7 @@ public class PlayerItemHolder : MonoBehaviour
             if (!haveItem) // Only assign a new item if the player doesn't have one
             {
                 animator.Play("Scrambling");
+                itemSound.Play();
             }
 
             other.gameObject.SetActive(false);

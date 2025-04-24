@@ -3,12 +3,7 @@ guid: 50dc4f2630a844e4a8b490c23e6e76f9
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sangkuriang_Material
-    second: {fileID: 2100000, guid: f3453f3b88c3ed74d98140646ee3ebf5, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
