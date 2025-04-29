@@ -6,7 +6,6 @@ public class ButtonSpriteChanger : MonoBehaviour, IPointerEnterHandler, IPointer
 {
     public Sprite normalSprite;
     public Sprite highlightedSprite;
-    public GameObject backgroundImage;
 
     private Image buttonImage;
     private Animator animator;
@@ -40,14 +39,12 @@ public class ButtonSpriteChanger : MonoBehaviour, IPointerEnterHandler, IPointer
     private void ChangeToHighlighted()
     {
         buttonImage.sprite = highlightedSprite;
-        backgroundImage.SetActive(true);
         animator.SetTrigger("Highlighted");
     }
 
     private void ChangeToNormal()
     {
         buttonImage.sprite = normalSprite;
-        backgroundImage.SetActive(false);
         animator.SetTrigger("Normal");
     }
 }

@@ -6,14 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Restu/Scenes/TitleScreen.unity
-    guid: feac86cffe5206a4386e904ac1a79843
-  - enabled: 1
     path: Assets/Restu/Scenes/MainMenu.unity
     guid: fe654cabbc91b144098df5ff4a98c0a7
   - enabled: 1
-    path: Assets/Restu/Scenes/ModeSelect.unity
-    guid: 38e0bbe9dbf2eb24689bef7772d1b009
+    path: Assets/Firdi/Scenes/Mode Selection.unity
+    guid: 89f06c157eae68948b06a94ca9865ea5
   - enabled: 1
     path: Assets/Firdi/Scenes/CharacterSelection2.unity
     guid: 9958ff565080b654f9dc51c038911cf7
