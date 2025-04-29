@@ -12,12 +12,11 @@ public class Camera_GroundCheck : MonoBehaviour
     public CinemachineVirtualCamera virtualCamera;
     public float distancefar;
     public float distance;
-    private float yVelocity = 0f; // outside Update
+    private float yVelocity = 0f;
     private void Start()
     {
         if (Camera != null)
         {
-            // Calculate the initial forwardOffset based on the initial placement
             Vector3 offset = transform.position - Camera.position;
             forwardOffset = Vector3.Dot(offset, Camera.forward);
         }
@@ -28,18 +27,16 @@ public class Camera_GroundCheck : MonoBehaviour
     {
         Aligning();
 
-        // Calculate distance between the empty object and the virtual camera
         distance = Vector3.Distance(this.transform.position, virtualCamera.transform.position);
 
-        // Get the CinemachineComposer (the Aim module)
         var transposer = virtualCamera.GetCinemachineComponent<CinemachineTransposer>();
         // inside Update:
         if (transposer != null)
         {
-            float targetHeight = distance < distancefar ? 5f : 1.91f;
+            float targetHeight = distance < distancefar ? 5f : 3f;
 
             Vector3 currentOffset = transposer.m_FollowOffset;
-            currentOffset.y = Mathf.SmoothDamp(currentOffset.y, targetHeight, ref yVelocity, 1f); // 0.3f = smoothing time
+            currentOffset.y = Mathf.SmoothDamp(currentOffset.y, targetHeight, ref yVelocity, .7f);
             transposer.m_FollowOffset = currentOffset;
         }
     }
