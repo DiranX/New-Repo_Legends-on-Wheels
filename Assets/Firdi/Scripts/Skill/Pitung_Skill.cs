@@ -73,7 +73,7 @@ public class Pitung_Skill : MonoBehaviour
     {
         GameObject golok = Instantiate(Golok, frontThrow.position, frontThrow.rotation);
         Rigidbody rb = golok.GetComponent<Rigidbody>();
-        golok.GetComponent<Pitung_Golok>().Thrower = transform.position;
+        golok.GetComponent<Pitung_Golok>().pitung = this.GetComponent<Pitung_Skill>();
         golok.GetComponent<Pitung_Golok>().Id = this.Id;
 
         Vector3 Direction = frontThrow.forward * Force;
