@@ -47,6 +47,52 @@ MonoBehaviour:
   intensity:
     m_OverrideState: 1
     m_Value: 0
+--- !u!114 &-4176393686707262783
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
+  m_Name: DepthOfField
+  m_EditorClassIdentifier: 
+  active: 0
+  mode:
+    m_OverrideState: 1
+    m_Value: 1
+  gaussianStart:
+    m_OverrideState: 1
+    m_Value: 0
+  gaussianEnd:
+    m_OverrideState: 1
+    m_Value: 50
+  gaussianMaxRadius:
+    m_OverrideState: 0
+    m_Value: 1
+  highQualitySampling:
+    m_OverrideState: 0
+    m_Value: 0
+  focusDistance:
+    m_OverrideState: 1
+    m_Value: 10
+  aperture:
+    m_OverrideState: 1
+    m_Value: 5.6
+  focalLength:
+    m_OverrideState: 1
+    m_Value: 50
+  bladeCount:
+    m_OverrideState: 0
+    m_Value: 5
+  bladeCurvature:
+    m_OverrideState: 0
+    m_Value: 1
+  bladeRotation:
+    m_OverrideState: 0
+    m_Value: 0
 --- !u!114 &-3690095985713769323
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -265,6 +311,7 @@ MonoBehaviour:
   - {fileID: -6578125108369540142}
   - {fileID: -3461333883722171532}
   - {fileID: 2210344939496199198}
+  - {fileID: -4176393686707262783}
   - {fileID: 2070534624794462337}
   - {fileID: 3291144571353804749}
   - {fileID: -3690095985713769323}
@@ -286,10 +333,10 @@ MonoBehaviour:
   active: 1
   temperature:
     m_OverrideState: 1
-    m_Value: -50
+    m_Value: -75
   tint:
     m_OverrideState: 1
-    m_Value: 45
+    m_Value: 55
 --- !u!114 &2210344939496199198
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -405,7 +452,7 @@ MonoBehaviour:
     m_Value: 0
   saturation:
     m_OverrideState: 1
-    m_Value: 10
+    m_Value: 17
 --- !u!114 &3291144571353804749
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -427,7 +474,7 @@ MonoBehaviour:
     m_Value: 0.8
   intensity:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 1
   scatter:
     m_OverrideState: 0
     m_Value: 0.7
