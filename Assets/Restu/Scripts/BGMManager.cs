@@ -9,6 +9,8 @@ public class BGMManager : MonoBehaviour
     [Header("List Musik Per Scene")]
     public AudioClip titleScreen;
     public AudioClip mainMenu;
+    public AudioClip settings;
+    public AudioClip credits;
     public AudioClip modeSelect;
     public AudioClip characterSelect2;
     public AudioClip characterSelect3;
@@ -51,6 +53,12 @@ public class BGMManager : MonoBehaviour
             case "MainMenu":
                 ChangeMusic(titleScreen);
                 break;
+            case "Settings":
+                ChangeMusic(settings);
+            break;
+            case "Credits":
+                ChangeMusic(credits);
+            break;
             case "ModeSelect":
                 ChangeMusic(titleScreen);
                 break;

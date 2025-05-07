@@ -12,6 +12,7 @@ TagManager:
   - Obstacle
   - Water
   - Respawner
+  - Teleporter
   layers:
   - Default
   - TransparentFX
