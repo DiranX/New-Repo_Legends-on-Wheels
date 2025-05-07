@@ -45,24 +45,21 @@ public class Sangkuriang_Bukit : MonoBehaviour
         {
             // Check if the player kart enters the boost pad
             PlayerKartController playerKart = other.GetComponent<PlayerKartController>();
-            Sangkuriang_Skill Sangkuriang = other.GetComponent<Sangkuriang_Skill>();
+            int id = playerKart.GetComponentInParent<Player>().id;
 
-            if(Sangkuriang != null)
+            if (id == Id)
             {
-                if(Sangkuriang.Id == Id)
+                if (playerKart != null)
                 {
-                    if (playerKart != null)
+                    if (playerKart.moveForward || playerKart.moveBackward)
                     {
-                        if (playerKart.moveForward || playerKart.moveBackward)
-                        {
-                            playerKart.ReceiveBoost(boostAmount, boostDuration);
-                            playerKart.PlayBoostParticle();
-                        }
-                        else if (!playerKart.moveForward || !playerKart.moveBackward)
-                        {
-                            playerKart.ReceiveBoost(boostAmount * 1.5f, boostDuration);
-                            playerKart.PlayBoostParticle();
-                        }
+                        playerKart.ReceiveBoost(boostAmount, boostDuration);
+                        playerKart.PlayBoostParticle();
+                    }
+                    else if (!playerKart.moveForward || !playerKart.moveBackward)
+                    {
+                        playerKart.ReceiveBoost(boostAmount * 1.5f, boostDuration);
+                        playerKart.PlayBoostParticle();
                     }
                 }
             }

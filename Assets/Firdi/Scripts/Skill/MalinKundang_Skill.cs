@@ -11,6 +11,7 @@ public class MalinKundang_Skill : MonoBehaviour
     private bool skillUsed;
     public bool canUsed;
     public Image UIcon;
+    public GameObject Ready;
     public float duration;
     public float remainingTime;
     private float lastUsedTime = -Mathf.Infinity;
@@ -37,14 +38,16 @@ public class MalinKundang_Skill : MonoBehaviour
     void Update()
     {
         Renderer();
-        UIcon.fillAmount = remainingTime / duration;
+        UIcon.fillAmount = 1f - (remainingTime / duration);
         if (remainingTime <= 0)
         {
             canUsed = true;
+            Ready.SetActive(true);
             if (skillUsed && canUsed && Time.time - lastUsedTime >= duration)
             {
                 canUsed = false;
                 lastUsedTime = Time.time;
+                efek.isProtect = true;
                 index = 1;
                 StartCoroutine(Timeup());
             }
@@ -52,6 +55,7 @@ public class MalinKundang_Skill : MonoBehaviour
         else
         {
             canUsed = false;
+            Ready.SetActive(false);
             StopCoroutine(Timeup());
         }
 

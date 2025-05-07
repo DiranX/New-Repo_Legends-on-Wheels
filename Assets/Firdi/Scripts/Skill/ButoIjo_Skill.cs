@@ -11,6 +11,7 @@ public class ButoIjo_Skill : MonoBehaviour
     private bool skillUsed;
     public bool canUsed;
     public Image UIcon;
+    public GameObject Ready;
     public float duration;
     public float remainingTime;
     private float lastUsedTime = -Mathf.Infinity;
@@ -27,19 +28,22 @@ public class ButoIjo_Skill : MonoBehaviour
         playerKartKontroller = GetComponentInParent<PlayerInput>();
         playerKartKontroller.actions["Skill"].started += ctx => skillUsed = true;
         playerKartKontroller.actions["Skill"].canceled += ctx => skillUsed = false;
+
         if (this.gameObject.activeSelf)
         {
             UiSkill.SetActive(true);
+            this.Id = GetComponentInParent<Player>().id;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        UIcon.fillAmount = remainingTime / duration;
+        UIcon.fillAmount = 1f - (remainingTime / duration);
         if (remainingTime <= 0)
         {
             canUsed = true;
+            Ready.SetActive(true);
             if (skillUsed && canUsed && Time.time - lastUsedTime >= duration)
             {
                 GameObject obj = Instantiate(sphere, skillSpawn.position, Quaternion.identity);
@@ -51,6 +55,7 @@ public class ButoIjo_Skill : MonoBehaviour
         else
         {
             canUsed = false;
+            Ready.SetActive(false);
         }
 
         timeSinceUsed = Time.time - lastUsedTime;

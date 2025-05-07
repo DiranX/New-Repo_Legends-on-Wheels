@@ -44,8 +44,16 @@ public class Item_Barrel_Script : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<PlayerItemHolder>().playerKartController.GetComponent<Animator>().SetTrigger("Stop");
+            if(collision.gameObject.GetComponent<PlayerItemHolder>().playerKartController.GetComponent<Skill_Effect>().isProtect != true)
+            {
+                collision.gameObject.GetComponent<PlayerItemHolder>().playerKartController.GetComponent<Animator>().SetTrigger("Stop");
+            }
             Destroy(this.gameObject);
+        }
+
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            Destroy(collision.gameObject);
         }
     }   
 }

@@ -12,6 +12,7 @@ public class Pitung_Skill : MonoBehaviour
     public Transform frontThrow;
     public Transform backThrow;
     public Image UIcon;
+    public GameObject Ready;
     public float duration;
     public float remainingTime;
     private float lastUsedTime = -Mathf.Infinity;
@@ -32,19 +33,19 @@ public class Pitung_Skill : MonoBehaviour
         if (this.gameObject.activeSelf)
         {
             UiSkill.SetActive(true);
+            this.Id = GetComponentInParent<Player>().id;
         }
-
-        this.Id = GetComponentInParent<Player>().id;
 
     }
 
     private void FixedUpdate()
     {
         Vector2 MoveY = playerKartKontroller.actions["Move"].ReadValue<Vector2>();
-        UIcon.fillAmount = remainingTime / duration;
+        UIcon.fillAmount = 1f - (remainingTime / duration);
         if (remainingTime <= 0)
         {
             canUsed = true;
+            Ready.SetActive(true);
             if (skillUsed && canUsed && Time.time - lastUsedTime >= duration)
             {
                 Debug.Log("Skill is Used");
@@ -63,6 +64,7 @@ public class Pitung_Skill : MonoBehaviour
         else
         {
             canUsed = false;
+            Ready.SetActive(false);
         }
 
         timeSinceUsed = Time.time - lastUsedTime;
@@ -86,6 +88,7 @@ public class Pitung_Skill : MonoBehaviour
         // Apply dynamic force
         Vector3 throwDirection = frontThrow.forward * (Force * speedFactor);
         rb.AddForce(throwDirection, ForceMode.Impulse);
+        golok.GetComponent<Pitung_Golok>().velocity = throwDirection;
     }
 
     void BackThrow()
