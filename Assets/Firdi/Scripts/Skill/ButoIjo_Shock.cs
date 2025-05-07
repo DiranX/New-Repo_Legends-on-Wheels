@@ -27,12 +27,13 @@ public class ButoIjo_Shock : MonoBehaviour
         if (other.gameObject.CompareTag("Kart"))
         {
             PlayerKartController playerKart = other.GetComponent<PlayerKartController>();
-            ButoIjo_Skill buto = other.GetComponent<ButoIjo_Skill>();
-            if(buto != null)
+            int id = playerKart.GetComponentInParent<Player>().id;
+            if (playerKart != null)
             {
-                if(this.Id != buto.Id)
+                if(this.Id != id&& playerKart.GetComponent<Skill_Effect>().isProtect != true)
                 {
                     other.gameObject.GetComponent<Animator>().SetTrigger("Stop");
+                    Debug.Log("Stop");
                 }
             }
         }

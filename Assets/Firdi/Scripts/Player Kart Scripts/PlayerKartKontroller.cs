@@ -107,6 +107,7 @@ public class PlayerKartController : MonoBehaviour
             this.sphere.GetComponent<PlayerItemHolder>().playerKartController = this;
             virtualCam.Follow = this.transform;
             virtualCam.LookAt = this.transform;
+            StopBoostParticle();
         }
     }
 
@@ -179,6 +180,10 @@ public class PlayerKartController : MonoBehaviour
             }
         }
 
+        if(currentSpeed >= 150)
+        {
+            currentSpeed = 150;
+        }
 
         if (!drift && drifting)
         {
@@ -222,10 +227,11 @@ public class PlayerKartController : MonoBehaviour
         {
             boostTimer -= Time.fixedDeltaTime;
             currentSpeed += driftBoostAmount;
-
+            PlayBoostParticle();
             if (boostTimer <= 0)
             {
                 currentSpeed = Mathf.Max(currentSpeed - level3Boost, acceleration);
+                StopBoostParticle();
             }
         }
         else
@@ -278,7 +284,6 @@ public class PlayerKartController : MonoBehaviour
         {
             newColor = driftColor[3];
             ChangeParticleColor();
-            PlayBoostParticle();
             BoostSound.PlayOneShot(BoostSound.clip);
         }
 
@@ -304,7 +309,7 @@ public class PlayerKartController : MonoBehaviour
     {
         driftBoostAmount += boostAmount;
         boostTimer = boostDuration;
-        BoostSound.PlayOneShot(BoostSound.clip);
+        //BoostSound.PlayOneShot(BoostSound.clip);
         if (virtualCam != null)
         {
             StopAllCoroutines();
@@ -425,6 +430,13 @@ public class PlayerKartController : MonoBehaviour
             boost.Play();
         }
     }
+    public void StopBoostParticle()
+        {
+            foreach (ParticleSystem boost in boostParticle)
+            {
+                boost.Stop();
+            }
+        }
 
     public void StopKart()
     {

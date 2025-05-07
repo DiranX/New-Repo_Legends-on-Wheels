@@ -14,11 +14,14 @@ public class playerLapCounter : MonoBehaviour
     public GameObject[] checkPoint;
     public TextMeshProUGUI lapCounter;
     public TextMeshProUGUI PlacementCounter;
+    public TextMeshProUGUI PlacementCounter2;
     public TextMeshProUGUI winOrLose;
     public int playerCurrentPlace;
     public bool finish;
     public AudioSource FinishSound;
     public AudioSource CrowdSound;
+    public string[] Place;
+    public Color[] textColor;
 
     private void Awake()
     {
@@ -32,11 +35,14 @@ public class playerLapCounter : MonoBehaviour
     }
     private void Start()
     {
-        lapCounter.text = currentLap.ToString() + "/" + totalLap.ToString();
+        lapCounter.text = currentLap.ToString();
     }
     private void Update()
     {
         PlacementCounter.text = playerCurrentPlace.ToString();
+        PlacementCounter2.text = Place[playerCurrentPlace];
+        PlacementCounter.color = textColor[playerCurrentPlace];
+        PlacementCounter2.color = textColor[playerCurrentPlace];
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -47,7 +53,7 @@ public class playerLapCounter : MonoBehaviour
             {
                 this.currentCheckpoint = 0;
                 this.currentLap++;
-                this.lapCounter.text = currentLap.ToString() + "/" + totalLap.ToString();
+                this.lapCounter.text = currentLap.ToString();
                 FinishSound.Play();
             }
 

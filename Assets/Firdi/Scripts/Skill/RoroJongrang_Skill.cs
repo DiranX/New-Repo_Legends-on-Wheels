@@ -11,6 +11,7 @@ public class RoroJongrang_Skill : MonoBehaviour
     private bool skillUsed;
     public bool canUsed;
     public Image UIcon;
+    public GameObject Ready;
     public float duration;
     public float remainingTime;
     private float lastUsedTime = -Mathf.Infinity;
@@ -18,6 +19,8 @@ public class RoroJongrang_Skill : MonoBehaviour
     public GameObject Candi;
     public Transform Front;
     public Transform Back;
+    public int id;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +30,7 @@ public class RoroJongrang_Skill : MonoBehaviour
         if (this.gameObject.activeSelf)
         {
             UiSkill.SetActive(true);
+            this.id = GetComponentInParent<Player>().id;
         }
     }
 
@@ -34,10 +38,11 @@ public class RoroJongrang_Skill : MonoBehaviour
     void Update()
     {
         Vector2 MoveY = playerKartKontroller.actions["Move"].ReadValue<Vector2>();
-        UIcon.fillAmount = remainingTime / duration;
+        UIcon.fillAmount = 1f - (remainingTime / duration);
         if (remainingTime <= 0)
         {
             canUsed = true;
+            Ready.SetActive(true);
             if (skillUsed && canUsed && Time.time - lastUsedTime >= duration)
             {
                 Debug.Log("Skill is Used");
@@ -46,16 +51,19 @@ public class RoroJongrang_Skill : MonoBehaviour
                 if (MoveY.y >= 0)
                 {
                     GameObject candi = Instantiate(Candi, Front.position, Quaternion.identity);
+                    candi.GetComponent<RoroJongrang_Candi>().id = this.id;
                 }
                 else if (MoveY.y <= -0.5f)
                 {
                     GameObject candi = Instantiate(Candi, Back.position, Quaternion.identity);
+                    candi.GetComponent<RoroJongrang_Candi>().id = this.id;
                 }
             }
         }
         else
         {
             canUsed = false;
+            Ready.SetActive(false);
         }
 
         timeSinceUsed = Time.time - lastUsedTime;

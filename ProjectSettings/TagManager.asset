@@ -12,6 +12,7 @@ TagManager:
   - Obstacle
   - Water
   - Respawner
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - Player
   - Item
   - Post
-  - 
+  - Wall
   - 
   - 
   - 

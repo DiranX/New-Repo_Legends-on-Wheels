@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using UnityEngine.VFX;
 
 public class Kancil_Skill : MonoBehaviour
 {
@@ -12,13 +13,13 @@ public class Kancil_Skill : MonoBehaviour
     public bool canUsed;
     public Image BoostCon;
     public Image UIcon;
+    public GameObject cool;
     public float charge;
     public float duration;
     public float remainingTime;
     private float lastUsedTime = -Mathf.Infinity;
     float timeSinceUsed;
     Skill_Effect efek;
-    public int Id;
 
     // Start is called before the first frame update
     void Start()
@@ -36,10 +37,11 @@ public class Kancil_Skill : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UIcon.fillAmount = remainingTime / duration;
+        UIcon.fillAmount = 1f - (remainingTime / duration);
         if (remainingTime <= 0)
         {
             canUsed = true;
+            cool.SetActive(false);
             if(charge >= 0)
             {
                 BoostCon.fillAmount = charge / 100;
@@ -58,6 +60,7 @@ public class Kancil_Skill : MonoBehaviour
         else
         {
             canUsed = false;
+            cool.SetActive(true);
         }
 
         timeSinceUsed = Time.time - lastUsedTime;
