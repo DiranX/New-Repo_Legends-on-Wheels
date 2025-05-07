@@ -389,7 +389,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e634d464cb8e34e4e83fd7d29aa40382, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f781140cb5146ed46aee159e3117c222, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -807,7 +807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b108e6229e8919f4697aec7f8655f72b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfxButton: {fileID: 8300000, guid: 5948e8558da02224aba98aebe4293ea7, type: 3}
+  sfxButton: {fileID: 8300000, guid: 7278fea861e602342b552f48de5fb931, type: 3}
 --- !u!1 &1898052249
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,6 +929,8 @@ MonoBehaviour:
   musicSource: {fileID: 2077330817}
   titleScreen: {fileID: 8300000, guid: fb8a6481118a272419468e6dbd1a301c, type: 3}
   mainMenu: {fileID: 8300000, guid: fb8a6481118a272419468e6dbd1a301c, type: 3}
+  settings: {fileID: 8300000, guid: fb8a6481118a272419468e6dbd1a301c, type: 3}
+  credits: {fileID: 8300000, guid: fb8a6481118a272419468e6dbd1a301c, type: 3}
   modeSelect: {fileID: 8300000, guid: fb8a6481118a272419468e6dbd1a301c, type: 3}
   characterSelect2: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
   characterSelect3: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}

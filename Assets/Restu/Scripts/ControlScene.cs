@@ -3,34 +3,34 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class ControlScene : MonoBehaviour {
+public class ControlScene : MonoBehaviour
+{
+    public AudioClip sfxButton;
+    private bool oneshotSfx;
+    private AudioSource audioSource;
 
- public AudioClip sfxButton;
- 
- private bool oneshotSfx;
- 
- // Update is called once per frame
- void Update () 
- {
-  
-    //if press any key jump to gameplay scene
-    if ((Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame) || (Keyboard.current != null && (Keyboard.current.enterKey.wasPressedThisFrame || Keyboard.current.spaceKey.wasPressedThisFrame)))
+    void Start()
     {
-        if(!oneshotSfx)
-        {
-            AudioSource.PlayClipAtPoint(sfxButton,Vector3.zero);
-            Invoke("LoadScene",0.5f);
-            oneshotSfx = true;
-        }
-   
-   
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
- 
- }
- 
-    void LoadScene()
+
+    void Update()
     {
+        if ((Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame) ||
+            (Keyboard.current != null && (Keyboard.current.enterKey.wasPressedThisFrame || Keyboard.current.spaceKey.wasPressedThisFrame)))
+        {
+            if (!oneshotSfx)
+            {
+                oneshotSfx = true;
+                StartCoroutine(PlaySfxThenLoadScene());
+            }
+        }
+    }
+
+    IEnumerator PlaySfxThenLoadScene()
+    {
+        audioSource.PlayOneShot(sfxButton);
+        yield return new WaitForSeconds(sfxButton.length);
         SceneManager.LoadScene(1);
     }
- 
 }
