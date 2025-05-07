@@ -12,6 +12,7 @@ public class NyiroroKidul_Skill : MonoBehaviour
     private bool skillUsed;
     public bool canUsed;
     public Image UIcon;
+    public GameObject Ready;
     public float duration;
     public float remainingTime;
     private float lastUsedTime = -Mathf.Infinity;
@@ -33,10 +34,11 @@ public class NyiroroKidul_Skill : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UIcon.fillAmount = remainingTime / duration;
+        UIcon.fillAmount = 1f - (remainingTime / duration);
         if (remainingTime <= 0)
         {
             canUsed = true;
+            Ready.SetActive(true);
             if (skillUsed && canUsed && Time.time - lastUsedTime >= duration)
             {
                 canUsed = false;
@@ -49,6 +51,7 @@ public class NyiroroKidul_Skill : MonoBehaviour
         else
         {
             canUsed = false;
+            Ready.SetActive(false);
             StopCoroutine(Timeup());
         }
 

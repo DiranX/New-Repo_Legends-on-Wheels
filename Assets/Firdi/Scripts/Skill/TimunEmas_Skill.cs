@@ -13,6 +13,7 @@ public class TimunEmas_Skill : MonoBehaviour
     public Transform frontThrow;
     public Transform backThrow;
     public Image UIcon;
+    public GameObject Ready;
     public float duration;
     public float remainingTime;
     private float lastUsedTime = -Mathf.Infinity;
@@ -21,6 +22,7 @@ public class TimunEmas_Skill : MonoBehaviour
     public GameObject UiSkill;
     public float Force;
     public float ForceY;
+    public int id;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +35,7 @@ public class TimunEmas_Skill : MonoBehaviour
         if (this.gameObject.activeSelf)
         {
             UiSkill.SetActive(true);
+            this.id = GetComponentInParent<Player>().id;
         }
 
     }
@@ -40,10 +43,11 @@ public class TimunEmas_Skill : MonoBehaviour
     private void FixedUpdate()
     {
         Vector2 MoveY = playerKartKontroller.actions["Move"].ReadValue<Vector2>();
-        UIcon.fillAmount = remainingTime/duration;
+        UIcon.fillAmount = 1f - (remainingTime / duration);
         if (remainingTime <= 0)
         {
             canUsed = true;
+            Ready.SetActive(true);
             if(skillUsed && canUsed && Time.time - lastUsedTime >= duration)
             {
                 Debug.Log("Skill is Used");
@@ -61,6 +65,7 @@ public class TimunEmas_Skill : MonoBehaviour
         else
         {
             canUsed = false;
+            Ready.SetActive(false);
         }
 
         timeSinceUsed = Time.time - lastUsedTime;
@@ -71,6 +76,7 @@ public class TimunEmas_Skill : MonoBehaviour
     {
         GameObject terasi = Instantiate(Terasi, frontThrow.position, frontThrow.rotation);
         Rigidbody rb = terasi.GetComponent<Rigidbody>();
+        terasi.GetComponent<TimunEmas_Terasi>().Id = this.id;
 
         Vector3 Direction = frontThrow.forward * Force + Vector3.up * ForceY;
 
@@ -88,6 +94,7 @@ public class TimunEmas_Skill : MonoBehaviour
     {
         GameObject terasi = Instantiate(Terasi, backThrow.position, backThrow.rotation);
         Rigidbody rb = terasi.GetComponent<Rigidbody>();
+        terasi.GetComponent<TimunEmas_Terasi>().Id = this.id;
 
         Vector3 Direction = backThrow.forward * Force + Vector3.up * ForceY;
 

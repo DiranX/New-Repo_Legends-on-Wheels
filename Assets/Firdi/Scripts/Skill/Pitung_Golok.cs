@@ -3,52 +3,94 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 
 public class Pitung_Golok : MonoBehaviour
 {
     public int Id;
     public bool isBack;
     public Pitung_Skill pitung;
-    float speed = 10;
-    public float timer;
+    public float speed = 5f;
+    public Vector3 velocity;
+    public LayerMask terrain;
+    private float lastValidHeight;
+    public float offsetAboveGround = 0.5f;
+    int bounceCount;
+    public bool trigger;
 
-    private void FixedUpdate()
+    void Update()
     {
-        timer += Time.fixedDeltaTime;
+        // Set a high starting point for the raycast (above the kart)
+        Vector3 rayOrigin = transform.position + Vector3.up * 20;
 
-        if (timer >= 2) isBack = true;
-
-        Rigidbody rigidbody = GetComponent<Rigidbody>();
-        if (isBack)
+        // Raycast down from this position to find the ground
+        RaycastHit hit;
+        if (Physics.Raycast(rayOrigin + Vector3.up, Vector3.down, out hit, Mathf.Infinity, terrain))
         {
-            Vector3 target = pitung.GetComponent<Transform>().position;
-            Vector3 newPos = Vector3.MoveTowards(rigidbody.position, target, .5f);
-            rigidbody.MovePosition(newPos);
+            // Move the object slightly above the ground
+            transform.position = hit.point + Vector3.up * offsetAboveGround;
+
+            lastValidHeight = hit.point.y;
+        }
+        else
+        {
+            // If no ground detected, keep it at the original position (failsafe)
+            transform.position = new Vector3(transform.position.x, lastValidHeight, transform.position.z);
+        }
+
+        transform.position += velocity * speed * Time.deltaTime;
+
+        if (bounceCount >= 15)
+        {
+            Destroy(gameObject);
+        }
+        StartCoroutine(Destroyit());
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            float zHitOffset = transform.position.z - collision.transform.position.z;
+            float maxwallHalfHeight = collision.collider.bounds.size.z / 2;
+            float normalizedZ = Mathf.Clamp(zHitOffset / maxwallHalfHeight, -1f, 1f);
+
+            velocity = new Vector3(-velocity.x, 0f, normalizedZ).normalized * ((speed / 2) * 3);
+            bounceCount += 1;
+        }
+        else if (collision.gameObject.CompareTag("Track"))
+        {
+            float zHitOffset = transform.position.z - collision.transform.position.z;
+            float maxwallHalfHeight = collision.collider.bounds.size.z / 2;
+            float normalizedZ = Mathf.Clamp(zHitOffset / maxwallHalfHeight, -1f, 1f);
+
+            velocity = new Vector3(-velocity.x, 0f, normalizedZ).normalized * ((speed / 2) * 3);
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        PlayerKartController playerKart = other.GetComponent<PlayerKartController>();
-        Pitung_Skill id = other.GetComponent<Pitung_Skill>();
-
-        if(id != null)
+        if(trigger == true)
         {
-            if(playerKart != null)
+            if (other.gameObject.CompareTag("Kart"))
             {
-                if (isBack)
+                // Check if the player kart enters the boost pad
+                PlayerKartController playerKart = other.gameObject.GetComponent<PlayerKartController>();
+                int id = playerKart.GetComponentInParent<Player>().id;
+                if (playerKart != null)
                 {
-                    if (other.gameObject.CompareTag("Kart") && Id == id.Id)
+                    if (id != Id && playerKart.GetComponent<Skill_Effect>().isProtect != true)
                     {
-                        Destroy(gameObject);
-                    }
-                    else if (other.gameObject.CompareTag("Kart") && Id != id.Id)
-                    {
-                        other.gameObject.GetComponent<Animator>().SetTrigger("Stop");
+                        playerKart.GetComponent<Animator>().SetTrigger("Stop");
+                        Debug.Log("Stop");
                     }
                 }
             }
-            
         }
+    }
+
+    IEnumerator Destroyit()
+    {
+        yield return new WaitForSeconds(10);
+        Destroy(gameObject);
     }
 }

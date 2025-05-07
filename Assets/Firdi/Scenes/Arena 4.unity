@@ -3145,7 +3145,7 @@ PrefabInstance:
     - target: {fileID: 6585707956888492007, guid: d8107970db2a43744af72c1e69efee9f,
         type: 3}
       propertyPath: charge
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6585707956888492007, guid: d8107970db2a43744af72c1e69efee9f,
         type: 3}

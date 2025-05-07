@@ -11,6 +11,7 @@ public class Sangkuriang_Skill : MonoBehaviour
     private bool skillUsed;
     public bool canUsed;
     public Image UIcon;
+    public GameObject Ready;
     public float duration;
     public float remainingTime;
     private float lastUsedTime = -Mathf.Infinity;
@@ -37,10 +38,11 @@ public class Sangkuriang_Skill : MonoBehaviour
     void Update()
     {
         Vector2 MoveY = playerKartKontroller.actions["Move"].ReadValue<Vector2>();
-        UIcon.fillAmount = remainingTime / duration;
+        UIcon.fillAmount = 1f - (remainingTime / duration);
         if (remainingTime <= 0)
         {
             canUsed = true;
+            Ready.SetActive(true);
             if (skillUsed && canUsed && Time.time - lastUsedTime >= duration)
             {
                 canUsed = false;
@@ -56,6 +58,7 @@ public class Sangkuriang_Skill : MonoBehaviour
         else
         {
             canUsed = false;
+            Ready.SetActive(false );
         }
 
         timeSinceUsed = Time.time - lastUsedTime;
