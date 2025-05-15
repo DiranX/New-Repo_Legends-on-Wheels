@@ -5,6 +5,7 @@ using System.Collections;
 
 public class ControlScene : MonoBehaviour
 {
+    public GameObject quitMenu;
     public AudioClip sfxButton;
     private bool oneshotSfx;
     private AudioSource audioSource;
@@ -16,6 +17,11 @@ public class ControlScene : MonoBehaviour
 
     void Update()
     {
+        if (quitMenu.activeSelf)
+        {
+            return; 
+        }
+
         if ((Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame) ||
             (Keyboard.current != null && (Keyboard.current.enterKey.wasPressedThisFrame || Keyboard.current.spaceKey.wasPressedThisFrame)))
         {

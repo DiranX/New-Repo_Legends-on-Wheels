@@ -3,36 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - CheckPoint
-  - Kart
-  - ItemLoot
-  - Selector
-  - Track
-  - Obstacle
-  - Water
-  - Respawner
-
-  - Teleporter
-=======
-  - Wall
-
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Track
+  - 
   - Water
   - UI
-  - P1
-  - P2
-  - P3
-  - P4
-  - Image
-  - Player
-  - Item
-  - Post
-  - Wall
   - 
   - 
   - 
@@ -49,11 +27,17 @@ TagManager:
   - 
   - 
   - 
-  - HLOD
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: UI
-    uniqueID: 3972292677
     locked: 0
