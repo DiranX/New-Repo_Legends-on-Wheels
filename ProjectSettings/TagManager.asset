@@ -13,6 +13,7 @@ TagManager:
   - Kart
   - ItemLoot
   - Obstacle
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -26,6 +27,19 @@ TagManager:
   - Player 3
   - Player 4
   - Obstacle
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
