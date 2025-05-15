@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9209186071653936267}
   - component: {fileID: 4173233352274568030}
   - component: {fileID: 7002677017093033070}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BoostPad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 8158510399850774665}
   - component: {fileID: 8408731968475357609}
   - component: {fileID: 4589456493446804202}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Batu Jumping
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,6 +247,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: vfxgraph_Sangkuriang
+      objectReference: {fileID: 0}
+    - target: {fileID: 784015042014431516, guid: aa4d246db8c7c214386802a515965e20,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4595068295097658191, guid: aa4d246db8c7c214386802a515965e20,
         type: 3}

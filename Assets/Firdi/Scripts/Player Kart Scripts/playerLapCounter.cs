@@ -35,7 +35,7 @@ public class playerLapCounter : MonoBehaviour
     }
     private void Start()
     {
-        lapCounter.text = currentLap.ToString();
+        lapCounter.text = (currentLap + 1).ToString();
     }
     private void Update()
     {
@@ -53,7 +53,7 @@ public class playerLapCounter : MonoBehaviour
             {
                 this.currentCheckpoint = 0;
                 this.currentLap++;
-                this.lapCounter.text = currentLap.ToString();
+                this.lapCounter.text = (currentLap + 1).ToString();
                 FinishSound.Play();
             }
 

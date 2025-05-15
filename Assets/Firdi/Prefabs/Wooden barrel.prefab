@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2489526259745172382}
   - component: {fileID: 1619658709532895366}
   - component: {fileID: 2258533823572638294}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: Wooden barrel
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 1290842591269818883}
   - component: {fileID: 3269737646958501263}
   - component: {fileID: 8505057021686121027}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: Wooden_barrel_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
