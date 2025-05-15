@@ -28,7 +28,7 @@ public class KartAnimation : MonoBehaviour
 
     void Start()
     {
-        anim = GetComponentInChildren<Animator>();
+        anim = GetComponent<Animator>();
         playerKart = GetComponent<PlayerKartController>();
     }
 

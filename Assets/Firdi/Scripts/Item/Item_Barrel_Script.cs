@@ -52,7 +52,7 @@ public class Item_Barrel_Script : MonoBehaviour
             }
             else
             {
-                Destroy(this.gameObject);
+                //Destroy(this.gameObject);
             }
         }
 
