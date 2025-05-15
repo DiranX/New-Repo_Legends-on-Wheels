@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7378775076416551829}
   - component: {fileID: 7459533473704076614}
   - component: {fileID: 6419732580025969824}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: BoostRamp (2)
   m_TagString: Track
   m_Icon: {fileID: 0}

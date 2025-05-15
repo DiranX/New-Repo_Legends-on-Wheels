@@ -200,7 +200,7 @@ SphereCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -254,7 +254,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   terrain:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 64
   offsetAboveGround: 1
   trigger: 0
 --- !u!95 &4769228764256954266
@@ -558,7 +558,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   terrain:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   offsetAboveGround: 0.5
   trigger: 1
 --- !u!136 &8314008726395129965

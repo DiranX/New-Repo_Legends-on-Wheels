@@ -33,7 +33,7 @@ public class PlayerItemHolder : MonoBehaviour
         Vector2 throwInput = playerInput.actions["Move"].ReadValue<Vector2>();
         if (playerItemUI[playerItemIndex].activeSelf == true && ItemUsed)
         {
-            if (playerItemIndex == 0)
+            if (playerItemIndex == 0 || playerItemIndex == 2)
             {
                 if (throwInput.y >= 0f)
                 {
@@ -47,6 +47,17 @@ public class PlayerItemHolder : MonoBehaviour
             else if (playerItemIndex == 1)
             {
                 Boost();
+            }
+            else if(playerItemIndex == 3)
+            {
+                if (ItemPrefabs[3].activeSelf == false)
+                {
+                    ItemUsed = false;
+                    playerItemUI[playerItemIndex].SetActive(false); // Deactivate the UI element
+                    haveItem = false; // Allow picking up a new item
+                    ItemPrefabs[3].SetActive(true);
+                    playerKartController.GetComponent<Skill_Effect>().isProtect = true;
+                }
             }
         }
     }

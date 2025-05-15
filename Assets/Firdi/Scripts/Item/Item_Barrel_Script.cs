@@ -11,7 +11,7 @@ public class Item_Barrel_Script : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Physics.IgnoreLayerCollision(12, 11, true);
+        Physics.IgnoreLayerCollision(11, 3, true);
     }
     private void Update()
     {
@@ -37,23 +37,28 @@ public class Item_Barrel_Script : MonoBehaviour
                 rb.velocity = Vector3.zero;
                 rb.angularVelocity = Vector3.zero;
                 rb.isKinematic = true;
-                Physics.IgnoreLayerCollision(12, 11, false);
+                Physics.IgnoreLayerCollision(11, 3, false);
                 transform.localScale *= 3f;
             }
         }
 
         if (collision.gameObject.CompareTag("Player"))
         {
-            if(collision.gameObject.GetComponent<PlayerItemHolder>().playerKartController.GetComponent<Skill_Effect>().isProtect != true)
+            BoxCollider collider = GetComponent<BoxCollider>();
+            if (collision.gameObject.GetComponent<PlayerItemHolder>().playerKartController.GetComponent<Skill_Effect>().isProtect != true)
             {
                 collision.gameObject.GetComponent<PlayerItemHolder>().playerKartController.GetComponent<Animator>().SetTrigger("Stop");
+                Destroy(this.gameObject);
             }
-            Destroy(this.gameObject);
+            else
+            {
+                Destroy(this.gameObject);
+            }
         }
 
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             Destroy(collision.gameObject);
         }
-    }   
+    }
 }
