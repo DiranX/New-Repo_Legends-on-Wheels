@@ -133,9 +133,17 @@ public class PlayerKartController : MonoBehaviour
         // Steer
         if (moveInput.x != 0)
         {
-            int dir = moveInput.x > 0 ? 1 : -1;
-            float amount = Mathf.Abs(moveInput.x);
-            Steer(dir, amount);
+            if (!GetComponent<Skill_Effect>().isReverse)
+            {
+                int dir = moveInput.x > 0 ? 1 : -1;
+                float amount = Mathf.Abs(moveInput.x);
+                Steer(dir, amount);
+            }else if (GetComponent<Skill_Effect>().isReverse)
+            {
+                int dir = moveInput.x > 0 ? -1 : 1;
+                float amount = Mathf.Abs(moveInput.x);
+                Steer(dir, amount);
+            }
         }
 
         if (drift && !drifting && moveInput.x != 0)

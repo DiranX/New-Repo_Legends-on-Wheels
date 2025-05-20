@@ -9,7 +9,7 @@ public class Relocate : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Respawner"))
         {
-            transform.DOMove(other.GetComponent<Respawn>().ReLocate.transform.position, 2);
+            transform.DOMove(other.GetComponent<Respawn>().ReLocate.transform.position, 50 * Time.deltaTime);
             GetComponent<PlayerItemHolder>().playerKartController.currentSpeed = 0;
         }
     }

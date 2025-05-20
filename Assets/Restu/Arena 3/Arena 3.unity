@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 2446002}
   - component: {fileID: 2446004}
   - component: {fileID: 2446003}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -998,6 +998,12 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!4 &9854860 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8348160605428835123, guid: b775eb6e4a2197840b156ab2d9ce7a02,
+    type: 3}
+  m_PrefabInstance: {fileID: 536055318}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &12875277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1356,7 +1362,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 24116380}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1770,7 +1776,7 @@ GameObject:
   - component: {fileID: 29834905}
   - component: {fileID: 29834907}
   - component: {fileID: 29834906}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3619,8 +3625,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bf9908df89538df459a5e32829210586,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf9908df89538df459a5e32829210586,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf9908df89538df459a5e32829210586,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bf9908df89538df459a5e32829210586,
         type: 3}
@@ -4035,6 +4051,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BoostPad (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 3862608627348085786, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
@@ -4623,6 +4649,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoostPad (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
       propertyPath: m_LocalScale.z
@@ -4796,7 +4832,7 @@ GameObject:
   - component: {fileID: 82608830}
   - component: {fileID: 82608832}
   - component: {fileID: 82608831}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4968,9 +5004,9 @@ GameObject:
   - component: {fileID: 85908539}
   - component: {fileID: 85908538}
   - component: {fileID: 85908537}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut17
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5417,7 +5453,7 @@ GameObject:
   m_Component:
   - component: {fileID: 89063750}
   - component: {fileID: 89063749}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6258,7 +6294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 95837422}
   - component: {fileID: 95837421}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6832,6 +6868,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BoostPad (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
@@ -8302,9 +8348,9 @@ GameObject:
   - component: {fileID: 112978571}
   - component: {fileID: 112978570}
   - component: {fileID: 112978569}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut27
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9583,7 +9629,7 @@ GameObject:
   m_Component:
   - component: {fileID: 132617507}
   - component: {fileID: 132617506}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10110,7 +10156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 141556761}
   - component: {fileID: 141556760}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11163,7 +11209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 153583333}
   - component: {fileID: 153583332}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11973,9 +12019,9 @@ GameObject:
   - component: {fileID: 165337049}
   - component: {fileID: 165337048}
   - component: {fileID: 165337047}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut18
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13031,7 +13077,7 @@ GameObject:
   - component: {fileID: 176535513}
   - component: {fileID: 176535515}
   - component: {fileID: 176535514}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13115,7 +13161,7 @@ GameObject:
   - component: {fileID: 177344889}
   - component: {fileID: 177344891}
   - component: {fileID: 177344890}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13287,7 +13333,7 @@ GameObject:
   - component: {fileID: 179032103}
   - component: {fileID: 179032105}
   - component: {fileID: 179032104}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17217,6 +17263,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoostPad (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -18153,9 +18209,9 @@ GameObject:
   - component: {fileID: 209510328}
   - component: {fileID: 209510327}
   - component: {fileID: 209510326}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut5
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18259,7 +18315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 209854461}
   - component: {fileID: 209854460}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18397,9 +18453,9 @@ GameObject:
   - component: {fileID: 210325491}
   - component: {fileID: 210325490}
   - component: {fileID: 210325489}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut37
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18923,7 +18979,7 @@ GameObject:
   - component: {fileID: 219168241}
   - component: {fileID: 219168243}
   - component: {fileID: 219168242}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19006,7 +19062,7 @@ GameObject:
   m_Component:
   - component: {fileID: 219637961}
   - component: {fileID: 219637960}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20303,7 +20359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 243550193}
   - component: {fileID: 243550194}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Road1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20625,9 +20681,9 @@ GameObject:
   - component: {fileID: 245626092}
   - component: {fileID: 245626091}
   - component: {fileID: 245626090}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut38
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21130,7 +21186,7 @@ GameObject:
   - component: {fileID: 250245988}
   - component: {fileID: 250245990}
   - component: {fileID: 250245989}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21400,7 +21456,7 @@ GameObject:
   - component: {fileID: 252345626}
   - component: {fileID: 252345628}
   - component: {fileID: 252345627}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21627,9 +21683,9 @@ GameObject:
   - component: {fileID: 256697750}
   - component: {fileID: 256697749}
   - component: {fileID: 256697748}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut42
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21740,7 +21796,7 @@ GameObject:
   - component: {fileID: 259624131}
   - component: {fileID: 259624133}
   - component: {fileID: 259624132}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21825,9 +21881,9 @@ GameObject:
   - component: {fileID: 260407897}
   - component: {fileID: 260407896}
   - component: {fileID: 260407895}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut29
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24387,7 +24443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 307064037}
   - component: {fileID: 307064036}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24491,7 +24547,7 @@ GameObject:
   - component: {fileID: 307550120}
   - component: {fileID: 307550122}
   - component: {fileID: 307550121}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25097,6 +25153,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoostPad (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -25303,6 +25369,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BoostPad (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
@@ -25862,7 +25938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 327621418}
   - component: {fileID: 327621417}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26294,9 +26370,9 @@ GameObject:
   - component: {fileID: 332273290}
   - component: {fileID: 332273289}
   - component: {fileID: 332273288}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut23
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26496,9 +26572,9 @@ GameObject:
   - component: {fileID: 334375293}
   - component: {fileID: 334375292}
   - component: {fileID: 334375291}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut14
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26786,6 +26862,111 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1104752615}
   m_SourcePrefab: {fileID: 100100000, guid: e6b4b3854b2db8c4894806527ca72067, type: 3}
+--- !u!1 &340297073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 340297077}
+  - component: {fileID: 340297076}
+  - component: {fileID: 340297075}
+  - component: {fileID: 340297074}
+  m_Layer: 0
+  m_Name: 1 (3)
+  m_TagString: CheckPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &340297074
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340297073}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &340297075
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340297073}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &340297076
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340297073}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &340297077
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340297073}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.00075290236, z: -0, w: 0.99999976}
+  m_LocalPosition: {x: 756.9, y: 7.7269, z: 377.28}
+  m_LocalScale: {x: 1, y: 29.266527, z: 116.96357}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9854860}
+  m_LocalEulerAnglesHint: {x: 0, y: -0.086, z: 0}
 --- !u!1 &342770852 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1a0746f98766108498f5de5b4cfb6f6f,
@@ -26842,6 +27023,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BoostPad (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
@@ -27261,9 +27452,9 @@ GameObject:
   - component: {fileID: 347697472}
   - component: {fileID: 347697471}
   - component: {fileID: 347697470}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut7
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27783,9 +27974,9 @@ GameObject:
   - component: {fileID: 354113774}
   - component: {fileID: 354113773}
   - component: {fileID: 354113772}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut1
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28171,9 +28362,9 @@ GameObject:
   - component: {fileID: 356760670}
   - component: {fileID: 356760669}
   - component: {fileID: 356760668}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut12
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28463,9 +28654,9 @@ GameObject:
   - component: {fileID: 363361205}
   - component: {fileID: 363361204}
   - component: {fileID: 363361203}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut24
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29852,6 +30043,111 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2607347306135948246, guid: 1a0746f98766108498f5de5b4cfb6f6f, type: 3}
+--- !u!1 &383522613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 383522617}
+  - component: {fileID: 383522616}
+  - component: {fileID: 383522615}
+  - component: {fileID: 383522614}
+  m_Layer: 0
+  m_Name: Start/FInish
+  m_TagString: CheckPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &383522614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383522613}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &383522615
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383522613}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &383522616
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383522613}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &383522617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383522613}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 247.23, y: 43.4909, z: 613.5419}
+  m_LocalScale: {x: 1, y: 18.293814, z: 36.000114}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9854860}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &385132502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30434,7 +30730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 387557694}
   - component: {fileID: 387557693}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30537,7 +30833,7 @@ GameObject:
   m_Component:
   - component: {fileID: 390141452}
   - component: {fileID: 390141451}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34628,7 +34924,7 @@ GameObject:
   - component: {fileID: 449123865}
   - component: {fileID: 449123867}
   - component: {fileID: 449123866}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35502,6 +35798,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BoostPad (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
@@ -36458,9 +36764,9 @@ GameObject:
   - component: {fileID: 480034433}
   - component: {fileID: 480034432}
   - component: {fileID: 480034431}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut26
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36800,8 +37106,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bf9908df89538df459a5e32829210586,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf9908df89538df459a5e32829210586,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf9908df89538df459a5e32829210586,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bf9908df89538df459a5e32829210586,
         type: 3}
@@ -37611,7 +37927,7 @@ GameObject:
   - component: {fileID: 502304405}
   - component: {fileID: 502304407}
   - component: {fileID: 502304406}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38184,9 +38500,9 @@ GameObject:
   - component: {fileID: 520481861}
   - component: {fileID: 520481860}
   - component: {fileID: 520481859}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut2
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38788,7 +39104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 529522845}
   - component: {fileID: 529522844}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39276,6 +39592,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 73362654344906913, guid: b775eb6e4a2197840b156ab2d9ce7a02,
+        type: 3}
+      propertyPath: CheckPoint.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 73362654344906913, guid: b775eb6e4a2197840b156ab2d9ce7a02,
+        type: 3}
+      propertyPath: CheckPoint.Array.data[0]
+      value: 
+      objectReference: {fileID: 1192500602}
+    - target: {fileID: 73362654344906913, guid: b775eb6e4a2197840b156ab2d9ce7a02,
+        type: 3}
+      propertyPath: CheckPoint.Array.data[1]
+      value: 
+      objectReference: {fileID: 1072726394}
+    - target: {fileID: 73362654344906913, guid: b775eb6e4a2197840b156ab2d9ce7a02,
+        type: 3}
+      propertyPath: CheckPoint.Array.data[2]
+      value: 
+      objectReference: {fileID: 1650150770}
+    - target: {fileID: 73362654344906913, guid: b775eb6e4a2197840b156ab2d9ce7a02,
+        type: 3}
+      propertyPath: CheckPoint.Array.data[3]
+      value: 
+      objectReference: {fileID: 340297073}
+    - target: {fileID: 73362654344906913, guid: b775eb6e4a2197840b156ab2d9ce7a02,
+        type: 3}
+      propertyPath: CheckPoint.Array.data[4]
+      value: 
+      objectReference: {fileID: 1726205945}
+    - target: {fileID: 73362654344906913, guid: b775eb6e4a2197840b156ab2d9ce7a02,
+        type: 3}
+      propertyPath: CheckPoint.Array.data[5]
+      value: 
+      objectReference: {fileID: 1359056613}
+    - target: {fileID: 73362654344906913, guid: b775eb6e4a2197840b156ab2d9ce7a02,
+        type: 3}
+      propertyPath: CheckPoint.Array.data[6]
+      value: 
+      objectReference: {fileID: 383522613}
     - target: {fileID: 5951698912500057414, guid: b775eb6e4a2197840b156ab2d9ce7a02,
         type: 3}
       propertyPath: m_Name
@@ -39332,8 +39688,39 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2548090438079851390, guid: b775eb6e4a2197840b156ab2d9ce7a02, type: 3}
+    - {fileID: 3813772790753895074, guid: b775eb6e4a2197840b156ab2d9ce7a02, type: 3}
+    - {fileID: 7651664048549749006, guid: b775eb6e4a2197840b156ab2d9ce7a02, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8348160605428835123, guid: b775eb6e4a2197840b156ab2d9ce7a02,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 383522617}
+    - targetCorrespondingSourceObject: {fileID: 8348160605428835123, guid: b775eb6e4a2197840b156ab2d9ce7a02,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1192500606}
+    - targetCorrespondingSourceObject: {fileID: 8348160605428835123, guid: b775eb6e4a2197840b156ab2d9ce7a02,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1072726398}
+    - targetCorrespondingSourceObject: {fileID: 8348160605428835123, guid: b775eb6e4a2197840b156ab2d9ce7a02,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1650150774}
+    - targetCorrespondingSourceObject: {fileID: 8348160605428835123, guid: b775eb6e4a2197840b156ab2d9ce7a02,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 340297077}
+    - targetCorrespondingSourceObject: {fileID: 8348160605428835123, guid: b775eb6e4a2197840b156ab2d9ce7a02,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1726205949}
+    - targetCorrespondingSourceObject: {fileID: 8348160605428835123, guid: b775eb6e4a2197840b156ab2d9ce7a02,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1359056617}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b775eb6e4a2197840b156ab2d9ce7a02, type: 3}
 --- !u!1 &536439356 stripped
@@ -39915,7 +40302,7 @@ GameObject:
   - component: {fileID: 549329072}
   - component: {fileID: 549329074}
   - component: {fileID: 549329073}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40206,6 +40593,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BoostPad (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
@@ -43716,7 +44113,7 @@ GameObject:
   m_Component:
   - component: {fileID: 572921347}
   - component: {fileID: 572921346}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44225,9 +44622,9 @@ GameObject:
   - component: {fileID: 583289003}
   - component: {fileID: 583289002}
   - component: {fileID: 583289001}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut33
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44331,7 +44728,7 @@ GameObject:
   m_Component:
   - component: {fileID: 585172800}
   - component: {fileID: 585172799}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44523,7 +44920,7 @@ GameObject:
   - component: {fileID: 586632066}
   - component: {fileID: 586632068}
   - component: {fileID: 586632067}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47150,6 +47547,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoostPad (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -47335,7 +47742,7 @@ GameObject:
   m_Component:
   - component: {fileID: 631968636}
   - component: {fileID: 631968635}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47471,7 +47878,7 @@ GameObject:
   m_Component:
   - component: {fileID: 637525018}
   - component: {fileID: 637525017}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48327,7 +48734,7 @@ GameObject:
   - component: {fileID: 648710666}
   - component: {fileID: 648710668}
   - component: {fileID: 648710667}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48555,7 +48962,7 @@ GameObject:
   - component: {fileID: 652827972}
   - component: {fileID: 652827974}
   - component: {fileID: 652827973}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48638,7 +49045,7 @@ GameObject:
   m_Component:
   - component: {fileID: 653272302}
   - component: {fileID: 653272301}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49647,7 +50054,7 @@ GameObject:
   m_Component:
   - component: {fileID: 666770276}
   - component: {fileID: 666770275}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50169,7 +50576,7 @@ GameObject:
   - component: {fileID: 675088220}
   - component: {fileID: 675088222}
   - component: {fileID: 675088221}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50976,7 +51383,7 @@ GameObject:
   m_Component:
   - component: {fileID: 703128627}
   - component: {fileID: 703128626}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51178,6 +51585,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BoostPad (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
@@ -51460,7 +51877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 708461450}
   - component: {fileID: 708461451}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51964,9 +52381,9 @@ GameObject:
   - component: {fileID: 718272553}
   - component: {fileID: 718272552}
   - component: {fileID: 718272551}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut20
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52070,7 +52487,7 @@ GameObject:
   m_Component:
   - component: {fileID: 719841999}
   - component: {fileID: 719841998}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52272,9 +52689,9 @@ GameObject:
   - component: {fileID: 721339634}
   - component: {fileID: 721339633}
   - component: {fileID: 721339632}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut28
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53104,7 +53521,7 @@ GameObject:
   - component: {fileID: 732745879}
   - component: {fileID: 732745881}
   - component: {fileID: 732745880}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53277,9 +53694,9 @@ GameObject:
   - component: {fileID: 736626673}
   - component: {fileID: 736626672}
   - component: {fileID: 736626671}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut34
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53746,7 +54163,7 @@ GameObject:
   - component: {fileID: 745565504}
   - component: {fileID: 745565506}
   - component: {fileID: 745565505}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53829,7 +54246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 747798704}
   - component: {fileID: 747798703}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53934,9 +54351,9 @@ GameObject:
   - component: {fileID: 749007770}
   - component: {fileID: 749007769}
   - component: {fileID: 749007768}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut9
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54827,7 +55244,7 @@ GameObject:
   - component: {fileID: 760600044}
   - component: {fileID: 760600046}
   - component: {fileID: 760600045}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54912,9 +55329,9 @@ GameObject:
   - component: {fileID: 760936628}
   - component: {fileID: 760936627}
   - component: {fileID: 760936626}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut3
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56007,7 +56424,7 @@ GameObject:
   - component: {fileID: 778824593}
   - component: {fileID: 778824595}
   - component: {fileID: 778824594}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56452,7 +56869,7 @@ GameObject:
   - component: {fileID: 784126271}
   - component: {fileID: 784126273}
   - component: {fileID: 784126272}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57127,7 +57544,7 @@ GameObject:
   - component: {fileID: 793536731}
   - component: {fileID: 793536733}
   - component: {fileID: 793536732}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59032,6 +59449,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoostPad (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -59746,7 +60173,7 @@ GameObject:
   - component: {fileID: 822967471}
   - component: {fileID: 822967473}
   - component: {fileID: 822967472}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61958,7 +62385,7 @@ GameObject:
   - component: {fileID: 852161212}
   - component: {fileID: 852161214}
   - component: {fileID: 852161213}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63026,6 +63453,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoostPad (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -64020,7 +64457,7 @@ GameObject:
   - component: {fileID: 881519766}
   - component: {fileID: 881519768}
   - component: {fileID: 881519767}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65187,9 +65624,9 @@ GameObject:
   - component: {fileID: 909990127}
   - component: {fileID: 909990126}
   - component: {fileID: 909990125}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut30
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65397,6 +65834,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BoostPad (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
@@ -65724,7 +66171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 914769327}
   - component: {fileID: 914769326}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66099,7 +66546,7 @@ GameObject:
   m_Component:
   - component: {fileID: 922573741}
   - component: {fileID: 922573740}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66418,6 +66865,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoostPad (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -66700,7 +67157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 936333849}
   - component: {fileID: 936333848}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67618,6 +68075,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoostPad (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -68372,7 +68839,7 @@ GameObject:
   - component: {fileID: 965101262}
   - component: {fileID: 965101264}
   - component: {fileID: 965101263}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68587,9 +69054,9 @@ GameObject:
   - component: {fileID: 968275896}
   - component: {fileID: 968275895}
   - component: {fileID: 968275894}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut15
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71216,6 +71683,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoostPad (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -72765,6 +73242,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoostPad (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 3862608627348085786, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
       propertyPath: m_Size.x
@@ -72959,7 +73446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1038116533}
   - component: {fileID: 1038116532}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73465,7 +73952,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1052427569}
   - component: {fileID: 1052427568}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75198,6 +75685,111 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1072726394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1072726398}
+  - component: {fileID: 1072726397}
+  - component: {fileID: 1072726396}
+  - component: {fileID: 1072726395}
+  m_Layer: 0
+  m_Name: 1 (1)
+  m_TagString: CheckPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1072726395
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072726394}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1072726396
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072726394}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1072726397
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072726394}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1072726398
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072726394}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.0072401874, z: -0, w: 0.99997383}
+  m_LocalPosition: {x: 534.6, y: 52.77, z: 569}
+  m_LocalScale: {x: 1, y: 18.293814, z: 36.000114}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9854860}
+  m_LocalEulerAnglesHint: {x: 0, y: 0.83, z: 0}
 --- !u!1001 &1073759884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75400,7 +75992,7 @@ GameObject:
   - component: {fileID: 1078653186}
   - component: {fileID: 1078653188}
   - component: {fileID: 1078653187}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76000,9 +76592,9 @@ GameObject:
   - component: {fileID: 1096441481}
   - component: {fileID: 1096441480}
   - component: {fileID: 1096441483}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 127
@@ -79200,9 +79792,9 @@ GameObject:
   - component: {fileID: 1143743149}
   - component: {fileID: 1143743148}
   - component: {fileID: 1143743147}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut4
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79444,7 +80036,7 @@ GameObject:
   - component: {fileID: 1146413441}
   - component: {fileID: 1146413443}
   - component: {fileID: 1146413442}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80122,9 +80714,9 @@ GameObject:
   - component: {fileID: 1160525299}
   - component: {fileID: 1160525298}
   - component: {fileID: 1160525297}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut22
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80957,7 +81549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1165842665}
   - component: {fileID: 1165842664}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82390,7 +82982,7 @@ GameObject:
   - component: {fileID: 1180697655}
   - component: {fileID: 1180697657}
   - component: {fileID: 1180697656}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83198,6 +83790,111 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1191423817}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1192500602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1192500606}
+  - component: {fileID: 1192500605}
+  - component: {fileID: 1192500604}
+  - component: {fileID: 1192500603}
+  m_Layer: 0
+  m_Name: 1
+  m_TagString: CheckPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1192500603
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192500602}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1192500604
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192500602}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1192500605
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192500602}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1192500606
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192500602}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.09955878, z: -0, w: 0.9950317}
+  m_LocalPosition: {x: 458.3, y: 50.28, z: 702.3}
+  m_LocalScale: {x: 1, y: 18.293814, z: 36.000114}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9854860}
+  m_LocalEulerAnglesHint: {x: 0, y: -11.428, z: 0}
 --- !u!1 &1194287277
 GameObject:
   m_ObjectHideFlags: 0
@@ -84765,7 +85462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1215009861}
   - component: {fileID: 1215009860}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadArchitectSystem1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85027,9 +85724,9 @@ GameObject:
   - component: {fileID: 1220006593}
   - component: {fileID: 1220006592}
   - component: {fileID: 1220006591}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut0
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87730,6 +88427,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoostPad (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -87918,7 +88625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1257713805}
   - component: {fileID: 1257713804}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89908,7 +90615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1291242641}
   - component: {fileID: 1291242640}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90013,9 +90720,9 @@ GameObject:
   - component: {fileID: 1292423670}
   - component: {fileID: 1292423669}
   - component: {fileID: 1292423668}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut8
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94039,6 +94746,111 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1359056613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1359056617}
+  - component: {fileID: 1359056616}
+  - component: {fileID: 1359056615}
+  - component: {fileID: 1359056614}
+  m_Layer: 0
+  m_Name: 1 (5)
+  m_TagString: CheckPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1359056614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359056613}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1359056615
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359056613}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1359056616
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359056613}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1359056617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359056613}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.9407671, z: -0, w: 0.33905354}
+  m_LocalPosition: {x: 110.3, y: 7.7269, z: 504.9}
+  m_LocalScale: {x: 1, y: 29.266527, z: 130.88223}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9854860}
+  m_LocalEulerAnglesHint: {x: 0, y: -140.362, z: 0}
 --- !u!43 &1359336211
 Mesh:
   m_ObjectHideFlags: 0
@@ -94425,6 +95237,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BoostPad
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
@@ -96520,7 +97342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1402027943}
   - component: {fileID: 1402027942}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97208,6 +98030,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoostPad (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -97561,9 +98393,9 @@ GameObject:
   - component: {fileID: 1414757762}
   - component: {fileID: 1414757761}
   - component: {fileID: 1414757760}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut41
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98118,6 +98950,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BoostPad (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
@@ -98865,7 +99707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1436145715}
   - component: {fileID: 1436145714}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99186,9 +100028,9 @@ GameObject:
   - component: {fileID: 1440410531}
   - component: {fileID: 1440410530}
   - component: {fileID: 1440410529}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut39
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100713,7 +101555,7 @@ GameObject:
   - component: {fileID: 1458230308}
   - component: {fileID: 1458230310}
   - component: {fileID: 1458230309}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102537,7 +103379,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1498128428}
   - component: {fileID: 1498128427}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103764,9 +104606,9 @@ GameObject:
   - component: {fileID: 1508201862}
   - component: {fileID: 1508201861}
   - component: {fileID: 1508201860}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut40
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104207,9 +105049,9 @@ GameObject:
   - component: {fileID: 1517049382}
   - component: {fileID: 1517049381}
   - component: {fileID: 1517049380}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut36
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104383,7 +105225,7 @@ GameObject:
   - component: {fileID: 1517904203}
   - component: {fileID: 1517904205}
   - component: {fileID: 1517904204}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104546,7 +105388,7 @@ GameObject:
   - component: {fileID: 1520611970}
   - component: {fileID: 1520611972}
   - component: {fileID: 1520611971}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105015,7 +105857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1524342968}
   - component: {fileID: 1524342967}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106766,7 +107608,7 @@ GameObject:
   - component: {fileID: 1561983680}
   - component: {fileID: 1561983682}
   - component: {fileID: 1561983681}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107883,7 +108725,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1578439088}
   - component: {fileID: 1578439087}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108217,9 +109059,9 @@ GameObject:
   - component: {fileID: 1583239931}
   - component: {fileID: 1583239930}
   - component: {fileID: 1583239929}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut35
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108323,7 +109165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1584553824}
   - component: {fileID: 1584553823}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109001,9 +109843,9 @@ GameObject:
   - component: {fileID: 1597266736}
   - component: {fileID: 1597266735}
   - component: {fileID: 1597266734}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut16
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109107,7 +109949,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1597273957}
   - component: {fileID: 1597273956}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109791,7 +110633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1602235568}
   - component: {fileID: 1602235567}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110786,7 +111628,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1612964734}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Intersections
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112284,7 +113126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1634964752}
   - component: {fileID: 1634964751}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113576,6 +114418,111 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1649984392}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1650150770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1650150774}
+  - component: {fileID: 1650150773}
+  - component: {fileID: 1650150772}
+  - component: {fileID: 1650150771}
+  m_Layer: 0
+  m_Name: 1 (2)
+  m_TagString: CheckPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1650150771
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650150770}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1650150772
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650150770}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1650150773
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650150770}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1650150774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650150770}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.0072401874, z: -0, w: 0.99997383}
+  m_LocalPosition: {x: 758.3, y: 7.7269, z: 566.2067}
+  m_LocalScale: {x: 1, y: 29.266527, z: 100.90969}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9854860}
+  m_LocalEulerAnglesHint: {x: 0, y: 0.83, z: 0}
 --- !u!1 &1650439080
 GameObject:
   m_ObjectHideFlags: 0
@@ -114442,9 +115389,9 @@ GameObject:
   - component: {fileID: 1663760117}
   - component: {fileID: 1663760116}
   - component: {fileID: 1663760115}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut6
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115323,9 +116270,9 @@ GameObject:
   - component: {fileID: 1678693432}
   - component: {fileID: 1678693431}
   - component: {fileID: 1678693430}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut10
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115789,7 +116736,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1689305294}
   - component: {fileID: 1689305293}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115893,7 +116840,7 @@ GameObject:
   - component: {fileID: 1689810913}
   - component: {fileID: 1689810915}
   - component: {fileID: 1689810914}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116709,9 +117656,9 @@ GameObject:
   - component: {fileID: 1714515581}
   - component: {fileID: 1714515580}
   - component: {fileID: 1714515579}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut43
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117816,6 +118763,111 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1725613572}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1726205945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1726205949}
+  - component: {fileID: 1726205948}
+  - component: {fileID: 1726205947}
+  - component: {fileID: 1726205946}
+  m_Layer: 0
+  m_Name: 1 (4)
+  m_TagString: CheckPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1726205946
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726205945}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1726205947
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726205945}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1726205948
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726205945}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1726205949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726205945}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.9998466, z: -0, w: 0.017515719}
+  m_LocalPosition: {x: 352, y: 7.7269, z: 400.4442}
+  m_LocalScale: {x: 1, y: 29.266527, z: 130.88223}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9854860}
+  m_LocalEulerAnglesHint: {x: 0, y: -177.993, z: 0}
 --- !u!4 &1726919936 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e6b4b3854b2db8c4894806527ca72067,
@@ -118862,6 +119914,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoostPad (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -119838,7 +120900,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1768894528}
   - component: {fileID: 1768894527}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119942,7 +121004,7 @@ GameObject:
   - component: {fileID: 1769850150}
   - component: {fileID: 1769850152}
   - component: {fileID: 1769850151}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120209,7 +121271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1783908305}
   - component: {fileID: 1783908304}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120596,7 +121658,7 @@ GameObject:
   - component: {fileID: 1788455613}
   - component: {fileID: 1788455615}
   - component: {fileID: 1788455614}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122019,6 +123081,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoostPad (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 3862608627348085786, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
       propertyPath: m_Size.x
@@ -122609,7 +123681,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1830109397}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Boost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122767,9 +123839,9 @@ GameObject:
   - component: {fileID: 1832113657}
   - component: {fileID: 1832113656}
   - component: {fileID: 1832113655}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut25
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124285,7 +125357,7 @@ GameObject:
   - component: {fileID: 1852935627}
   - component: {fileID: 1852935629}
   - component: {fileID: 1852935628}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125281,8 +126353,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bf9908df89538df459a5e32829210586,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf9908df89538df459a5e32829210586,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf9908df89538df459a5e32829210586,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bf9908df89538df459a5e32829210586,
         type: 3}
@@ -125620,12 +126702,17 @@ PrefabInstance:
     - target: {fileID: 1872620861778615448, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2209134493547477220, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2213654699839388115, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
@@ -125661,6 +126748,81 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.0000000027951035
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417767358075593121, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2872044730448299148, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2872044730448299148, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2872044730448299148, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2872044730448299148, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2872044730448299148, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.000000016729965
+      objectReference: {fileID: 0}
+    - target: {fileID: 2872044730448299148, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0000001224475
+      objectReference: {fileID: 0}
+    - target: {fileID: 2872044730448299148, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.000000035371958
+      objectReference: {fileID: 0}
+    - target: {fileID: 3020956063580102687, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.000014483929
+      objectReference: {fileID: 0}
+    - target: {fileID: 3020956063580102687, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.9999986
+      objectReference: {fileID: 0}
+    - target: {fileID: 3020956063580102687, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.35001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3020956063580102687, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9932028
+      objectReference: {fileID: 0}
+    - target: {fileID: 3020956063580102687, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.1162621
+      objectReference: {fileID: 0}
+    - target: {fileID: 3020956063580102687, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0055690743
+      objectReference: {fileID: 0}
+    - target: {fileID: 3020956063580102687, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0006519064
       objectReference: {fileID: 0}
     - target: {fileID: 3292901080640455602, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
@@ -125755,6 +126917,11 @@ PrefabInstance:
     - target: {fileID: 4958777773708162377, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: layerMask.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763739476544908435, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9058945942100472820, guid: 9128af1ae82e7114c80ed06c836af48a,
@@ -128455,7 +129622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1912163680}
   - component: {fileID: 1912163679}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129352,7 +130519,7 @@ GameObject:
   - component: {fileID: 1929767387}
   - component: {fileID: 1929767389}
   - component: {fileID: 1929767388}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129673,7 +130840,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1947996826}
   - component: {fileID: 1947996825}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130097,9 +131264,9 @@ GameObject:
   - component: {fileID: 1952564145}
   - component: {fileID: 1952564144}
   - component: {fileID: 1952564143}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut32
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131378,6 +132545,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoostPad (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -131557,9 +132734,9 @@ GameObject:
   - component: {fileID: 1975531400}
   - component: {fileID: 1975531399}
   - component: {fileID: 1975531398}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut31
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133006,9 +134183,9 @@ GameObject:
   - component: {fileID: 2001228242}
   - component: {fileID: 2001228241}
   - component: {fileID: 2001228240}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut21
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133708,7 +134885,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2008802354}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MainMeshes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133760,7 +134937,7 @@ GameObject:
   - component: {fileID: 2014427125}
   - component: {fileID: 2014427127}
   - component: {fileID: 2014427126}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134175,9 +135352,9 @@ GameObject:
   - component: {fileID: 2018248857}
   - component: {fileID: 2018248856}
   - component: {fileID: 2018248855}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut19
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136495,7 +137672,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2047608839}
   - component: {fileID: 2047608838}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136599,7 +137776,7 @@ GameObject:
   - component: {fileID: 2047812144}
   - component: {fileID: 2047812146}
   - component: {fileID: 2047812145}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136821,6 +137998,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BoostPad (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
@@ -137431,9 +138618,9 @@ GameObject:
   - component: {fileID: 2064748311}
   - component: {fileID: 2064748310}
   - component: {fileID: 2064748309}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut13
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137539,9 +138726,9 @@ GameObject:
   - component: {fileID: 2065773822}
   - component: {fileID: 2065773821}
   - component: {fileID: 2065773820}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCut11
-  m_TagString: Untagged
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137681,7 +138868,7 @@ GameObject:
   - component: {fileID: 2069517714}
   - component: {fileID: 2069517716}
   - component: {fileID: 2069517715}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138257,7 +139444,7 @@ GameObject:
   - component: {fileID: 2080307525}
   - component: {fileID: 2080307527}
   - component: {fileID: 2080307526}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139489,7 +140676,7 @@ GameObject:
   - component: {fileID: 2113768502}
   - component: {fileID: 2113768504}
   - component: {fileID: 2113768503}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Markers5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139988,6 +141175,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BoostPad (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227305931500400908, guid: cc12e776c8007da47b9d1e087492d086,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 7222004987729782369, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
