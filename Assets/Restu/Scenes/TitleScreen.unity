@@ -1543,10 +1543,10 @@ MonoBehaviour:
   settings: {fileID: 8300000, guid: fb8a6481118a272419468e6dbd1a301c, type: 3}
   credits: {fileID: 8300000, guid: fb8a6481118a272419468e6dbd1a301c, type: 3}
   modeSelect: {fileID: 8300000, guid: fb8a6481118a272419468e6dbd1a301c, type: 3}
-  characterSelect2: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
-  characterSelect3: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
-  characterSelect4: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
-  arenaSelectMusic: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
+  characterSelection2: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
+  characterSelection3: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
+  characterSelection4: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
+  arenaSelection: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
 --- !u!4 &2077330816
 Transform:
   m_ObjectHideFlags: 0

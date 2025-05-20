@@ -4986,8 +4986,8 @@ MonoBehaviour:
   currentSpeed: 0
   previousSpeed: 0
   driftDirection: 0
-  topSpeed: 70
-  acceleration: 20
+  topSpeed: 67
+  acceleration: 23
   deceleration: 15
   steering: 30
   gravity: 30
@@ -45405,9 +45405,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799644170205320292}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000029600951, y: 0.00000018155686, z: -0.000000043045855,
+  m_LocalRotation: {x: -0.00000008880249, y: 0.000000057485344, z: -0.000000013563109,
     w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -333.376, y: -92.88636, z: -386.2535}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -93116,8 +93116,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1960221366257015831}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.11626224, y: 0.0055690557, z: -0.00065190205, w: 0.99320275}
-  m_LocalPosition: {x: 0, y: 3, z: -5.35}
+  m_LocalRotation: {x: 0.11626226, y: 0.0055691297, z: -0.00065191084, w: 0.99320275}
+  m_LocalPosition: {x: 337.81, y: 4.169474, z: 388.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -193933,10 +193933,10 @@ MonoBehaviour:
   currentSpeed: 0
   previousSpeed: 0
   driftDirection: 0
-  topSpeed: 70
-  acceleration: 20
+  topSpeed: 66
+  acceleration: 23
   deceleration: 15
-  steering: 30
+  steering: 28
   gravity: 30
   layerMask:
     serializedVersion: 2
@@ -225607,10 +225607,10 @@ MonoBehaviour:
   currentSpeed: 0
   previousSpeed: 0
   driftDirection: 0
-  topSpeed: 70
-  acceleration: 20
+  topSpeed: 72
+  acceleration: 15
   deceleration: 15
-  steering: 30
+  steering: 23
   gravity: 30
   layerMask:
     serializedVersion: 2
@@ -262585,10 +262585,10 @@ MonoBehaviour:
   currentSpeed: 0
   previousSpeed: 0
   driftDirection: 0
-  topSpeed: 70
-  acceleration: 20
+  topSpeed: 69
+  acceleration: 24
   deceleration: 15
-  steering: 30
+  steering: 32
   gravity: 30
   layerMask:
     serializedVersion: 2
@@ -306209,10 +306209,10 @@ MonoBehaviour:
   currentSpeed: 0
   previousSpeed: 0
   driftDirection: 0
-  topSpeed: 70
+  topSpeed: 68
   acceleration: 20
   deceleration: 15
-  steering: 30
+  steering: 31
   gravity: 30
   layerMask:
     serializedVersion: 2
@@ -350524,9 +350524,9 @@ MonoBehaviour:
   previousSpeed: 0
   driftDirection: 0
   topSpeed: 70
-  acceleration: 20
+  acceleration: 23
   deceleration: 15
-  steering: 30
+  steering: 32
   gravity: 30
   layerMask:
     serializedVersion: 2
@@ -415347,10 +415347,10 @@ MonoBehaviour:
   currentSpeed: 0
   previousSpeed: 0
   driftDirection: 0
-  topSpeed: 70
-  acceleration: 20
+  topSpeed: 66
+  acceleration: 25
   deceleration: 15
-  steering: 30
+  steering: 35
   gravity: 30
   layerMask:
     serializedVersion: 2
@@ -436088,9 +436088,9 @@ MonoBehaviour:
   previousSpeed: 0
   driftDirection: 0
   topSpeed: 70
-  acceleration: 20
+  acceleration: 22
   deceleration: 15
-  steering: 30
+  steering: 32
   gravity: 30
   layerMask:
     serializedVersion: 2
@@ -458904,10 +458904,10 @@ MonoBehaviour:
   currentSpeed: 0
   previousSpeed: 0
   driftDirection: 0
-  topSpeed: 70
-  acceleration: 20
+  topSpeed: 72
+  acceleration: 18
   deceleration: 15
-  steering: 30
+  steering: 29
   gravity: 30
   layerMask:
     serializedVersion: 2
@@ -615623,10 +615623,10 @@ MonoBehaviour:
   currentSpeed: 0
   previousSpeed: 0
   driftDirection: 0
-  topSpeed: 70
-  acceleration: 20
+  topSpeed: 73
+  acceleration: 18
   deceleration: 15
-  steering: 30
+  steering: 28
   gravity: 30
   layerMask:
     serializedVersion: 2

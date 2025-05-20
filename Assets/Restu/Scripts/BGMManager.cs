@@ -12,11 +12,10 @@ public class BGMManager : MonoBehaviour
     public AudioClip settings;
     public AudioClip credits;
     public AudioClip modeSelect;
-    public AudioClip characterSelect2;
-    public AudioClip characterSelect3;
-    public AudioClip characterSelect4;
-
-    public AudioClip arenaSelectMusic;
+    public AudioClip characterSelection2;
+    public AudioClip characterSelection3;
+    public AudioClip characterSelection4;
+    public AudioClip arenaSelection;
 
     private void Awake()
     {
@@ -51,7 +50,7 @@ public class BGMManager : MonoBehaviour
                 ChangeMusic(titleScreen);
                 break;
             case "MainMenu":
-                ChangeMusic(titleScreen);
+                ChangeMusic(mainMenu);
                 break;
             case "Settings":
                 ChangeMusic(settings);
@@ -60,19 +59,19 @@ public class BGMManager : MonoBehaviour
                 ChangeMusic(credits);
             break;
             case "ModeSelect":
-                ChangeMusic(titleScreen);
+                ChangeMusic(modeSelect);
                 break;
-            case "CharacterSelect2":
-                ChangeMusic(characterSelect2);
+            case "CharacterSelection2":
+                ChangeMusic(characterSelection2);
                 break;
-            case "CharacterSelect3":
-                ChangeMusic(characterSelect2);
+            case "CharacterSelection3":
+                ChangeMusic(characterSelection3);
                 break;
-            case "CharacterSelect4":
-                ChangeMusic(characterSelect2);
+            case "CharacterSelection4":
+                ChangeMusic(characterSelection4);
                 break;
-            case "ArenaSelect":
-                ChangeMusic(characterSelect2); // Arena pakai musik dari Character Select
+            case "ArenaSelection":
+                ChangeMusic(arenaSelection);
                 break;
             default:
                 // Kalau scene tidak spesifik, bisa pilih diam, stop musik, atau play musik default
