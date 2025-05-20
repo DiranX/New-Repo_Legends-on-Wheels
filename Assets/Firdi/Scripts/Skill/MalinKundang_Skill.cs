@@ -18,6 +18,7 @@ public class MalinKundang_Skill : MonoBehaviour
     float timeSinceUsed;
     Skill_Effect efek;
     public Texture[] texture;
+    public Texture[] Chartexture;
     public Renderer[] Kartrender;
     public Renderer[] Chararender;
     int index;

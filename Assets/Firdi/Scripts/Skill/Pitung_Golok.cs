@@ -18,6 +18,10 @@ public class Pitung_Golok : MonoBehaviour
     int bounceCount;
     public bool trigger;
 
+    private void Start()
+    {
+        Physics.IgnoreLayerCollision(3, 11, true);
+    }
     void Update()
     {
         // Set a high starting point for the raycast (above the kart)
@@ -40,7 +44,7 @@ public class Pitung_Golok : MonoBehaviour
 
         transform.position += velocity * speed * Time.deltaTime;
 
-        if (bounceCount >= 15)
+        if (bounceCount >= 20)
         {
             Destroy(gameObject);
         }
@@ -56,6 +60,7 @@ public class Pitung_Golok : MonoBehaviour
 
             velocity = new Vector3(-velocity.x, 0f, normalizedZ).normalized * ((speed / 2) * 3);
             bounceCount += 1;
+            Physics.IgnoreLayerCollision(3, 11, false);
         }
         else if (collision.gameObject.CompareTag("Track"))
         {
@@ -81,9 +86,14 @@ public class Pitung_Golok : MonoBehaviour
                     if (id != Id && playerKart.GetComponent<Skill_Effect>().isProtect != true)
                     {
                         playerKart.GetComponent<Animator>().SetTrigger("Stop");
+                        playerKart.GetComponent<Skill_Effect>().isReverse = true;
                         Debug.Log("Stop");
                     }
                 }
+            }
+            if (other.gameObject.CompareTag("Obstacle"))
+            {
+                Destroy(other.gameObject);
             }
         }
     }

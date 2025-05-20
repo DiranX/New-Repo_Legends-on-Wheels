@@ -64,7 +64,7 @@ public class NyiroroKidul_Skill : MonoBehaviour
     {
         if (Tornado.activeSelf)
         {
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(15);
             Tornado.SetActive(false);
             efek.isProtect = false;
         }

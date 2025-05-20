@@ -16,10 +16,8 @@ public class Item_Bomb_Script : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        if (!isVfx)
-        {
-            Physics.IgnoreLayerCollision(11, 3, true);
-        }
+
+        Physics.IgnoreLayerCollision(3, 1, true);
     }
 
     // Update is called once per frame
@@ -33,6 +31,7 @@ public class Item_Bomb_Script : MonoBehaviour
             }
             else
             {
+                Physics.IgnoreLayerCollision(3, 11, false);
                 time += Time.deltaTime;
 
                 if (time >= 1 && !isExplode)

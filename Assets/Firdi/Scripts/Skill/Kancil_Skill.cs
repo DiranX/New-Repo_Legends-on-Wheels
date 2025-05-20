@@ -41,26 +41,27 @@ public class Kancil_Skill : MonoBehaviour
         if (remainingTime <= 0)
         {
             canUsed = true;
-            cool.SetActive(false);
-            if(charge >= 0)
+            cool.SetActive(true);
+            if (skillUsed && canUsed && Time.time - lastUsedTime >= duration)
             {
-                BoostCon.fillAmount = charge / 100;
-                if (skillUsed && canUsed && Time.time - lastUsedTime >= duration)
-                {
-                    //canUsed = false;
-                    charge -= 10 * Time.deltaTime;
-                    GetComponent<PlayerKartController>().StartBoost(.1f);
-                }
-            }else if(charge <= 0)
-            {
-                if(canUsed) charge = 100;
+                canUsed = false;
                 lastUsedTime = Time.time;
+                GetComponent<PlayerKartController>().ReceiveBoost(1f, 3.5f);
             }
+            //cool.SetActive(false);
+            //if (charge >= 0)
+            //{
+            //    //BoostCon.fillAmount = charge / 100;
+                
+            //}else if(charge <= 0)
+            //{
+            //    if(canUsed) charge = 100;
+            //}
         }
         else
         {
             canUsed = false;
-            cool.SetActive(true);
+            cool.SetActive(false);
         }
 
         timeSinceUsed = Time.time - lastUsedTime;

@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations.Rigging;
 using UnityEngine.InputSystem;
 using DG.Tweening;
+using UnityEditor.Rendering.LookDev;
 
 public class KartAnimation : MonoBehaviour
 {
@@ -19,11 +21,29 @@ public class KartAnimation : MonoBehaviour
     [SerializeField] private float maxSteerAngle; // Max wheel steering angle
 
     public Animator charaAnim;
-
+    public TwoBoneIKConstraint LhandIk;
+    public TwoBoneIKConstraint RhandIk;
+    public bool itemUsed;
+    public bool skilUSed;
+    public GameObject[] objek;
+    public bool isTimun;
+    public bool isJongrang;
+    public bool isKeong;
+    public bool isMalin;
+    public bool isKidul;
+    public bool isSangkuriang;
+    public bool isPitung;
+    public bool isButo;
+    public bool isKancil;
+    public bool isLutung;
 
     private void Awake()
     {
         input = GetComponentInParent<PlayerInput>();
+        input.actions["Item"].started += ctx => itemUsed = true;
+        input.actions["Item"].canceled += ctx => itemUsed = false;
+        input.actions["Skill"].started += ctx => skilUSed = true;
+        input.actions["Skill"].canceled += ctx => skilUSed = false;
     }
 
     void Start()
@@ -108,6 +128,145 @@ public class KartAnimation : MonoBehaviour
         {
             charaAnim.SetFloat("L", 0);
             charaAnim.SetFloat("R", 0);
+        }
+
+        SkillandItemAnimation();
+    }
+
+    void SkillandItemAnimation()
+    {
+        bool haveItem = playerKart.sphere.GetComponent<PlayerItemHolder>().haveItem;
+        int index = playerKart.sphere.GetComponent<PlayerItemHolder>().playerItemIndex;
+        int layerInd = charaAnim.GetLayerIndex("Tangan");
+        Vector2 moveInput = input.actions["Move"].ReadValue<Vector2>();
+
+        if (haveItem)
+        {
+            RhandIk.weight = 0;
+            if(index == 0)
+            {
+                charaAnim.SetBool("isHolding", true);
+                charaAnim.SetLayerWeight(layerInd, 1);
+                objek[0].SetActive(true);
+            }
+            if(index == 2)
+            {
+                charaAnim.SetBool("isHolding", true);
+                charaAnim.SetLayerWeight(layerInd, 1);
+                objek[1].SetActive(true);
+            }
+            if(index == 1)
+            {
+                charaAnim.SetLayerWeight(layerInd, 1);
+            }
+            if(index == 3)
+            {
+                charaAnim.SetLayerWeight(layerInd, 1);
+            }
+        }else if(!haveItem)
+        {
+            //charaAnim.SetLayerWeight(layerInd, 0);
+            objek[0].SetActive(false);
+            objek[1].SetActive(false);
+            RhandIk.weight = 1;
+        }
+
+        if (itemUsed)
+        {
+            //handIk.weight = 1;
+            if (index == 0 || index == 2)
+            {
+                charaAnim.SetBool("isHolding", false);
+                if (moveInput.y >= 0)
+                {
+                    charaAnim.SetTrigger("front");
+                }
+                else if (moveInput.y < 0)
+                {
+                    charaAnim.SetTrigger("back");
+                }
+            }
+
+            if(index == 1)
+            {
+                charaAnim.SetTrigger("Hyper");
+            }
+
+            if(index == 3)
+            {
+                charaAnim.SetTrigger("Eclipse");
+            }
+        }
+
+        if (skilUSed)
+        {
+            charaAnim.SetLayerWeight(layerInd, 1);
+            LhandIk.weight = 0;
+            RhandIk.weight = 0;
+            if (isTimun)
+            {
+                charaAnim.SetTrigger("front");
+                if (moveInput.y >= 0)
+                {
+                    charaAnim.SetTrigger("front");
+                }
+                if (moveInput.y < 0)
+                {
+                    charaAnim.SetTrigger("back");
+                }
+            }
+            if (isJongrang)
+            {
+                charaAnim.SetTrigger("Ult");
+            }
+            if (isKeong)
+            {
+                charaAnim.SetTrigger("Ult");
+            }
+            if (isMalin)
+            {
+                charaAnim.SetTrigger("Ult");
+            }
+            if (isKidul)
+            {
+                charaAnim.SetTrigger("Ult");
+            }
+            if (isSangkuriang)
+            {
+                charaAnim.SetTrigger("Ult");
+            }
+            if (isPitung)
+            {
+                charaAnim.SetTrigger("front");
+                if (moveInput.y >= 0)
+                {
+                    charaAnim.SetTrigger("front");
+                }
+                else if (moveInput.y < 0)
+                {
+                    charaAnim.SetTrigger("back");
+                }
+            }
+            if (isButo)
+            {
+                charaAnim.SetTrigger("Ult");
+            }
+            if (isKancil)
+            {
+                charaAnim.SetTrigger("Ult");
+            }
+            if (isLutung)
+            {
+                charaAnim.SetTrigger("front");
+                if (moveInput.y >= 0)
+                {
+                    charaAnim.SetTrigger("front");
+                }
+                else if (moveInput.y < 0)
+                {
+                    charaAnim.SetTrigger("back");
+                }
+            }
         }
     }
 }

@@ -1,5 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &494772254588323783
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,13 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 6517467473985659808}
   - component: {fileID: 2189697081020574480}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &6517467473985659808
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30,6 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8695401987057276690}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!96 &2189697081020574480
 TrailRenderer:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -142,6 +145,7 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!1 &558690185039817561
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,13 +158,14 @@ GameObject:
   - component: {fileID: 4793137632354437995}
   - component: {fileID: 7571615676658100796}
   - component: {fileID: 4769228764256954266}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: Golok
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &8695401987057276690
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,6 +187,7 @@ Transform:
   - {fileID: 1500208568029857945}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+--- !u!135 &683489752958222992
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,14 +200,15 @@ SphereCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2056
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 1.84
+  m_Radius: 2.55
   m_Center: {x: -0.12, y: -0.85, z: 0}
+--- !u!54 &4793137632354437995
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -228,6 +235,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7571615676658100796
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -247,9 +255,9 @@ MonoBehaviour:
   terrain:
     serializedVersion: 2
     m_Bits: 64
-    m_Bits: 0
   offsetAboveGround: 1
   trigger: 0
+--- !u!95 &4769228764256954266
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -270,6 +278,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &638581434335583798
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -279,13 +288,14 @@ GameObject:
   m_Component:
   - component: {fileID: 7292352095508458565}
   - component: {fileID: 5222457385201195141}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &7292352095508458565
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -300,6 +310,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8695401987057276690}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!96 &5222457385201195141
 TrailRenderer:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -412,6 +423,7 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!1 &1269461190442387888
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -422,13 +434,14 @@ GameObject:
   - component: {fileID: 7969826221840209148}
   - component: {fileID: 7772951628738473360}
   - component: {fileID: 8463936656023604525}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: Cube.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &7969826221840209148
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -443,6 +456,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8695401987057276690}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7772951628738473360
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -450,6 +464,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269461190442387888}
   m_Mesh: {fileID: 4493585093827132993, guid: aa5d631219833944ab7261294ef9b594, type: 3}
+--- !u!23 &8463936656023604525
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -491,6 +506,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &4728806064759104912
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -501,13 +517,14 @@ GameObject:
   - component: {fileID: 1500208568029857945}
   - component: {fileID: 8347064064050764393}
   - component: {fileID: 8314008726395129965}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: GameObject (2)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &1500208568029857945
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -522,6 +539,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8695401987057276690}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8347064064050764393
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -540,9 +558,10 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   terrain:
     serializedVersion: 2
-    m_Bits: 72
+    m_Bits: 64
   offsetAboveGround: 0.5
   trigger: 1
+--- !u!136 &8314008726395129965
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -565,6 +584,7 @@ CapsuleCollider:
   m_Height: 5.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &5986080575398429039
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -575,13 +595,14 @@ GameObject:
   - component: {fileID: 2691821434401073579}
   - component: {fileID: 7580058374804903070}
   - component: {fileID: 3023607468644399389}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &2691821434401073579
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -596,6 +617,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8695401987057276690}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7580058374804903070
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -603,6 +625,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5986080575398429039}
   m_Mesh: {fileID: -462981019419857548, guid: aa5d631219833944ab7261294ef9b594, type: 3}
+--- !u!23 &3023607468644399389
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -644,6 +667,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &7237016368305770939
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -654,13 +678,14 @@ GameObject:
   - component: {fileID: 8119643541628495701}
   - component: {fileID: 1521369207535216234}
   - component: {fileID: 6148733236589953213}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &8119643541628495701
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -675,6 +700,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8695401987057276690}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1521369207535216234
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -682,6 +708,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7237016368305770939}
   m_Mesh: {fileID: 2534964839176971238, guid: aa5d631219833944ab7261294ef9b594, type: 3}
+--- !u!23 &6148733236589953213
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -723,6 +750,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &8676663162017635867
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -733,13 +761,14 @@ GameObject:
   - component: {fileID: 6755914992135202441}
   - component: {fileID: 2571915650670518851}
   - component: {fileID: 958839683712521362}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &6755914992135202441
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -754,6 +783,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8695401987057276690}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2571915650670518851
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -761,6 +791,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8676663162017635867}
   m_Mesh: {fileID: -5495902117074765545, guid: aa5d631219833944ab7261294ef9b594, type: 3}
+--- !u!23 &958839683712521362
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

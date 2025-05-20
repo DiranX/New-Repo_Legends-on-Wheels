@@ -33,18 +33,18 @@ public class PlayerItemHolder : MonoBehaviour
         Vector2 throwInput = playerInput.actions["Move"].ReadValue<Vector2>();
         if (playerItemUI[playerItemIndex].activeSelf == true && ItemUsed)
         {
-            if (playerItemIndex == 0 || playerItemIndex == 2)
+            if(playerItemIndex == 0 || playerItemIndex == 2)
             {
-                if (throwInput.y >= 0f)
+                if(throwInput.y >= 0)
                 {
                     FrontThrow();
                 }
-                else if (throwInput.y < 0f)
+                else if(throwInput.y < 0)
                 {
                     BackThrow();
                 }
             }
-            else if (playerItemIndex == 1)
+            if (playerItemIndex == 1)
             {
                 Boost();
             }
