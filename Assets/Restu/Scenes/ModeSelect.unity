@@ -254,10 +254,10 @@ MonoBehaviour:
   settings: {fileID: 8300000, guid: fb8a6481118a272419468e6dbd1a301c, type: 3}
   credits: {fileID: 8300000, guid: fb8a6481118a272419468e6dbd1a301c, type: 3}
   modeSelect: {fileID: 8300000, guid: fb8a6481118a272419468e6dbd1a301c, type: 3}
-  characterSelect2: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
-  characterSelect3: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
-  characterSelect4: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
-  arenaSelectMusic: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
+  characterSelection2: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
+  characterSelection3: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
+  characterSelection4: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
+  arenaSelection: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
 --- !u!4 &174606391
 Transform:
   m_ObjectHideFlags: 0
@@ -448,7 +448,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d8742a2ebcacea14a9d0ee73b8fb11c8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 136b5d538b5d04a4189eadffadec492b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -537,7 +537,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2f6a27719c7ecb94fad3e31be92f5b68, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 559315a9c38fe9841ad6657f93acfdaf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
