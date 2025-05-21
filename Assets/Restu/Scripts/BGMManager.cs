@@ -74,6 +74,7 @@ public class BGMManager : MonoBehaviour
                 ChangeMusic(arenaSelection);
                 break;
             default:
+                musicSource.Stop();
                 // Kalau scene tidak spesifik, bisa pilih diam, stop musik, atau play musik default
                 break;
         }
