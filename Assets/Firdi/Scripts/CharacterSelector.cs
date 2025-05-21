@@ -72,7 +72,6 @@ public class CharacterSelector : MonoBehaviour
         if (cursor.position == characterButtons[currentIndex].transform.position)
         {
             characterDisplay[currentIndex].SetActive(true);
-            text.text = characterDisplay[currentIndex].GetComponent<CharacterDIsplay>().name;
         }
     }
     void MoveCursor(int direction)

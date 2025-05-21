@@ -17,6 +17,7 @@ public class PlayerHolder : MonoBehaviour
             playerHolder[0].SetActive(true);
             playerHolder[1].SetActive(true);
             playerHolder[2].SetActive(true);
+            playerHolder[4].SetActive(true);
         }
         else if(GameManager.Instance.playerCount == 4)
         {
