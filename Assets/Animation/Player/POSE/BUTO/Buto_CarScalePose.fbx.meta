@@ -3,7 +3,12 @@ guid: 6e027bb6f8d703e40ae4500c66003d44
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buto_Texture1
+    second: {fileID: 2100000, guid: da951e3a7877ddd4c8010d997b98f32b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -13,6 +14,7 @@ public class CharacterSelector : MonoBehaviour
     public GameObject[] characterDisplay;
     public int CharacterID;
     public bool isSelected = false;
+    public TextMeshProUGUI text;
 
 
     private PlayerInput playerInput;
@@ -70,6 +72,7 @@ public class CharacterSelector : MonoBehaviour
         if (cursor.position == characterButtons[currentIndex].transform.position)
         {
             characterDisplay[currentIndex].SetActive(true);
+            text.text = characterDisplay[currentIndex].GetComponent<CharacterDIsplay>().name;
         }
     }
     void MoveCursor(int direction)
@@ -88,11 +91,20 @@ public class CharacterSelector : MonoBehaviour
         isSelected = true;
         CharacterID = currentIndex;
         // Store selection and move to game scene
+        if (cursor.position == characterButtons[currentIndex].transform.position)
+        {
+            characterButtons[currentIndex].GetComponent<Image>().sprite 
+                = characterButtons[currentIndex].GetComponent<CharacterSourceImage>().image[playerID];
+            characterDisplay[currentIndex].GetComponent<CharacterDIsplay>().animator.SetBool("isSelect", true);
+        }
     }
 
     void CancelCharacter()
     {
         isSelected = false;
         CharacterID = 0;
+        characterButtons[currentIndex].GetComponent<Image>().sprite
+            = characterButtons[currentIndex].GetComponent<CharacterSourceImage>().image[0];
+        characterDisplay[currentIndex].GetComponent<CharacterDIsplay>().animator.SetBool("isSelect", false);
     }
 }

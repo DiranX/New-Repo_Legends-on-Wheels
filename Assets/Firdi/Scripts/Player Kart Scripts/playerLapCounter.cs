@@ -22,6 +22,7 @@ public class playerLapCounter : MonoBehaviour
     public AudioSource CrowdSound;
     public string[] Place;
     public Color[] textColor;
+    public Sprite[] characterFace;
 
     private void Awake()
     {
@@ -57,17 +58,12 @@ public class playerLapCounter : MonoBehaviour
                 FinishSound.Play();
             }
 
-            if (currentLap >= totalLap && playerCurrentPlace == 1)
+            if (currentLap >= totalLap)
             {
                 //Debug.Log("Win");
-                winOrLose.text = "Win:)";
+                winOrLose.text = playerCurrentPlace.ToString() + Place[playerCurrentPlace];
                 finish = true;
                 CrowdSound.Play();
-            }
-            else if(currentLap >= totalLap && playerCurrentPlace != 1)
-            {
-                winOrLose.text = "Lose;(";
-                finish = true;
             }
         }
     }

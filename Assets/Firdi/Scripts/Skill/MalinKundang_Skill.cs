@@ -71,9 +71,17 @@ public class MalinKundang_Skill : MonoBehaviour
         {
             item.material.mainTexture = texture[index];
         }
-        foreach (var item in Chararender)
+        if(index == 1)
         {
-            item.material.mainTexture = texture[index];
+            Chararender[0].material.mainTexture = Chartexture[9];
+            Chararender[1].material.mainTexture = Chartexture[9];
+            Chararender[2].material.mainTexture = Chartexture[9];
+            Chararender[3].material.mainTexture = Chartexture[9];
+            Chararender[4].material.mainTexture = Chartexture[9];
+            Chararender[5].material.mainTexture = Chartexture[9];
+            Chararender[6].material.mainTexture = Chartexture[9];
+            Chararender[7].material.mainTexture = Chartexture[9];
+            Chararender[8].material.mainTexture = Chartexture[9];
         }
     }
 
@@ -81,6 +89,19 @@ public class MalinKundang_Skill : MonoBehaviour
     {
         yield return new WaitForSeconds(10);
         index = 0;
+
+        if(index == 0)
+        {
+            Chararender[0].material.mainTexture = Chartexture[0];
+            Chararender[1].material.mainTexture = Chartexture[1];
+            Chararender[2].material.mainTexture = Chartexture[2];
+            Chararender[3].material.mainTexture = Chartexture[3];
+            Chararender[4].material.mainTexture = Chartexture[4];
+            Chararender[5].material.mainTexture = Chartexture[5];
+            Chararender[6].material.mainTexture = Chartexture[6];
+            Chararender[7].material.mainTexture = Chartexture[7];
+            Chararender[8].material.mainTexture = Chartexture[8];
+        }
     }
 
     private void OnTriggerEnter(Collider other)

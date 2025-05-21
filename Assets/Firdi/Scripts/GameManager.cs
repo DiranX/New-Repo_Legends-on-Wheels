@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
         if (characterSelector != null && characterSelector.Count > 0 && characterSelector.All(c => c.isSelected))
         {
             StoreCharacterIDs(); // Save selected character IDs
-            SceneManager.LoadScene("MapSelectionScreen");
+            SceneManager.LoadSceneAsync ("ArenaSelection");
         }
     }
 
@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "MapSelectionScreen")
+        if (scene.name == "ArenaSelection")
         {
             characterSelector.Clear();
             characterIds.Clear();

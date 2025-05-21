@@ -80,6 +80,15 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""389dfab6-df36-4483-9684-80bed17de08e"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -170,6 +179,17 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
                     ""action"": ""Skill"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7b1517fa-563e-4acb-ba4b-a7cb5e0b3255"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -196,6 +216,7 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
         m_PlayerKart_Move = m_PlayerKart.FindAction("Move", throwIfNotFound: true);
         m_PlayerKart_Item = m_PlayerKart.FindAction("Item", throwIfNotFound: true);
         m_PlayerKart_Skill = m_PlayerKart.FindAction("Skill", throwIfNotFound: true);
+        m_PlayerKart_Pause = m_PlayerKart.FindAction("Pause", throwIfNotFound: true);
     }
 
     ~@PlayerKartInput()
@@ -268,6 +289,7 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_PlayerKart_Move;
     private readonly InputAction m_PlayerKart_Item;
     private readonly InputAction m_PlayerKart_Skill;
+    private readonly InputAction m_PlayerKart_Pause;
     public struct PlayerKartActions
     {
         private @PlayerKartInput m_Wrapper;
@@ -278,6 +300,7 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_PlayerKart_Move;
         public InputAction @Item => m_Wrapper.m_PlayerKart_Item;
         public InputAction @Skill => m_Wrapper.m_PlayerKart_Skill;
+        public InputAction @Pause => m_Wrapper.m_PlayerKart_Pause;
         public InputActionMap Get() { return m_Wrapper.m_PlayerKart; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -305,6 +328,9 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
             @Skill.started += instance.OnSkill;
             @Skill.performed += instance.OnSkill;
             @Skill.canceled += instance.OnSkill;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
         }
 
         private void UnregisterCallbacks(IPlayerKartActions instance)
@@ -327,6 +353,9 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
             @Skill.started -= instance.OnSkill;
             @Skill.performed -= instance.OnSkill;
             @Skill.canceled -= instance.OnSkill;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
         }
 
         public void RemoveCallbacks(IPlayerKartActions instance)
@@ -361,5 +390,6 @@ public partial class @PlayerKartInput: IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnItem(InputAction.CallbackContext context);
         void OnSkill(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }

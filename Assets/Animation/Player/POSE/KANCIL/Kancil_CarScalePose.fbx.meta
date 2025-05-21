@@ -3,7 +3,12 @@ guid: 9ba03d0edaab9ad4cbf2834e2f55adfc
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kancil
+    second: {fileID: 2100000, guid: 1a6a7690ca0f2b645916a194d5cacac5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
