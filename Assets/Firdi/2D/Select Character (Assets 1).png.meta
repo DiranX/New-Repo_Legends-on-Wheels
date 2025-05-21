@@ -1,0 +1,471 @@
+fileFormatVersion: 2
+guid: 85f166ca71561344397a2f1fe6e25f0c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Select Character (Assets 1)_14
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 888
+        width: 165
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327b58d1eb365934cb61e67aabbf784b
+      internalID: -1097878273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Select Character (Assets 1)_15
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 888
+        width: 165
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570c79bb346c8914cb51364d78193552
+      internalID: -54755015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Select Character (Assets 1)_16
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 888
+        width: 165
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecda2e7d80312a45a259e1b5e36854f
+      internalID: 1641944107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Select Character (Assets 1)_17
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 888
+        width: 165
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41059b9267ea2c648a80f74df2dccf63
+      internalID: 1521845717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Select Character (Assets 1)_18
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 888
+        width: 165
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80bce91faa2e4a4abcaa55dc4faa44c
+      internalID: -1431201147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Select Character (Assets 1)_31
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 717
+        width: 165
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcc22e49919c3f45b71c3c227ab5da0
+      internalID: -1765185408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Select Character (Assets 1)_32
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 717
+        width: 165
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a101a06a10f3c1e498c2efc3480462dd
+      internalID: -1853297758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Select Character (Assets 1)_33
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 717
+        width: 165
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca838e28a485454d8cf73f83ecbc5ea
+      internalID: 220395768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Select Character (Assets 1)_34
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 717
+        width: 165
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf01cf6aa2c9bb42958690f67dbb37b
+      internalID: 1530213437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Select Character (Assets 1)_35
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 717
+        width: 165
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6dc43f28781e845b6d649d8901615b
+      internalID: 687258211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Select Character (Assets 1)_36
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 623
+        width: 188
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaafca3ef3e1c1c49a7ff05503528723
+      internalID: -248503648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Select Character (Assets 1)_37
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 623
+        width: 188
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be15f25b89d7a64489614fa751ae3dd
+      internalID: 153020780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Select Character (Assets 1)_38
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 623
+        width: 188
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bce3503748ea3446bea60a2c174bb78
+      internalID: 555262461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Select Character (Assets 1)_39
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 472
+        width: 259
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a90ab78875d2974e981a580a89bba4f
+      internalID: 941287305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Select Character (Assets 1)_40
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 464
+        width: 188
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c2bb3c1efde0e4586ceea6235fc17a
+      internalID: 840288790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Select Character (Assets 1)_0: 2055313665
+      Select Character (Assets 1)_1: -1264383849
+      Select Character (Assets 1)_10: -446443871
+      Select Character (Assets 1)_11: 227559216
+      Select Character (Assets 1)_12: -237281514
+      Select Character (Assets 1)_13: 1738983090
+      Select Character (Assets 1)_14: -1097878273
+      Select Character (Assets 1)_15: -54755015
+      Select Character (Assets 1)_16: 1641944107
+      Select Character (Assets 1)_17: 1521845717
+      Select Character (Assets 1)_18: -1431201147
+      Select Character (Assets 1)_19: -1401308072
+      Select Character (Assets 1)_2: 1841142743
+      Select Character (Assets 1)_20: 1924053522
+      Select Character (Assets 1)_21: 1452781496
+      Select Character (Assets 1)_22: -1559183843
+      Select Character (Assets 1)_23: -531182520
+      Select Character (Assets 1)_24: 1744355418
+      Select Character (Assets 1)_25: -1902033003
+      Select Character (Assets 1)_26: -620334752
+      Select Character (Assets 1)_27: 597725802
+      Select Character (Assets 1)_28: 1782883034
+      Select Character (Assets 1)_29: -2057722398
+      Select Character (Assets 1)_3: 859679202
+      Select Character (Assets 1)_30: 992288404
+      Select Character (Assets 1)_31: -1765185408
+      Select Character (Assets 1)_32: -1853297758
+      Select Character (Assets 1)_33: 220395768
+      Select Character (Assets 1)_34: 1530213437
+      Select Character (Assets 1)_35: 687258211
+      Select Character (Assets 1)_36: -248503648
+      Select Character (Assets 1)_37: 153020780
+      Select Character (Assets 1)_38: 555262461
+      Select Character (Assets 1)_39: 941287305
+      Select Character (Assets 1)_4: -1178371574
+      Select Character (Assets 1)_40: 840288790
+      Select Character (Assets 1)_41: 586684425
+      Select Character (Assets 1)_5: 818641396
+      Select Character (Assets 1)_6: 698088161
+      Select Character (Assets 1)_7: 381775006
+      Select Character (Assets 1)_8: -424436235
+      Select Character (Assets 1)_9: -839240827
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

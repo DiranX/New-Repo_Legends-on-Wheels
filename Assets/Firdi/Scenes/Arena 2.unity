@@ -8829,7 +8829,7 @@ PrefabInstance:
     - target: {fileID: 3174518133359935291, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
       propertyPath: boostAmount
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3174518133359935291, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
@@ -18567,7 +18567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostAmount: 20
-  boostDuration: 1
+  boostDuration: 1.5
 --- !u!54 &323709116
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20279,7 +20279,7 @@ PrefabInstance:
     - target: {fileID: 3174518133359935291, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
       propertyPath: boostAmount
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3174518133359935291, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
@@ -36424,8 +36424,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecdfed01cbf760640bd51e311fc01b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boostAmount: 15
-  boostDuration: 1
+  boostAmount: 20
+  boostDuration: 2
 --- !u!54 &627197687
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37782,7 +37782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostAmount: 20
-  boostDuration: 1
+  boostDuration: 1.5
 --- !u!54 &639899128
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -40411,7 +40411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecdfed01cbf760640bd51e311fc01b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boostAmount: 5
+  boostAmount: 10
   boostDuration: 2
 --- !u!54 &686393274
 Rigidbody:
@@ -46499,7 +46499,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 213432abe62993540b36a13c78ea17b5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -71210,7 +71210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostAmount: 20
-  boostDuration: 1
+  boostDuration: 1.5
 --- !u!54 &1169094152
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -77133,7 +77133,7 @@ PrefabInstance:
     - target: {fileID: 3174518133359935291, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
       propertyPath: boostAmount
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3174518133359935291, guid: cc12e776c8007da47b9d1e087492d086,
         type: 3}
@@ -96618,17 +96618,17 @@ PrefabInstance:
     - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -4.7304605e-10
+      value: 0.000000029130044
       objectReference: {fileID: 0}
     - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0000000045121396
+      value: -0.000000012723804
       objectReference: {fileID: 0}
     - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 8.7053975e-10
+      value: 0.0000000028063016
       objectReference: {fileID: 0}
     - target: {fileID: 2409264192313959993, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
@@ -97188,17 +97188,17 @@ PrefabInstance:
     - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.116262004
+      value: 0.11626199
       objectReference: {fileID: 0}
     - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.005569784
+      value: 0.005569767
       objectReference: {fileID: 0}
     - target: {fileID: 3361952999214744916, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00065198593
+      value: -0.000651984
       objectReference: {fileID: 0}
     - target: {fileID: 3389227120989079119, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}

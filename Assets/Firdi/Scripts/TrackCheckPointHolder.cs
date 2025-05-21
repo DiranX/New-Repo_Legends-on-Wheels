@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TrackCheckPointHolder : MonoBehaviour
 {
@@ -17,6 +19,7 @@ public class TrackCheckPointHolder : MonoBehaviour
     [Header("Leader Board")]
     public TextMeshProUGUI[] leaderBoard;
     public GameObject leaderBoardCanvas; // Assign in Inspector
+    public Image[] character;
 
     private List<GameObject> finishedPlayers = new List<GameObject>(); // Stores finished players
 
@@ -30,6 +33,7 @@ public class TrackCheckPointHolder : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        StopCoroutine(CheckTime());
     }
 
     private void Start()
@@ -94,7 +98,7 @@ public class TrackCheckPointHolder : MonoBehaviour
             if (playerInfo.finish && !finishedPlayers.Contains(player))
             {
                 finishedPlayers.Add(player);
-                AddToLeaderBoard(player.name);
+                AddToLeaderBoard(player.name, playerInfo.characterFace[GameManager.Instance.ID[playerInfo.GetComponentInParent<Player>().id]]);
             }
         }
 
@@ -102,16 +106,19 @@ public class TrackCheckPointHolder : MonoBehaviour
         if (finishedPlayers.Count == playerBatch.Count)
         {
             leaderBoardCanvas.SetActive(true);
+            StartCoroutine(CheckTime());
         }
     }
 
-    private void AddToLeaderBoard(string playerName)
+    private void AddToLeaderBoard(string playerName, Sprite face)
     {
         for (int i = 0; i < leaderBoard.Length; i++)
         {
             if (string.IsNullOrEmpty(leaderBoard[i].text))
             {
                 leaderBoard[i].text = playerName;
+                character[i].sprite = face;
+                character[i].GetComponent<Image>().enabled = true;
                 break;
             }
         }
@@ -141,5 +148,11 @@ public class TrackCheckPointHolder : MonoBehaviour
         {
             player.GetComponent<PlayerKartController>().canMove = true;
         }
+    }
+
+    IEnumerator CheckTime()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("MainMenu");
     }
 }

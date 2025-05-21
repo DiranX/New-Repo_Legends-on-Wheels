@@ -3,7 +3,12 @@ guid: 5db4169e11d8336438afd294a237a4b2
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lutung
+    second: {fileID: 2100000, guid: 59431fe405352a8468103d6695fd94bb, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

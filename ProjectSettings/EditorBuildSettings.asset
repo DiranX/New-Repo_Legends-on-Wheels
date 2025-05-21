@@ -38,6 +38,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Firdi/Scenes/Arena 2.unity
     guid: 8b89577ddb5f02a47b21c61314555cfe
+  - enabled: 1
+    path: Assets/Restu/Arena 3/Arena 3.unity
+    guid: ad74de2f155e1e843b86e690b17adb8b
+  - enabled: 1
+    path: Assets/Firdi/Scenes/Arena 4.unity
+    guid: 97a4f5a50a6315b4e89b93dd549c80e3
+  - enabled: 1
+    path: Assets/Firdi/Scenes/Arena 5.unity
+    guid: 34a482c17a199a64da649c097f1b2798
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 468f338fc36fdae468e312476b10c9ac,
       type: 3}

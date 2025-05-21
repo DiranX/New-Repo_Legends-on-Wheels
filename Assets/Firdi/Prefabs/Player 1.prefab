@@ -46112,9 +46112,8 @@ Transform:
   m_GameObject: {fileID: 799644170205320292}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000014800641, y: -0.000000004567875, z: 0.0000000010290595,
-  m_LocalRotation: {x: -0.00000008880249, y: 0.000000057485344, z: -0.000000013563109,
     w: 1}
-  m_LocalPosition: {x: -333.376, y: -92.88636, z: -386.2535}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -50393,7 +50392,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -480, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &489083125093560460
@@ -50424,9 +50423,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3fe31e5ad7b70144dbc52de82680e2f7, type: 2}
   m_sharedMaterial: {fileID: -70947746118001052, guid: 3fe31e5ad7b70144dbc52de82680e2f7,
@@ -50436,8 +50433,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4281253363
+  m_fontColor: {r: 0.95294124, g: 0.7411765, b: 0.18039216, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -50460,7 +50457,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 3
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -95177,8 +95174,6 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.116262175, y: 0.005569194, z: -0.0006519178, w: 0.99320275}
   m_LocalPosition: {x: 0, y: 3, z: -5.35}
-  m_LocalRotation: {x: 0.11626226, y: 0.0055691297, z: -0.00065191084, w: 0.99320275}
-  m_LocalPosition: {x: 337.81, y: 4.169474, z: 388.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -291227,6 +291222,17 @@ MonoBehaviour:
   - {r: 0.9960785, g: 0.7686275, b: 0, a: 1}
   - {r: 0.745283, g: 0.34784448, b: 0, a: 1}
   - {r: 0.6226415, g: 0.0061621014, b: 0, a: 1}
+  characterFace:
+  - {fileID: 1195299530, guid: 2b9f0578906410244ae795af792ae5d5, type: 3}
+  - {fileID: -1023027881, guid: 2b9f0578906410244ae795af792ae5d5, type: 3}
+  - {fileID: 1049882546, guid: 2b9f0578906410244ae795af792ae5d5, type: 3}
+  - {fileID: -1311625198, guid: 2b9f0578906410244ae795af792ae5d5, type: 3}
+  - {fileID: 2036331744, guid: 2b9f0578906410244ae795af792ae5d5, type: 3}
+  - {fileID: -1868463320, guid: 2b9f0578906410244ae795af792ae5d5, type: 3}
+  - {fileID: 788351327, guid: 2b9f0578906410244ae795af792ae5d5, type: 3}
+  - {fileID: 704200168, guid: 2b9f0578906410244ae795af792ae5d5, type: 3}
+  - {fileID: -1797930503, guid: 2b9f0578906410244ae795af792ae5d5, type: 3}
+  - {fileID: -1993483540, guid: 2b9f0578906410244ae795af792ae5d5, type: 3}
 --- !u!114 &9092051944344622756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400883,6 +400889,9 @@ MonoBehaviour:
   - {fileID: 6179707892391079359}
   - {fileID: 32265384492004213}
   - {fileID: 4853348853990475275}
+  - {fileID: 3381896397178361072}
+  - {fileID: 3082204953883102103}
+  - {fileID: 3694785552502829375}
 --- !u!114 &7005227394027125941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423595,7 +423604,17 @@ MonoBehaviour:
   texture:
   - {fileID: 2800000, guid: a6f95895e891779479f223f7e0e5f769, type: 3}
   - {fileID: 2800000, guid: 7e35234e281d141418972228ee38415e, type: 3}
-  Chartexture: []
+  Chartexture:
+  - {fileID: 2800000, guid: 0e40fa8de59cf704ba76fccdef987f58, type: 3}
+  - {fileID: 2800000, guid: e9e2f6b3d8c77fe40829f7a1e2fa78ba, type: 3}
+  - {fileID: 2800000, guid: 26f414f61ecfa27489ffd0568dd80ab9, type: 3}
+  - {fileID: 2800000, guid: c4b0bbde0cdb2f247af73367c8cd23cd, type: 3}
+  - {fileID: 2800000, guid: e8f8f07639b37d940affebd93d24cb61, type: 3}
+  - {fileID: 2800000, guid: a0bea960ad62b06438a00d452a8ebd61, type: 3}
+  - {fileID: 2800000, guid: 39f7bca21963780469d4112dddf33f00, type: 3}
+  - {fileID: 2800000, guid: 151fdcbab0e4f624daed0c9a107951c2, type: 3}
+  - {fileID: 2800000, guid: 3275705af523c964492988f0c12774e4, type: 3}
+  - {fileID: 2800000, guid: 7e35234e281d141418972228ee38415e, type: 3}
   Kartrender:
   - {fileID: 1189616292649882058}
   - {fileID: 1809918379730325970}
@@ -423620,6 +423639,9 @@ MonoBehaviour:
   - {fileID: 2780527142128926868}
   - {fileID: 7536572817471444248}
   - {fileID: 6691562223685884389}
+  - {fileID: 1156610102786588323}
+  - {fileID: 3877400429419934934}
+  - {fileID: 8554282857985510507}
 --- !u!114 &7483239146879575121
 MonoBehaviour:
   m_ObjectHideFlags: 0

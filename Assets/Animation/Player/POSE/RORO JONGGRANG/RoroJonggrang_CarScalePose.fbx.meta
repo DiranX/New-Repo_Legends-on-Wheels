@@ -3,7 +3,12 @@ guid: fac87b4df6143194a809b8336220c7b3
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RoroJongrang_Texture
+    second: {fileID: 2100000, guid: 2b50debc1e5621a4f9411f4e5012a5c4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

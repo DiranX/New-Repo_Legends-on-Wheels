@@ -3,7 +3,12 @@ guid: ccef14d4b7bc74a47ab847300c8185d8
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Nyiroro_Texture
+    second: {fileID: 2100000, guid: c8101f03c515a394e805c39642f7827f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

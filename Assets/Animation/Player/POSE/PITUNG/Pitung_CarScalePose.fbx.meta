@@ -3,7 +3,12 @@ guid: 55f550a35674cb741b583a1906602f74
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pitung_Texture
+    second: {fileID: 2100000, guid: 29fb89636a9822c41a84f240754cb4b8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
