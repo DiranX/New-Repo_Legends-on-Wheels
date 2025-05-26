@@ -12,7 +12,7 @@ public class ControlScene : MonoBehaviour
 
     void Start()
     {
-        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource = GameObject.FindGameObjectWithTag("SFX Tag").GetComponent<AudioSource>();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -37,8 +37,11 @@ public class ControlScene : MonoBehaviour
 
     IEnumerator PlaySfxThenLoadScene()
     {
-        audioSource.PlayOneShot(sfxButton);
-        yield return new WaitForSeconds(sfxButton.length);
+        if(audioSource.enabled == true)
+        {
+            audioSource.PlayOneShot(sfxButton);
+            yield return new WaitForSeconds(sfxButton.length);
+        }
         SceneManager.LoadScene(1);
     }
 }

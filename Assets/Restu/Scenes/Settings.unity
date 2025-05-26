@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 484710395}
   m_Layer: 0
   m_Name: BGM Manager
-  m_TagString: Untagged
+  m_TagString: BGM Tag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -560,10 +560,10 @@ MonoBehaviour:
   settings: {fileID: 8300000, guid: fb8a6481118a272419468e6dbd1a301c, type: 3}
   credits: {fileID: 8300000, guid: fb8a6481118a272419468e6dbd1a301c, type: 3}
   modeSelect: {fileID: 8300000, guid: fb8a6481118a272419468e6dbd1a301c, type: 3}
-  characterSelect2: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
-  characterSelect3: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
-  characterSelect4: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
-  arenaSelectMusic: {fileID: 8300000, guid: 6d0bda9e8e3bb784cada0251047f9515, type: 3}
+  characterSelection2: {fileID: 0}
+  characterSelection3: {fileID: 0}
+  characterSelection4: {fileID: 0}
+  arenaSelection: {fileID: 0}
 --- !u!1 &547486249
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,7 +798,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1839489248}
+        m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
+        m_MethodName: ToggleBGM
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &783212907
 GameObject:
@@ -884,7 +896,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1839489248}
+        m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
+        m_MethodName: ToggleSFX
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &862916764
 GameObject:
@@ -1161,7 +1185,7 @@ GameObject:
   - component: {fileID: 952506945}
   m_Layer: 0
   m_Name: SFX
-  m_TagString: Untagged
+  m_TagString: SFX Tag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2409,6 +2433,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab95ea8e06c772f4aa579a524b61f7f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BGMActive: 1
+  SFXActive: 1
 --- !u!4 &1839489249
 Transform:
   m_ObjectHideFlags: 0

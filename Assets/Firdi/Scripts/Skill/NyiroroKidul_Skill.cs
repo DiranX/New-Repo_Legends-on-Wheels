@@ -28,6 +28,8 @@ public class NyiroroKidul_Skill : MonoBehaviour
         if (this.gameObject.activeSelf)
         {
             UiSkill.SetActive(true);
+            canUsed = false;
+            lastUsedTime = Time.time;
         }
     }
 

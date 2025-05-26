@@ -33,6 +33,8 @@ public class ButoIjo_Skill : MonoBehaviour
         {
             UiSkill.SetActive(true);
             this.Id = GetComponentInParent<Player>().id;
+            canUsed = false;
+            lastUsedTime = Time.time;
         }
     }
 
@@ -46,6 +48,8 @@ public class ButoIjo_Skill : MonoBehaviour
             Ready.SetActive(true);
             if (skillUsed && canUsed && Time.time - lastUsedTime >= duration)
             {
+                GetComponent<PlayerKartController>().sphere.GetComponent<PlayerItemHolder>().Sfx.PlayOneShot(
+                    GetComponent<PlayerKartController>().sphere.GetComponent<PlayerItemHolder>().SfxSound[8]);
                 GameObject obj = Instantiate(sphere, skillSpawn.position, Quaternion.identity);
                 obj.GetComponent<ButoIjo_Shock>().Id = Id;
                 canUsed = false;

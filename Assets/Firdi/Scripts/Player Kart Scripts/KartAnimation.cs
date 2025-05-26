@@ -39,9 +39,9 @@ public class KartAnimation : MonoBehaviour
     private void Awake()
     {
         input = GetComponentInParent<PlayerInput>();
-        input.actions["Item"].started += ctx => itemUsed = true;
+        input.actions["Item"].performed += ctx => itemUsed = true;
         input.actions["Item"].canceled += ctx => itemUsed = false;
-        input.actions["Skill"].started += ctx => skilUSed = true;
+        input.actions["Skill"].performed += ctx => skilUSed = true;
         input.actions["Skill"].canceled += ctx => skilUSed = false;
     }
 

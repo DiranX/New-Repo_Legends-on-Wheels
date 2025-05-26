@@ -34,6 +34,7 @@ public class ButoIjo_Shock : MonoBehaviour
                 {
                     playerKart.GetComponent<Skill_Effect>().isSlowed = true;
                     playerKart.topSpeed = playerKart.topSpeed / 2;
+                    playerKart.GetComponent<Animator>().SetTrigger("Stop");
                     Debug.Log("Stop");
                 }
             }

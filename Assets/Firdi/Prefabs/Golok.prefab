@@ -515,11 +515,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1500208568029857945}
-  - component: {fileID: 8347064064050764393}
   - component: {fileID: 8314008726395129965}
+  - component: {fileID: 2379618836047003076}
+  - component: {fileID: 6979315923606392292}
   m_Layer: 11
   m_Name: GameObject (2)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -539,28 +540,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8695401987057276690}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8347064064050764393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4728806064759104912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5d4dd0f9768b90429fb0a1d056bf300, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Id: 0
-  isBack: 0
-  pitung: {fileID: 0}
-  speed: 5
-  velocity: {x: 0, y: 0, z: 0}
-  terrain:
-    serializedVersion: 2
-    m_Bits: 64
-  offsetAboveGround: 0.5
-  trigger: 1
 --- !u!136 &8314008726395129965
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -584,6 +563,46 @@ CapsuleCollider:
   m_Height: 5.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &2379618836047003076
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728806064759104912}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &6979315923606392292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728806064759104912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4daa6e184c4286540880d2f7018a24fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id: 0
 --- !u!1 &5986080575398429039
 GameObject:
   m_ObjectHideFlags: 0

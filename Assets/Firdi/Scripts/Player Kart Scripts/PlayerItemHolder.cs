@@ -20,6 +20,8 @@ public class PlayerItemHolder : MonoBehaviour
     public PlayerInput playerInput;
     public PlayerKartController playerKartController;
     public AudioSource itemSound;
+    public AudioSource Sfx;
+    public AudioClip[] SfxSound;
 
     private void Awake()
     {
@@ -35,7 +37,8 @@ public class PlayerItemHolder : MonoBehaviour
         {
             if(playerItemIndex == 0 || playerItemIndex == 2)
             {
-                if(throwInput.y >= 0)
+                Sfx.PlayOneShot(SfxSound[6]);
+                if (throwInput.y >= 0)
                 {
                     FrontThrow();
                 }
@@ -53,6 +56,7 @@ public class PlayerItemHolder : MonoBehaviour
                 if (ItemPrefabs[3].activeSelf == false)
                 {
                     ItemUsed = false;
+                    Sfx.PlayOneShot(SfxSound[4]);
                     playerItemUI[playerItemIndex].SetActive(false); // Deactivate the UI element
                     haveItem = false; // Allow picking up a new item
                     ItemPrefabs[3].SetActive(true);

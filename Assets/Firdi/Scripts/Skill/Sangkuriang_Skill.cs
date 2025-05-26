@@ -31,6 +31,8 @@ public class Sangkuriang_Skill : MonoBehaviour
         {
             UiSkill.SetActive(true);
             this.Id = GetComponentInParent<Player>().id;
+            canUsed = false;
+            lastUsedTime = Time.time;
         }
     }
 
@@ -45,9 +47,10 @@ public class Sangkuriang_Skill : MonoBehaviour
             Ready.SetActive(true);
             if (skillUsed && canUsed && Time.time - lastUsedTime >= duration)
             {
+                GetComponent<PlayerKartController>().sphere.GetComponent<PlayerItemHolder>().Sfx.PlayOneShot(
+                    GetComponent<PlayerKartController>().sphere.GetComponent<PlayerItemHolder>().SfxSound[8]);
                 canUsed = false;
                 lastUsedTime = Time.time;
-                efek.isProtect = true;
                 if (MoveY.y >= 0)
                 {
                     GameObject bukit = Instantiate(Bukit, Front.position, Front.rotation);

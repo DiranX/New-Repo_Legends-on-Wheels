@@ -13,10 +13,12 @@ public class TimunEmas_Terasi : MonoBehaviour
     public bool isTerasi;
     public bool isLumpur;
     public int Id;
+    AudioSource audioSource;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         collider = GetComponent<BoxCollider>();
+        audioSource = GetComponent<AudioSource>();
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -24,6 +26,7 @@ public class TimunEmas_Terasi : MonoBehaviour
         {
             if (!isContact)
             {
+                audioSource.Play();
                 Terasi.SetActive(false);
                 Lumpur.SetActive(true);
                 isContact = true;
@@ -32,7 +35,7 @@ public class TimunEmas_Terasi : MonoBehaviour
                 rb.angularVelocity = Vector3.zero;
                 rb.isKinematic = true;
                 collider.isTrigger = true;
-                collider.size = new Vector3(3.5f, 0.3972006f, 3.5f);
+                collider.size = new Vector3(3.5f, 0.5f, 3.5f);
                 Physics.IgnoreLayerCollision(12, 11, false);
             }
         }
@@ -51,6 +54,8 @@ public class TimunEmas_Terasi : MonoBehaviour
                 {
                     Debug.Log("Buta");
                     other.GetComponent<Skill_Effect>().lumpur.SetActive(true);
+                    playerKartController.sphere.GetComponent<PlayerItemHolder>().Sfx.PlayOneShot(
+                        playerKartController.sphere.GetComponent<PlayerItemHolder>().SfxSound[3]);
                     Destroy(gameObject);
                 }
             }

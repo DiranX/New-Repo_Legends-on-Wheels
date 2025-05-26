@@ -11,10 +11,12 @@ public class Item_Bomb_Script : MonoBehaviour
     public bool isVfx;
     public bool isExplode;
     Rigidbody rb;
+    AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
 
         Physics.IgnoreLayerCollision(3, 1, true);
@@ -34,9 +36,10 @@ public class Item_Bomb_Script : MonoBehaviour
                 Physics.IgnoreLayerCollision(3, 11, false);
                 time += Time.deltaTime;
 
-                if (time >= 1 && !isExplode)
+                if (time >= .5 && !isExplode)
                 {
                     isExplode = true;
+                    audioSource.Play();
                     bombVfx.SetActive(true);
                     bomb.SetActive(false);
                 }
@@ -73,6 +76,7 @@ public class Item_Bomb_Script : MonoBehaviour
                     if (playerKart != null)
                     {
                         isExplode = true;
+                        audioSource.Play();
                         bombVfx.SetActive(true);
                         bomb.SetActive(false);
                     }
