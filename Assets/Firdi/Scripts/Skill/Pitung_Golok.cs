@@ -20,6 +20,7 @@ public class Pitung_Golok : MonoBehaviour
     private void Start()
     {
         Physics.IgnoreLayerCollision(3, 11, true);
+        StartCoroutine(Wait());
     }
     void Update()
     {
@@ -59,41 +60,6 @@ public class Pitung_Golok : MonoBehaviour
 
             velocity = new Vector3(-velocity.x, 0f, normalizedZ).normalized * ((speed / 2) * 3);
             bounceCount += 1;
-            Physics.IgnoreLayerCollision(3, 11, false);
-        }
-        else if (collision.gameObject.CompareTag("Track"))
-        {
-            float zHitOffset = transform.position.z - collision.transform.position.z;
-            float maxwallHalfHeight = collision.collider.bounds.size.z / 2;
-            float normalizedZ = Mathf.Clamp(zHitOffset / maxwallHalfHeight, -1f, 1f);
-
-            velocity = new Vector3(-velocity.x, 0f, normalizedZ).normalized * ((speed / 2) * 3);
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(trigger == true)
-        {
-            if (other.gameObject.CompareTag("Kart"))
-            {
-                // Check if the player kart enters the boost pad
-                PlayerKartController playerKart = other.gameObject.GetComponent<PlayerKartController>();
-                int id = playerKart.GetComponentInParent<Player>().id;
-                if (playerKart != null)
-                {
-                    if (id != Id && playerKart.GetComponent<Skill_Effect>().isProtect != true)
-                    {
-                        playerKart.GetComponent<Animator>().SetTrigger("Stop");
-                        playerKart.GetComponent<Skill_Effect>().isReverse = true;
-                        Debug.Log("Stop");
-                    }
-                }
-            }
-            if (other.gameObject.CompareTag("Obstacle"))
-            {
-                Destroy(other.gameObject);
-            }
         }
     }
 
@@ -101,5 +67,11 @@ public class Pitung_Golok : MonoBehaviour
     {
         yield return new WaitForSeconds(10);
         Destroy(gameObject);
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(2);
+        Physics.IgnoreLayerCollision(3, 11, false);
     }
 }

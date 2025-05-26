@@ -63,6 +63,11 @@ public class Sangkuriang_Bukit : MonoBehaviour
                     }
                 }
             }
+            else
+            {
+                playerKart.GetComponent<Skill_Effect>().isSlowed = true;
+                playerKart.topSpeed = playerKart.topSpeed / 2;
+            }
         }
 
     }

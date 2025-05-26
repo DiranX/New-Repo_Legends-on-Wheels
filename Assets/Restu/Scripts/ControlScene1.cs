@@ -13,7 +13,7 @@ public class ControlScene1 : MonoBehaviour
     void Start()
     {
         // Tambahkan AudioSource ke GameObject ini
-        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource = GameObject.FindGameObjectWithTag("SFX Tag").GetComponent<AudioSource>();
     }
 
     void Update()
@@ -31,8 +31,11 @@ public class ControlScene1 : MonoBehaviour
 
     IEnumerator PlaySfxAndLoadScene()
     {
-        audioSource.PlayOneShot(sfxButton);
-        yield return new WaitForSeconds(sfxButton.length);
+        if (audioSource.enabled == true)
+        {
+            audioSource.PlayOneShot(sfxButton);
+            yield return new WaitForSeconds(sfxButton.length);
+        }
         SceneManager.LoadScene(sceneIndex);
     }
 }

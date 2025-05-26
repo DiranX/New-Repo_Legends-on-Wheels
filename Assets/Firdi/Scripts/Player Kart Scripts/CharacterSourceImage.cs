@@ -6,4 +6,5 @@ using UnityEngine.UI;
 public class CharacterSourceImage : MonoBehaviour
 {
     public Sprite[] image;
+    public bool isSelected;
 }

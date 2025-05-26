@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public List<CharacterSelector> characterSelector = new List<CharacterSelector>(); // Stores references to selectors
     public List<int> characterIds = new List<int>(); // Stores selected character IDs
     public int[] ID; // Stores final selected character IDs
+    float waitTime = 0;
+    float delay = 1.5f;
 
     void Awake()
     {
@@ -35,7 +37,11 @@ public class GameManager : MonoBehaviour
         if (characterSelector != null && characterSelector.Count > 0 && characterSelector.All(c => c.isSelected))
         {
             StoreCharacterIDs(); // Save selected character IDs
-            SceneManager.LoadSceneAsync ("ArenaSelection");
+            waitTime += Time.deltaTime;
+            if(waitTime >= delay)
+            {
+                SceneManager.LoadSceneAsync("ArenaSelection");
+            }
         }
     }
 
@@ -58,10 +64,13 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "ArenaSelection")
+        if (scene.name == "ArenaSelection" || scene.name == "MainMenu"||
+            scene.name == "Settings" || scene.name == "TitleScreen"||
+            scene.name == "ModeSelect" || scene.name == "Credits")
         {
             characterSelector.Clear();
             characterIds.Clear();
+            waitTime = 0;
         }
     }
 

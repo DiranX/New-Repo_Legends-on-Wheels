@@ -19,7 +19,7 @@ public class Item_Barrel_Script : MonoBehaviour
     }
     IEnumerator Dest()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(10f);
         if (!isContact)
         {
             Destroy(this.gameObject);
@@ -37,8 +37,8 @@ public class Item_Barrel_Script : MonoBehaviour
                 rb.velocity = Vector3.zero;
                 rb.angularVelocity = Vector3.zero;
                 rb.isKinematic = true;
-                Physics.IgnoreLayerCollision(11, 3, false);
                 transform.localScale *= 3f;
+                Physics.IgnoreLayerCollision(11, 3, false);
             }
         }
 
@@ -48,10 +48,14 @@ public class Item_Barrel_Script : MonoBehaviour
             if (collision.gameObject.GetComponent<PlayerItemHolder>().playerKartController.GetComponent<Skill_Effect>().isProtect != true)
             {
                 collision.gameObject.GetComponent<PlayerItemHolder>().playerKartController.GetComponent<Animator>().SetTrigger("Stop");
+                collision.gameObject.GetComponent<PlayerItemHolder>().Sfx.PlayOneShot(
+                    collision.gameObject.GetComponent<PlayerItemHolder>().SfxSound[0]);
                 Destroy(this.gameObject);
             }
             else
             {
+                collision.gameObject.GetComponent<PlayerItemHolder>().Sfx.PlayOneShot(
+                    collision.gameObject.GetComponent<PlayerItemHolder>().SfxSound[0]);
                 Destroy(this.gameObject);
             }
         }

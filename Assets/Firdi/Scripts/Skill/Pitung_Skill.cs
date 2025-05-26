@@ -34,6 +34,8 @@ public class Pitung_Skill : MonoBehaviour
         {
             UiSkill.SetActive(true);
             this.Id = GetComponentInParent<Player>().id;
+            canUsed = false;
+            lastUsedTime = Time.time;
         }
 
     }
@@ -48,6 +50,8 @@ public class Pitung_Skill : MonoBehaviour
             Ready.SetActive(true);
             if (skillUsed && canUsed && Time.time - lastUsedTime >= duration)
             {
+                GetComponent<PlayerKartController>().sphere.GetComponent<PlayerItemHolder>().Sfx.PlayOneShot(
+                    GetComponent<PlayerKartController>().sphere.GetComponent<PlayerItemHolder>().SfxSound[6]);
                 Debug.Log("Skill is Used");
                 canUsed = false;
                 lastUsedTime = Time.time;
@@ -77,6 +81,7 @@ public class Pitung_Skill : MonoBehaviour
         Rigidbody rb = golok.GetComponent<Rigidbody>();
         golok.GetComponent<Pitung_Golok>().pitung = this.GetComponent<Pitung_Skill>();
         golok.GetComponent<Pitung_Golok>().Id = this.Id;
+        golok.GetComponentInChildren<Pitung_SkillTrigger>().Id = this.Id;
 
         Vector3 Direction = frontThrow.forward * Force;
 
@@ -95,6 +100,9 @@ public class Pitung_Skill : MonoBehaviour
     {
         GameObject golok = Instantiate(Golok, backThrow.position, backThrow.rotation);
         Rigidbody rb = golok.GetComponent<Rigidbody>();
+        golok.GetComponent<Pitung_Golok>().pitung = this.GetComponent<Pitung_Skill>();
+        golok.GetComponent<Pitung_Golok>().Id = this.Id;
+        golok.GetComponentInChildren<Pitung_SkillTrigger>().Id = this.Id;
 
         Vector3 Direction = backThrow.forward * Force;
 

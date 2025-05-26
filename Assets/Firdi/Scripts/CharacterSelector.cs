@@ -47,9 +47,12 @@ public class CharacterSelector : MonoBehaviour
             }
         }
 
-        if (playerInput.actions["Submit"].WasPressedThisFrame())
+        if (characterButtons[currentIndex].GetComponent<CharacterSourceImage>().isSelected == false)
         {
-            SelectCharacter();
+            if (playerInput.actions["Submit"].WasPressedThisFrame())
+            {
+                SelectCharacter();
+            }
         }
         if (playerInput.actions["Cancel"].WasPressedThisFrame())
         {
@@ -72,6 +75,7 @@ public class CharacterSelector : MonoBehaviour
         if (cursor.position == characterButtons[currentIndex].transform.position)
         {
             characterDisplay[currentIndex].SetActive(true);
+            text.text = characterDisplay[currentIndex].name;
         }
     }
     void MoveCursor(int direction)
@@ -94,6 +98,7 @@ public class CharacterSelector : MonoBehaviour
         {
             characterButtons[currentIndex].GetComponent<Image>().sprite 
                 = characterButtons[currentIndex].GetComponent<CharacterSourceImage>().image[playerID];
+            characterButtons[currentIndex].GetComponent<CharacterSourceImage>().isSelected = true;
             characterDisplay[currentIndex].GetComponent<CharacterDIsplay>().animator.SetBool("isSelect", true);
         }
     }
@@ -104,6 +109,7 @@ public class CharacterSelector : MonoBehaviour
         CharacterID = 0;
         characterButtons[currentIndex].GetComponent<Image>().sprite
             = characterButtons[currentIndex].GetComponent<CharacterSourceImage>().image[0];
+        characterButtons[currentIndex].GetComponent<CharacterSourceImage>().isSelected = false;
         characterDisplay[currentIndex].GetComponent<CharacterDIsplay>().animator.SetBool("isSelect", false);
     }
 }

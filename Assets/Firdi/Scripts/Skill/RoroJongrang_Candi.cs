@@ -53,6 +53,8 @@ public class RoroJongrang_Candi : MonoBehaviour
             if(this.id != id && playerkart.GetComponent<Skill_Effect>().isProtect != true)
             {
                 collision.gameObject.GetComponent<PlayerItemHolder>().playerKartController.GetComponent<Animator>().SetTrigger("Stop");
+                collision.gameObject.GetComponent<PlayerItemHolder>().Sfx.PlayOneShot(
+                    collision.gameObject.GetComponent<PlayerItemHolder>().SfxSound[2]);
                 Destroy(this.gameObject);
             }
             //else if (this.id == id && isClose)

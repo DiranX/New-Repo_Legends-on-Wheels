@@ -28,6 +28,8 @@ public class KeongEmas_Skill : MonoBehaviour
         if (this.gameObject.activeSelf)
         {
             UiSkill.SetActive(true);
+            canUsed = false;
+            lastUsedTime = Time.time;
         }
     }
 
@@ -43,6 +45,8 @@ public class KeongEmas_Skill : MonoBehaviour
             {
                 canUsed = false;
                 lastUsedTime = Time.time;
+                GetComponent<PlayerKartController>().sphere.GetComponent<PlayerItemHolder>().Sfx.PlayOneShot(
+                    GetComponent<PlayerKartController>().sphere.GetComponent<PlayerItemHolder>().SfxSound[4]);
                 Shield.SetActive(true);
                 efek.isProtect = true;
                 StartCoroutine(ShieldDuration());
@@ -64,6 +68,8 @@ public class KeongEmas_Skill : MonoBehaviour
         if (Shield.activeSelf)
         {
             yield return new WaitForSeconds(10);
+            GetComponent<PlayerKartController>().sphere.GetComponent<PlayerItemHolder>().Sfx.PlayOneShot(
+                GetComponent<PlayerKartController>().sphere.GetComponent<PlayerItemHolder>().SfxSound[5]);
             Shield.SetActive(false);
             efek.isProtect = false;
         }

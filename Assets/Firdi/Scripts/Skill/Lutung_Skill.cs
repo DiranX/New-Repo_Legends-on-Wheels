@@ -36,6 +36,8 @@ public class Lutung_Skill : MonoBehaviour
         {
             UiSkill.SetActive(true);
             this.id = GetComponentInParent<Player>().id;
+            canUsed = false;
+            lastUsedTime = Time.time;
         }
 
     }
@@ -50,6 +52,8 @@ public class Lutung_Skill : MonoBehaviour
             Ready.SetActive(true);
             if (skillUsed && canUsed && Time.time - lastUsedTime >= duration)
             {
+                GetComponent<PlayerKartController>().sphere.GetComponent<PlayerItemHolder>().Sfx.PlayOneShot(
+                    GetComponent<PlayerKartController>().sphere.GetComponent<PlayerItemHolder>().SfxSound[6]);
                 Debug.Log("Skill is Used");
                 canUsed = false;
                 lastUsedTime = Time.time;

@@ -149,8 +149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Id: 0
-  boostAmount: 20
-  boostDuration: 2
+  boostAmount: 30
+  boostDuration: 3
 --- !u!1001 &5563414628760807605
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -22,7 +22,9 @@ public class Lobby : MonoBehaviour
             }
         }
 
-        if(GameManager.Instance != null)
+        Character.Sort((a, b) => a.playerID.CompareTo(b.playerID));
+
+        if (GameManager.Instance != null)
         {
             GameManager.Instance.characterSelector = Character;
         }
