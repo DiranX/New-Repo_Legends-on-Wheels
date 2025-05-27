@@ -13,8 +13,7 @@ public class NyiroroKidul_Tornado : MonoBehaviour
             if(other.gameObject.GetComponent<PlayerItemHolder>().playerKartController.GetComponent<Skill_Effect>().isProtect != true)
             {
                 other.gameObject.GetComponent<PlayerItemHolder>().playerKartController.GetComponent<Animator>().SetTrigger("Spin");
-                other.transform.DOMove
-                    (other.gameObject.GetComponent<PlayerItemHolder>().playerKartController.GetComponent<Skill_Effect>()
+                other.transform.DOMove(other.gameObject.GetComponent<PlayerItemHolder>().playerKartController.GetComponent<Skill_Effect>()
                     .roroKidulRelocate.transform.position, 50 * Time.deltaTime);
                 Debug.Log("Tornado Hit Player");
             }

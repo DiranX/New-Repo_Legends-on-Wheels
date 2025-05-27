@@ -36,7 +36,7 @@ public class Item_Bomb_Script : MonoBehaviour
                 Physics.IgnoreLayerCollision(3, 11, false);
                 time += Time.deltaTime;
 
-                if (time >= .5 && !isExplode)
+                if (time >= .2 && !isExplode)
                 {
                     isExplode = true;
                     audioSource.Play();
