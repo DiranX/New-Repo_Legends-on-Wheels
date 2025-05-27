@@ -25336,6 +25336,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 476119434013297339, guid: 9128af1ae82e7114c80ed06c836af48a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1153960121777709327, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_IsActive
@@ -25389,17 +25394,17 @@ PrefabInstance:
     - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000005287939
+      value: -0.000000078758305
       objectReference: {fileID: 0}
     - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 6.059757e-10
+      value: -0.0000000409744
       objectReference: {fileID: 0}
     - target: {fileID: 2350620135853089223, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000051767257
+      value: 0.000000016306323
       objectReference: {fileID: 0}
     - target: {fileID: 2417767358075593121, guid: 9128af1ae82e7114c80ed06c836af48a,
         type: 3}
@@ -42808,6 +42813,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8961359253771211100, guid: 06eaf5979f4799f4eb7e7a160674e791,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8961359253771211100, guid: 06eaf5979f4799f4eb7e7a160674e791,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -42883,8 +42893,18 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: bda1df1725a94a04f90c5b4e4883689b, type: 2}
     - target: {fileID: -7029948723529949830, guid: 06eaf5979f4799f4eb7e7a160674e791,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -7029948723529949830, guid: 06eaf5979f4799f4eb7e7a160674e791,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7029948723529949830, guid: 06eaf5979f4799f4eb7e7a160674e791,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: -7029948723529949830, guid: 06eaf5979f4799f4eb7e7a160674e791,
         type: 3}
@@ -42895,6 +42915,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: jembatan baru
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 06eaf5979f4799f4eb7e7a160674e791,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 06eaf5979f4799f4eb7e7a160674e791,
         type: 3}
@@ -58564,7 +58589,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -462981019419857548, guid: 06eaf5979f4799f4eb7e7a160674e791, type: 3}
 --- !u!1 &2058390017 stripped

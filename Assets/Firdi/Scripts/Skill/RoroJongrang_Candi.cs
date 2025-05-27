@@ -16,17 +16,32 @@ public class RoroJongrang_Candi : MonoBehaviour
 
     private void Update()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Kart");
-        if (Vector3.Distance(this.gameObject.transform.position, player.transform.position) <= 15)
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Kart");
+
+        foreach (GameObject player in players)
         {
-            if(player.GetComponent<PlayerKartController>().ID == id)
+            float distance = Vector3.Distance(this.transform.position, player.transform.position);
+            PlayerKartController controller = player.GetComponent<PlayerKartController>();
+
+            if (distance <= 15)
             {
-                GetComponent<BoxCollider>().isTrigger = true;
+
+                if (controller != null && controller.ID == id)
+                {
+                    Debug.Log("Close to player ID " + id);
+                    GetComponent<BoxCollider>().isTrigger = true;
+                    break; // Stop after finding the correct one
+                }
+            }else if(distance >= 5)
+            {
+
+                if (controller != null && controller.ID == id)
+                {
+                    Debug.Log("Close to player ID " + id);
+                    GetComponent<BoxCollider>().isTrigger = false;
+                    break; // Stop after finding the correct one
+                }
             }
-        }
-        else if(Vector3.Distance(this.gameObject.transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 5)
-        {
-            GetComponent<BoxCollider>().isTrigger = false;
         }
     }
 

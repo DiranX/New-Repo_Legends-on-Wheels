@@ -118,7 +118,13 @@ public class playerLapCounter : MonoBehaviour
     }
     IEnumerator NullText()
     {
-        this.winOrLose.text = (currentLap + 1).ToString() + Place[currentLap + 1].ToString() + " Lap";
+        if(currentLap == 1)
+        {
+            this.winOrLose.text = (currentLap + 1).ToString() + Place[currentLap + 1].ToString() + " Lap";
+        }else if(currentLap == 2)
+        {
+            this.winOrLose.text = "Final Lap!";
+        }
         yield return new WaitForSeconds(1);
         this.winOrLose.text = "";
     }
