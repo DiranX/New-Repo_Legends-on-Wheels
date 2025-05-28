@@ -83,6 +83,13 @@ public class MainMenu : MonoBehaviour
     public void Track(string track)
     {
         SceneManager.LoadSceneAsync(track);
+        Time.timeScale = 1;
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1;
     }
 
     public void Pause()
