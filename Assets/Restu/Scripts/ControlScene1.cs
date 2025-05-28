@@ -21,10 +21,11 @@ public class ControlScene1 : MonoBehaviour
         if ((Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame) ||
             (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame))
         {
-            if (!oneshotSfx)
+            if (!oneshotSfx && this != null)
             {
                 oneshotSfx = true;
                 StartCoroutine(PlaySfxAndLoadScene());
+                SceneManager.LoadScene(sceneIndex);
             }
         }
     }
@@ -36,6 +37,5 @@ public class ControlScene1 : MonoBehaviour
             audioSource.PlayOneShot(sfxButton);
             yield return new WaitForSeconds(sfxButton.length);
         }
-        SceneManager.LoadScene(sceneIndex);
     }
 }
